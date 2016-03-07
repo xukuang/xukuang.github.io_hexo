@@ -1,0 +1,564 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>数据框基本操作的常见方法 | YiYuZhiJian</title>
+  <meta name="author" content="kuang xu">
+  
+  <meta name="description" content="Walk steps step by step">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="数据框基本操作的常见方法"/>
+  <meta property="og:site_name" content="YiYuZhiJian"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="YiYuZhiJian" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">YiYuZhiJian</a></h1>
+  <h2><a href="/">你害怕一件事，可还是要去做，那才是勇敢。</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	    <li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-05-16T07:23:57.000Z"><a href="/2015/05/16/common-methods-of-dealing-with-data-frame/">5月16 2015</a></time>
+      
+      
+  
+    <h1 class="title">数据框基本操作的常见方法</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>本文所说的数据框基本操作，主要包括添加新列、数据排列、数据筛选、数据选择和对所有列进行相同操作，针对每一种操作在基础包和dplyr包中使用方法进行了对比介绍。相对基础包的处理方法，dplyr包中的方法除了更加灵活外，处理速度也会大幅度提升。</p>
+<h2 id="添加新列">添加新列</h2><p>使用的数据companiesData来自于网络，它是苹果、谷歌以及微软等三家公司在2010到2013年3年间的营收与利润数额，其中fy为年份，company为公司名称，revenue为公司营收，profit为公司利润。创建两列：公司所属国家(country)，其值为America；利润列（margin），其值等于利润(profit)除以营收(revenue)再乘以100。<br><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fy &lt;- c(<span class="number">2010</span>,<span class="number">2011</span>,<span class="number">2012</span>,<span class="number">2010</span>,<span class="number">2011</span>,<span class="number">2012</span>,<span class="number">2010</span>,<span class="number">2011</span>,<span class="number">2012</span>)  </span><br><span class="line">company &lt;- c(<span class="string">"Apple"</span>,<span class="string">"Apple"</span>,<span class="string">"Apple"</span>,<span class="string">"Google"</span>,<span class="string">"Google"</span>,<span class="string">"Google"</span>,<span class="string">"Microsoft"</span>,  </span><br><span class="line"><span class="string">"Microsoft"</span>,<span class="string">"Microsoft"</span>)  </span><br><span class="line">revenue &lt;- c(<span class="number">65225</span>,<span class="number">108249</span>,<span class="number">156508</span>,<span class="number">29321</span>,<span class="number">37905</span>,<span class="number">50175</span>,<span class="number">62484</span>,<span class="number">69943</span>,<span class="number">73723</span>)  </span><br><span class="line">profit &lt;- c(<span class="number">14013</span>,<span class="number">25922</span>,<span class="number">41733</span>,<span class="number">8505</span>,<span class="number">9737</span>,<span class="number">10737</span>,<span class="number">18760</span>,<span class="number">23150</span>,<span class="number">16978</span>)  </span><br><span class="line">companiesData &lt;- data.frame(fy, company, revenue, profit)</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<ul>
+<li><p>为列简单创建一个变量名称</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">companiesData &lt;- data.frame(fy, company, revenue, profit)</span><br><span class="line">companiesData$country &lt;- <span class="string">'America'</span></span><br><span class="line">companiesData$margin &lt;- (companiesData$profit / companiesData$revenue) * <span class="number">100</span></span><br><span class="line">companiesData</span><br><span class="line">		fy   company revenue profit country   margin</span><br><span class="line">	<span class="number">1</span> <span class="number">2010</span>     Apple   <span class="number">65225</span>  <span class="number">14013</span>  Aerica <span class="number">21.48409</span></span><br><span class="line">	<span class="number">2</span> <span class="number">2011</span>     Apple  <span class="number">108249</span>  <span class="number">25922</span>  Aerica <span class="number">23.94664</span></span><br><span class="line">	<span class="number">3</span> <span class="number">2012</span>     Apple  <span class="number">156508</span>  <span class="number">41733</span>  Aerica <span class="number">26.66509</span></span><br><span class="line">	<span class="number">4</span> <span class="number">2010</span>    Google   <span class="number">29321</span>   <span class="number">8505</span>  Aerica <span class="number">29.00651</span></span><br><span class="line">	<span class="number">5</span> <span class="number">2011</span>    Google   <span class="number">37905</span>   <span class="number">9737</span>  Aerica <span class="number">25.68790</span></span><br><span class="line">	<span class="number">6</span> <span class="number">2012</span>    Google   <span class="number">50175</span>  <span class="number">10737</span>  Aerica <span class="number">21.39910</span></span><br><span class="line">	<span class="number">7</span> <span class="number">2010</span> Microsoft   <span class="number">62484</span>  <span class="number">18760</span>  Aerica <span class="number">30.02369</span></span><br><span class="line">	<span class="number">8</span> <span class="number">2011</span> Microsoft   <span class="number">69943</span>  <span class="number">23150</span>  Aerica <span class="number">33.09838</span></span><br><span class="line">	<span class="number">9</span> <span class="number">2012</span> Microsoft   <span class="number">73723</span>  <span class="number">16978</span>  Aerica <span class="number">23.02945</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>利用transform函数</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">companiesData &lt;- data.frame(fy, company, revenue, profit)</span><br><span class="line">companiesData &lt;- transform(companiesData,  country = <span class="string">'Aerica'</span>, margin = (profit/revenue) * <span class="number">100</span>)</span><br><span class="line">companiesData</span><br><span class="line">		fy   company revenue profit country   margin</span><br><span class="line">	<span class="number">1</span> <span class="number">2010</span>     Apple   <span class="number">65225</span>  <span class="number">14013</span>  Aerica <span class="number">21.48409</span></span><br><span class="line">	<span class="number">2</span> <span class="number">2011</span>     Apple  <span class="number">108249</span>  <span class="number">25922</span>  Aerica <span class="number">23.94664</span></span><br><span class="line">	<span class="number">3</span> <span class="number">2012</span>     Apple  <span class="number">156508</span>  <span class="number">41733</span>  Aerica <span class="number">26.66509</span></span><br><span class="line">	<span class="number">4</span> <span class="number">2010</span>    Google   <span class="number">29321</span>   <span class="number">8505</span>  Aerica <span class="number">29.00651</span></span><br><span class="line">	<span class="number">5</span> <span class="number">2011</span>    Google   <span class="number">37905</span>   <span class="number">9737</span>  Aerica <span class="number">25.68790</span></span><br><span class="line">	<span class="number">6</span> <span class="number">2012</span>    Google   <span class="number">50175</span>  <span class="number">10737</span>  Aerica <span class="number">21.39910</span></span><br><span class="line">	<span class="number">7</span> <span class="number">2010</span> Microsoft   <span class="number">62484</span>  <span class="number">18760</span>  Aerica <span class="number">30.02369</span></span><br><span class="line">	<span class="number">8</span> <span class="number">2011</span> Microsoft   <span class="number">69943</span>  <span class="number">23150</span>  Aerica <span class="number">33.09838</span></span><br><span class="line">	<span class="number">9</span> <span class="number">2012</span> Microsoft   <span class="number">73723</span>  <span class="number">16978</span>  Aerica <span class="number">23.02945</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>相对第一种方法，transform可以同时添加多列，书写相对简单，但是利用tranform时，新列必须是原始列的计算，而不能对刚刚建立起来的列进行计算，换句话说上面的第二条语句，如果要写成这样是错误的：companiesData &lt;- transform(companiesData,  country = ‘Aerica’, margin = (profit/revenue) <em> 100, margin.new = margin </em> 1.2),原因就在于margin.new = margin * 1.2中margin是新生的数据列，而非数据中原有的列。</p>
+<ul>
+<li>dplyr包中的mutate函数</li>
+</ul>
+<p>dplyr包可以简单地认为是对plyr包的升级，所以这两个包中的mutate函数有相似的作用。mutate函数很好的解决了transform函数不能解决的问题，即mutate函数，允许新列对刚刚建立起来的列进行计算。所以，对于tansform函数来说，错误的companiesData &lt;- transform(companiesData,  country = ‘Aerica’, margin = (profit/revenue) <em> 100, margin.new = margin \</em> 1.2)，对于mutate函数来说，companiesData &lt;- mutate(companiesData,  country = ‘Aerica’, margin = (profit/revenue) <em> 100, margin.new = margin \</em> 1.2)是正确的。<br><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(dplyr)</span><br><span class="line">companiesData &lt;- data.frame(fy, company, revenue, profit)</span><br><span class="line">companiesData &lt;- mutate(companiesData, country = <span class="string">'Aerica'</span>, margin = (profit/revenue) * <span class="number">100</span>, margin.new = margin * <span class="number">1.2</span>)</span><br><span class="line">companiesData</span><br><span class="line">		fy   company revenue profit country   margin margin.new</span><br><span class="line">	<span class="number">1</span> <span class="number">2010</span>     Apple   <span class="number">65225</span>  <span class="number">14013</span>  Aerica <span class="number">21.48409</span>   <span class="number">25.78091</span></span><br><span class="line">	<span class="number">2</span> <span class="number">2011</span>     Apple  <span class="number">108249</span>  <span class="number">25922</span>  Aerica <span class="number">23.94664</span>   <span class="number">28.73597</span></span><br><span class="line">	<span class="number">3</span> <span class="number">2012</span>     Apple  <span class="number">156508</span>  <span class="number">41733</span>  Aerica <span class="number">26.66509</span>   <span class="number">31.99811</span></span><br><span class="line">	<span class="number">4</span> <span class="number">2010</span>    Google   <span class="number">29321</span>   <span class="number">8505</span>  Aerica <span class="number">29.00651</span>   <span class="number">34.80782</span></span><br><span class="line">	<span class="number">5</span> <span class="number">2011</span>    Google   <span class="number">37905</span>   <span class="number">9737</span>  Aerica <span class="number">25.68790</span>   <span class="number">30.82548</span></span><br><span class="line">	<span class="number">6</span> <span class="number">2012</span>    Google   <span class="number">50175</span>  <span class="number">10737</span>  Aerica <span class="number">21.39910</span>   <span class="number">25.67892</span></span><br><span class="line">	<span class="number">7</span> <span class="number">2010</span> Microsoft   <span class="number">62484</span>  <span class="number">18760</span>  Aerica <span class="number">30.02369</span>   <span class="number">36.02842</span></span><br><span class="line">	<span class="number">8</span> <span class="number">2011</span> Microsoft   <span class="number">69943</span>  <span class="number">23150</span>  Aerica <span class="number">33.09838</span>   <span class="number">39.71806</span></span><br><span class="line">	<span class="number">9</span> <span class="number">2012</span> Microsoft   <span class="number">73723</span>  <span class="number">16978</span>  Aerica <span class="number">23.02945</span>   <span class="number">27.63534</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="数据排列">数据排列</h2><p>数据hflights来自R包hflights，记录的是飞机航班数据信息。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">library</span><span class="params">(hflights)</span></span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p>利用order函数</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 默认升序排列</span></span><br><span class="line"><span class="title">hf</span> = hflights[order(hflights<span class="variable">$DayofMonth</span>, hflights<span class="variable">$Month</span>, hflights<span class="variable">$Year</span>), ]</span><br><span class="line"><span class="comment"># 降序排列</span></span><br><span class="line">hflights[order(desc(hflights<span class="variable">$ArrDelay</span>)), ]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>dplyr包中的arrange函数</p>
+</li>
+</ul>
+<p>plyr包中也有具有相似功能arrange函数<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">require(dplyr)</span><br><span class="line"><span class="comment"># 默认升序排列</span></span><br><span class="line"><span class="constant">hf</span> = arrange(hflights, DayofMonth, Month, Year)</span><br><span class="line"><span class="comment"># 对列名加 desc() 进行倒序</span></span><br><span class="line"><span class="constant">hf</span> = arrange(hflights, desc(ArrDelay))</span><br></pre></td></tr></table></figure></p>
+<h2 id="数据筛选">数据筛选</h2><p>数据同样使用自R包hflights的hflights。数据筛选是选择满足符合某些条件的数据行。<br><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看各月数据行，方便下面的结果的确认</span></span><br><span class="line">table(hlihgts$Month)</span><br><span class="line">		<span class="number">1</span>     <span class="number">2</span>     <span class="number">3</span>     <span class="number">4</span>     <span class="number">5</span>     <span class="number">6</span>     <span class="number">7</span>     <span class="number">8</span>     <span class="number">9</span>    <span class="number">10</span>    <span class="number">11</span>    <span class="number">12</span> </span><br><span class="line">	<span class="number">18910</span> <span class="number">17128</span> <span class="number">19470</span> <span class="number">18593</span> <span class="number">19172</span> <span class="number">19600</span> <span class="number">20548</span> <span class="number">20176</span> <span class="number">18065</span> <span class="number">18696</span> <span class="number">18021</span> <span class="number">19117</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p>直接选取数据框中满足条件的数据行</p>
+<ul>
+<li><p>满足一个条件</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 满足数据框hflights中Month列等于1</span></span><br><span class="line">hf1 = hflights[hflights$Month == <span class="number">1</span>]</span><br><span class="line">nrow(hf1)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">18910</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>两个以上的条件：同时满足(相当于逻辑“且”)</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这里以两个条件为例</span></span><br><span class="line"><span class="comment">## 例子1：满足数据框hflights中Month列同时等于1和2</span></span><br><span class="line">hf2 = hflights[c(hflights$Month == <span class="number">1</span> &amp; hflights$Month == <span class="number">2</span>), ]</span><br><span class="line"><span class="comment">## 其值等于0，数据框hflights的Month列没有同时等于1，又等于2的数据行</span></span><br><span class="line">nrow(hf2)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">0</span></span><br><span class="line"><span class="comment">## 例子2：满足数据框hflights中Month列等于1且DayofMonth列等于2</span></span><br><span class="line">hf3 = hflights[c(hflights$Month == <span class="number">1</span> &amp; hflights$DayofMonth == <span class="number">2</span>), ]</span><br><span class="line">nrow(hf3)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">678</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>两个以上的条件：至少满足其中一个(相当于逻辑“或”)</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这里以两个条件为例</span></span><br><span class="line"><span class="comment">## 例子1：满足数据框hflights中Month列同时等于1或2</span></span><br><span class="line">hf4 = hflights[c(hflights$Month == <span class="number">1</span> | hflights$Month == <span class="number">2</span>), ]</span><br><span class="line"><span class="comment">## 其值等于18910(Month = 1) + 17128(Month = 1)</span></span><br><span class="line">nrow(hf4)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">36038</span></span><br><span class="line"><span class="comment">## 例子2：满足数据框hflights中Month列等于1或DayofMonth列等于2</span></span><br><span class="line">hf5 = hflights[c(hflights$Month == <span class="number">1</span> | hflights$DayofMonth == <span class="number">2</span>), ]</span><br><span class="line">nrow(hf5)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">25764</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>subset函数</p>
+<ul>
+<li><p>满足一个条件</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 满足数据框hflights中Month列等于1</span></span><br><span class="line">hf1 = subset(hflights, Month == <span class="number">1</span>)</span><br><span class="line">nrow(hf1)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">18910</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>两个以上的条件：同时满足(相当于逻辑“且”)</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这里以两个条件为例</span></span><br><span class="line"><span class="comment">## 例子1：满足数据框hflights中Month列同时等于1和2</span></span><br><span class="line">hf2 = subset(hflights, Month == <span class="number">1</span> &amp; Month == <span class="number">2</span>)</span><br><span class="line"><span class="comment">## 其值等于0，数据框hflights的Month列没有同时等于1，又等于2的数据行</span></span><br><span class="line">nrow(hf2)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">0</span></span><br><span class="line"><span class="comment">## 例子2：满足数据框hflights中Month列等于1且DayofMonth列等于2</span></span><br><span class="line">hf3 = subset(hflights, Month == <span class="number">1</span> &amp; DayofMonth == <span class="number">2</span>)</span><br><span class="line">nrow(hf3)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">678</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>两个以上的条件：至少满足其中一个(相当于逻辑“或”)</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这里以两个条件为例</span></span><br><span class="line"><span class="comment">## 例子1：满足数据框hflights中Month列同时等于1或2</span></span><br><span class="line">hf4 = subset(hflights, Month == <span class="number">1</span> | Month == <span class="number">2</span>)</span><br><span class="line"><span class="comment">## 此时也只有此时，subset函数可以写多个条件</span></span><br><span class="line"><span class="comment">## 这种方法不建议使用</span></span><br><span class="line">hf4 = subset(hflights, Month == <span class="number">1</span>, Month == <span class="number">2</span>)</span><br><span class="line"><span class="comment">## 其值等于18910(Month = 1) + 17128(Month = 1)</span></span><br><span class="line">nrow(hf4)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">36038</span></span><br><span class="line"><span class="comment">## 例子2：满足数据框hflights中Month列等于1或DayofMonth列等于2</span></span><br><span class="line">hf5 = subset(hflights, Month == <span class="number">1</span> | DayofMonth == <span class="number">2</span>)</span><br><span class="line">nrow(hf5)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">25764</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>dplyr包中的fliter函数<br>plyr包中并没有相似功能的filter函数</p>
+<ul>
+<li><p>满足一个条件</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">require</span>(dplyr)</span><br><span class="line"><span class="comment">## 满足数据框hflights中Month列等于1</span></span><br><span class="line">hf1 = filter(hflights, Month == <span class="number">1</span>)</span><br><span class="line">nrow(hf1)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">18910</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>两个以上的条件：同时满足(相当于逻辑“且”)</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这里以两个条件为例</span></span><br><span class="line"><span class="comment">## 例子1：满足数据框hflights中Month列同时等于1和2</span></span><br><span class="line">hf2 = filter(hflights, Month == <span class="number">1</span> &amp; Month == <span class="number">2</span>)</span><br><span class="line"><span class="comment">##在filter中,','直接相当于'&amp;'</span></span><br><span class="line">hf2 = filter(hflights, Month == <span class="number">1</span>, Month == <span class="number">2</span>)</span><br><span class="line"><span class="comment">## 为了统一，这种方法也不推荐使用</span></span><br><span class="line"><span class="comment">## 其值等于0，数据框hflights的Month列没有同时等于1，又等于2的数据行</span></span><br><span class="line">nrow(hf2)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">0</span></span><br><span class="line"><span class="comment">## 例子2：满足数据框hflights中Month列等于1且DayofMonth列等于2</span></span><br><span class="line">hf3 = filter(hflights, Month == <span class="number">1</span> &amp; DayofMonth == <span class="number">2</span>)</span><br><span class="line"><span class="comment">## 在filter中,','直接相当于'&amp;'</span></span><br><span class="line"><span class="comment">## 为了统一，这种方法也不推荐使用</span></span><br><span class="line">hf3 = filter(hflights, Month == <span class="number">1</span>, DayofMonth == <span class="number">2</span>)</span><br><span class="line">nrow(hf3)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">678</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>两个以上的条件：至少满足其中一个(相当于逻辑“或”)</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这里以两个条件为例</span></span><br><span class="line"><span class="comment">## 例子1：满足数据框hflights中Month列同时等于1或2</span></span><br><span class="line">hf4 = filter(hflights, Month == <span class="number">1</span> | Month == <span class="number">2</span>)</span><br><span class="line"><span class="comment">## 其值等于18910(Month = 1) + 17128(Month = 1)</span></span><br><span class="line">nrow(hf4)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">36038</span></span><br><span class="line"><span class="comment">## 例子2：满足数据框hflights中Month列等于1或DayofMonth列等于2</span></span><br><span class="line">hf5 = filter(hflights, Month == <span class="number">1</span> | DayofMonth == <span class="number">2</span>)</span><br><span class="line">nrow(hf5)</span><br><span class="line">	[<span class="number">1</span>] <span class="number">25764</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据选择">数据选择</h2><p>数据选择是选择数据框中的制定的列，这里使用的数据是dplyr包中自带的iris函数。<br><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">head(iris)</span><br><span class="line">	  Sepal.Length Sepal.Width Petal.Length Petal.Width Species</span><br><span class="line">	<span class="number">1</span>          <span class="number">5.1</span>         <span class="number">3.5</span>          <span class="number">1.4</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">2</span>          <span class="number">4.9</span>         <span class="number">3.0</span>          <span class="number">1.4</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">3</span>          <span class="number">4.7</span>         <span class="number">3.2</span>          <span class="number">1.3</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">4</span>          <span class="number">4.6</span>         <span class="number">3.1</span>          <span class="number">1.5</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">5</span>          <span class="number">5.0</span>         <span class="number">3.6</span>          <span class="number">1.4</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">6</span>          <span class="number">5.4</span>         <span class="number">3.9</span>          <span class="number">1.7</span>         <span class="number">0.4</span>  setosa</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p>直接选取</p>
+<ul>
+<li><p>利用字符向量选取指定列</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">iris.part1 = iris[,c(<span class="string">'Sepal.Length'</span>, <span class="string">'Sepal.Width'</span>)]</span><br><span class="line">head(iris.part1)</span><br><span class="line">	  Sepal.Length Sepal.Width</span><br><span class="line">	<span class="number">1</span>          <span class="number">5.1</span>         <span class="number">3.5</span></span><br><span class="line">	<span class="number">2</span>          <span class="number">4.9</span>         <span class="number">3.0</span></span><br><span class="line">	<span class="number">3</span>          <span class="number">4.7</span>         <span class="number">3.2</span></span><br><span class="line">	<span class="number">4</span>          <span class="number">4.6</span>         <span class="number">3.1</span></span><br><span class="line">	<span class="number">5</span>          <span class="number">5.0</span>         <span class="number">3.6</span></span><br><span class="line">	<span class="number">6</span>          <span class="number">5.4</span>         <span class="number">3.9</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>利用数字向量选择指定列</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 利用":"选取相邻列</span></span><br><span class="line">iris.part2 = iris[,<span class="number">1</span>:<span class="number">2</span>]</span><br><span class="line">head(iris.part2)</span><br><span class="line">	  Sepal.Length Sepal.Width</span><br><span class="line">	<span class="number">1</span>          <span class="number">5.1</span>         <span class="number">3.5</span></span><br><span class="line">	<span class="number">2</span>          <span class="number">4.9</span>         <span class="number">3.0</span></span><br><span class="line">	<span class="number">3</span>          <span class="number">4.7</span>         <span class="number">3.2</span></span><br><span class="line">	<span class="number">4</span>          <span class="number">4.6</span>         <span class="number">3.1</span></span><br><span class="line">	<span class="number">5</span>          <span class="number">5.0</span>         <span class="number">3.6</span></span><br><span class="line">	<span class="number">6</span>          <span class="number">5.4</span>         <span class="number">3.9</span></span><br><span class="line"><span class="comment"># 利用一般数字向量选取相邻列</span></span><br><span class="line">iris.part3 = iris[,c(<span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>)]</span><br><span class="line">head(iris.part3)</span><br><span class="line">	  Sepal.Length Petal.Length Petal.Width</span><br><span class="line">	<span class="number">1</span>          <span class="number">5.1</span>          <span class="number">1.4</span>         <span class="number">0.2</span></span><br><span class="line">	<span class="number">2</span>          <span class="number">4.9</span>          <span class="number">1.4</span>         <span class="number">0.2</span></span><br><span class="line">	<span class="number">3</span>          <span class="number">4.7</span>          <span class="number">1.3</span>         <span class="number">0.2</span></span><br><span class="line">	<span class="number">4</span>          <span class="number">4.6</span>          <span class="number">1.5</span>         <span class="number">0.2</span></span><br><span class="line">	<span class="number">5</span>          <span class="number">5.0</span>          <span class="number">1.4</span>         <span class="number">0.2</span></span><br><span class="line">	<span class="number">6</span>          <span class="number">5.4</span>          <span class="number">1.7</span>         <span class="number">0.4</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>利用“-”结合数字向量排除数据框的某些列</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">iris.part4 = iris[,-(<span class="number">1</span>:<span class="number">2</span>)]</span><br><span class="line">head(iris.part4)</span><br><span class="line">	  Petal.Length Petal.Width Species</span><br><span class="line">	<span class="number">1</span>          <span class="number">1.4</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">2</span>          <span class="number">1.4</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">3</span>          <span class="number">1.3</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">4</span>          <span class="number">1.5</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">5</span>          <span class="number">1.4</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">6</span>          <span class="number">1.7</span>         <span class="number">0.4</span>  setosa</span><br><span class="line">iris.part5 = iris[,-c(<span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>)]</span><br><span class="line">head(iris.part5)</span><br><span class="line">	  Sepal.Width Species</span><br><span class="line">	<span class="number">1</span>         <span class="number">3.5</span>  setosa</span><br><span class="line">	<span class="number">2</span>         <span class="number">3.0</span>  setosa</span><br><span class="line">	<span class="number">3</span>         <span class="number">3.2</span>  setosa</span><br><span class="line">	<span class="number">4</span>         <span class="number">3.1</span>  setosa</span><br><span class="line">	<span class="number">5</span>         <span class="number">3.6</span>  setosa</span><br><span class="line">	<span class="number">6</span>         <span class="number">3.9</span>  setosa</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>利用dplyr包中的select函数<br>select函数能完成上部分基础函数的所有操作。plyr包中也没有相似功能的select函数</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 利用列名选取指定列</span></span><br><span class="line">iris.part1 = select(iris, Sepal.Length, Sepal.Width)</span><br><span class="line"><span class="comment"># 甚至可以对选取的列进行重命名</span></span><br><span class="line">iris.part1 = select(iris, Sepal_length = Sepal.Length, Sepal_Width = Sepal.Width)</span><br><span class="line">head(iris.part1)</span><br><span class="line">	  Sepal_length Sepal_Width</span><br><span class="line">	<span class="number">1</span>          <span class="number">5.1</span>         <span class="number">3.5</span></span><br><span class="line">	<span class="number">2</span>          <span class="number">4.9</span>         <span class="number">3.0</span></span><br><span class="line">	<span class="number">3</span>          <span class="number">4.7</span>         <span class="number">3.2</span></span><br><span class="line">	<span class="number">4</span>          <span class="number">4.6</span>         <span class="number">3.1</span></span><br><span class="line">	<span class="number">5</span>          <span class="number">5.0</span>         <span class="number">3.6</span></span><br><span class="line">	<span class="number">6</span>          <span class="number">5.4</span>         <span class="number">3.9</span></span><br><span class="line"><span class="comment"># 利用数字向量选择指定列</span></span><br><span class="line">iris.part2 = select(iris,<span class="number">1</span>:<span class="number">2</span>)</span><br><span class="line">iris.part3 = iris[, c(<span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>)]</span><br><span class="line"><span class="comment"># * 利用"-"结合数字向量排除数据框的某些列 </span></span><br><span class="line">iris.part4 = select(iris,-c(<span class="number">1</span>:<span class="number">2</span>))</span><br><span class="line">iris.part5 = select(iris,-c(<span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>))</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>select函数还有自己的特点：</p>
+<ul>
+<li><p>“:”支持相邻列名的选取</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">iris.part6 = select(iris,Sepal.Length:Petal.Length)</span><br><span class="line">head(iris.part6)</span><br><span class="line">	  Sepal.Length Sepal.Width Petal.Length</span><br><span class="line">	<span class="number">1</span>          <span class="number">5.1</span>         <span class="number">3.5</span>          <span class="number">1.4</span></span><br><span class="line">	<span class="number">2</span>          <span class="number">4.9</span>         <span class="number">3.0</span>          <span class="number">1.4</span></span><br><span class="line">	<span class="number">3</span>          <span class="number">4.7</span>         <span class="number">3.2</span>          <span class="number">1.3</span></span><br><span class="line">	<span class="number">4</span>          <span class="number">4.6</span>         <span class="number">3.1</span>          <span class="number">1.5</span></span><br><span class="line">	<span class="number">5</span>          <span class="number">5.0</span>         <span class="number">3.6</span>          <span class="number">1.4</span></span><br><span class="line">	<span class="number">6</span>          <span class="number">5.4</span>         <span class="number">3.9</span>          <span class="number">1.7</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>支持某些特定语法格式</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"># 以"Petal"开始的列</span><br><span class="line"><span class="function">head</span>(<span class="function">select</span>(iris, <span class="function">starts_with</span>("Petal")))</span><br><span class="line">	  Petal<span class="class">.Length</span> Petal<span class="class">.Width</span></span><br><span class="line">	1          1<span class="class">.4</span>         0<span class="class">.2</span></span><br><span class="line">	2          1<span class="class">.4</span>         0<span class="class">.2</span></span><br><span class="line">	3          1<span class="class">.3</span>         0<span class="class">.2</span></span><br><span class="line">	4          1<span class="class">.5</span>         0<span class="class">.2</span></span><br><span class="line">	5          1<span class="class">.4</span>         0<span class="class">.2</span></span><br><span class="line">	6          1<span class="class">.7</span>         0<span class="class">.4</span></span><br><span class="line"># 以"<span class="attribute">Width</span>"结尾的列</span><br><span class="line"><span class="function">head</span>(<span class="function">select</span>(iris, <span class="function">ends_with</span>("<span class="attribute">Width</span>")))</span><br><span class="line">	  Sepal<span class="class">.Width</span> Petal<span class="class">.Width</span></span><br><span class="line">	1         3<span class="class">.5</span>         0<span class="class">.2</span></span><br><span class="line">	2         3<span class="class">.0</span>         0<span class="class">.2</span></span><br><span class="line">	3         3<span class="class">.2</span>         0<span class="class">.2</span></span><br><span class="line">	4         3<span class="class">.1</span>         0<span class="class">.2</span></span><br><span class="line">	5         3<span class="class">.6</span>         0<span class="class">.2</span></span><br><span class="line">6         3<span class="class">.9</span>         0<span class="class">.4</span></span><br><span class="line"># 包含"etal"的列</span><br><span class="line"><span class="function">head</span>(<span class="function">select</span>(iris, <span class="function">contains</span>("etal")))</span><br><span class="line">	  Petal<span class="class">.Length</span> Petal<span class="class">.Width</span></span><br><span class="line">	1          1<span class="class">.4</span>         0<span class="class">.2</span></span><br><span class="line">	2          1<span class="class">.4</span>         0<span class="class">.2</span></span><br><span class="line">	3          1<span class="class">.3</span>         0<span class="class">.2</span></span><br><span class="line">	4          1<span class="class">.5</span>         0<span class="class">.2</span></span><br><span class="line">	5          1<span class="class">.4</span>         0<span class="class">.2</span></span><br><span class="line">	6          1<span class="class">.7</span>         0<span class="class">.4</span></span><br><span class="line"># 甚至可以对上述个操作用"-"</span><br><span class="line"><span class="function">select</span>(iris, <span class="function">-starts_with</span>("Petal"))</span><br><span class="line"><span class="function">select</span>(iris, <span class="function">-ends_with</span>("<span class="attribute">Width</span>"))</span><br><span class="line"><span class="function">select</span>(iris, <span class="function">-contains</span>("etal"))</span><br><span class="line"><span class="function">select</span>(iris, -Petal<span class="class">.Length</span>, -Petal<span class="class">.Width</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>“-”去除指定列</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">iris.part7 = select(iris,-(Sepal.Length:Petal.Length))</span><br><span class="line">head(iris.part7)</span><br><span class="line">	  Petal.Width Species</span><br><span class="line">	<span class="number">1</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">2</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">3</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">4</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">5</span>         <span class="number">0.2</span>  setosa</span><br><span class="line">	<span class="number">6</span>         <span class="number">0.4</span>  setosa</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这里，主要讲述的是结合“:”的使用方法。其实正如上个例子那样，”-“也可与特定的语法格式结合使用。</p>
+<h2 id="对所有列进行相同操作">对所有列进行相同操作</h2><p>这里的操作主要指求和、平均值、方差、标准、最小值、最大值以及简单的四则运算。</p>
+<ul>
+<li><p>colSums和colMeans<br>基础包里的colSums和colMeans函数，只能对所有列进行求和和求平均值操作，并且要求所有数据列必须是数字型的, 否则会提示错误。</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(hflights)</span><br><span class="line">head(hflights)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提取数字类型列</span></span><br><span class="line">hflights.dat = hflights[,! colnames(hflights) %<span class="keyword">in</span>% c(<span class="string">'CancellationCode'</span>, <span class="string">'UniqueCarrier'</span>, <span class="string">'TailNum'</span>, <span class="string">'Origin'</span>, <span class="string">'Dest'</span>)]</span><br><span class="line">head(hflights.dat)</span><br><span class="line">summary(hflights.dat)</span><br><span class="line">colSums(hflights.dat, na.rm = <span class="literal">T</span>)</span><br><span class="line">colMeans(hflights.dat, na.rm = <span class="literal">T</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>dplyr包的summarise_each或者mutate_each</p>
+<ul>
+<li><p>summarise_each可以进行求平均值、标准差、方差、最小值和最大值，此时被处理的数据列也不需要必须是数字类型(只是此时会有警告提示)。然而，无论如何要进行求和操作时，所有数据列必须是数字类型(原因是sum函数对字符求和，直接返回错误，而求平均值、标准差和方差只是返回NA，并提示警告，最小值和最大值时返回真实的结果)。当然也可以多个指标同时计算。</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># 平均值，字符平均值返回NA</span></span><br><span class="line">summarise_each(hflights, funs(mean))</span><br><span class="line"><span class="preprocessor"># 标准差，字符标准差返回NA</span></span><br><span class="line">summarise_each(hflights, funs(sd))</span><br><span class="line"><span class="preprocessor"># 方差，字符方差返回NA</span></span><br><span class="line">summarise_each(hflights, funs(<span class="keyword">var</span>))</span><br><span class="line"><span class="preprocessor"># 最小值，字符最小值也是可以运算的</span></span><br><span class="line">summarise_each(hflights, funs(min))</span><br><span class="line"><span class="preprocessor"># 最大值，字符最大值也是可以运算的</span></span><br><span class="line">summarise_each(hflights, funs(max))</span><br><span class="line"><span class="preprocessor"># 平均值、最小值和最大值</span></span><br><span class="line">summarise_each(hflights, funs(mean, min, max))</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 求和</span></span><br><span class="line">hflights.dat = hflights[,! colnames(hflights) %in% c(<span class="string">'CancellationCode'</span>, <span class="string">'UniqueCarrier'</span>, <span class="string">'TailNum'</span>, <span class="string">'Origin'</span>, <span class="string">'Dest'</span>)]</span><br><span class="line">summarise_each(hflights.dat, funs(sum))</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 若果某一列中有NA，要想得到结果可以通过调整函数内部的na.rm参数来实现</span></span><br><span class="line"><span class="preprocessor"># 平均值</span></span><br><span class="line">summarise_each(hflights, funs(mean(., na.rm = T)))</span><br><span class="line"><span class="preprocessor"># 标准差</span></span><br><span class="line">summarise_each(hflights, funs(sd(., na.rm = T)))</span><br><span class="line"><span class="preprocessor"># 方差</span></span><br><span class="line">summarise_each(hflights, funs(<span class="keyword">var</span>(., na.rm = T)))</span><br><span class="line"><span class="preprocessor"># 最小值</span></span><br><span class="line">summarise_each(hflights, funs(min(., na.rm = T)))</span><br><span class="line"><span class="preprocessor"># 最大值</span></span><br><span class="line">summarise_each(hflights, funs(max(., na.rm = T)))</span><br><span class="line"><span class="preprocessor"># 求和</span></span><br><span class="line">summarise_each(hflights.dat, funs(sum(., na.rm = T)))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>mutate_each跟summarise_each最大的不同在于产生于原数据相同行数的结果，所以mutate_each除了可以进行summarise_each函数的操作以外，还可进行简单四则运算，当然进行四则运算时，要保证所有列都是数字型。    </p>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="title"># 四则运算</span><br><span class="line">temp1</span> = mutate_each<span class="comment">(hflights.dat, funs( . + 1)</span>)</span><br><span class="line">head<span class="comment">(hflights)</span></span><br><span class="line">head<span class="comment">(temp1)</span></span><br><span class="line"><span class="title"># 事实上四则运算根本不需要借助函数来实现</span><br><span class="line">temp2</span> = hflights.dat + <span class="number">1</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>plyr包的colwise函数<br>plyr包的colwise函数也能对数据框的所有列进行相同的操作。同样可以直接进行求平均值、标准差、方差、最小值和最大值，此时被处理的数据列也不需要必须是数字类型(只是此时会有警告提示)。当所有数据列都是数字类型可以直接求和。当然也可以多个指标同时计算。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 平均值，字符平均值返回NA</span></span><br><span class="line">colwise(mean)(hflights)</span><br><span class="line"><span class="comment"># 标准差，字符标准差返回NA</span></span><br><span class="line">colwise(sd)(hflights)</span><br><span class="line"><span class="comment"># 方差，字符方差返回NA</span></span><br><span class="line">colwise(<span class="keyword">var</span>)(hflights)</span><br><span class="line"><span class="comment"># 最小值，字符最小值也是可以运算的</span></span><br><span class="line">colwise(min)(hflights)</span><br><span class="line"><span class="comment"># 最大值，字符最大值也是可以运算的</span></span><br><span class="line">colwise(max)(hflights)</span><br><span class="line"><span class="comment"># 平均值、最小值和最大值</span></span><br><span class="line">colwise(mean, min, max)(hflights)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 求和</span></span><br><span class="line">hflights.dat = hflights[,! colnames(hflights) %in% c(<span class="string">'CancellationCode'</span>, <span class="string">'UniqueCarrier'</span>, <span class="string">'TailNum'</span>, <span class="string">'Origin'</span>, <span class="string">'Dest'</span>)]</span><br><span class="line">colwise(sum)(hflights)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 若果某一列中有NA，要想得到结果可以通过调整函数内部的na.rm参数来实现</span></span><br><span class="line"><span class="comment"># 平均值</span></span><br><span class="line">colwise(<span class="function"><span class="keyword">function</span><span class="params">(x)</span><span class="title">mean</span><span class="params">(x, na.rm = T)</span>)<span class="params">(hflights)</span></span><br><span class="line"># 标准差</span><br><span class="line"><span class="title">colwise</span><span class="params">(function<span class="params">(x)</span>sd<span class="params">(x, na.rm = T)</span>)</span><span class="params">(hflights)</span></span><br><span class="line"># 方差</span><br><span class="line"><span class="title">colwise</span><span class="params">(function<span class="params">(x)</span>var<span class="params">(x, na.rm = T)</span>)</span><span class="params">(hflights)</span></span><br><span class="line"># 最小值</span><br><span class="line"><span class="title">colwise</span><span class="params">(function<span class="params">(x)</span>min<span class="params">(x, na.rm = T)</span>)</span><span class="params">(hflights)</span></span><br><span class="line"># 最大值</span><br><span class="line"><span class="title">colwise</span><span class="params">(function<span class="params">(x)</span>max<span class="params">(x, na.rm = T)</span>)</span><span class="params">(hflights)</span></span><br><span class="line"># 求和</span><br><span class="line"><span class="title">colwise</span><span class="params">(function<span class="params">(x)</span>sum<span class="params">(x, na.rm = T)</span>)</span><span class="params">(hflights.dat)</span></span><br><span class="line"></span><br><span class="line"><span class="title">temp3</span> = <span class="title">colwise</span><span class="params">(function<span class="params">(x)</span>&#123;x + <span class="number">1</span>&#125;)</span><span class="params">(hflights.dat)</span></span><br><span class="line"><span class="title">head</span><span class="params">(hflights)</span></span><br><span class="line"><span class="title">head</span><span class="params">(temp3)</span></span><br><span class="line"># 事实上四则运算根本不需要借助函数来实现</span><br><span class="line"><span class="title">temp2</span> = <span class="title">hflights</span>.<span class="title">dat</span> + 1</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/技术篇/">技术篇</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/R/">R</a>, <a href="/tags/dplyr/">dplyr</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    <a href="/2015/05/29/merge-function-in-R/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2015/05/16/daqingxiangguo/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+<section id="comment">
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="/2015/05/16/common-methods-of-dealing-with-data-frame/" data-title="数据框基本操作的常见方法" data-url="http://xukuang.github.io/2015/05/16/common-methods-of-dealing-with-data-frame/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yiyuzhijian"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+  
+</section>
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:xukuang.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/学习篇/">学习篇</a><small>2</small></li>
+  
+    <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
+  
+    <li><a href="/categories/技术篇/">技术篇</a><small>17</small></li>
+  
+    <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
+  
+    <li><a href="/categories/读书篇/">读书篇</a><small>7</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+  </div>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</font></h3>
+<ul class="entry">
+<li>姓名：<a href=http://xukuang.github.io/about/>匡旭</a></li>
+<li>现状：博士在读</li>
+<li>Theme: <a href="https://github.com/zippera/lightum">Lightum</a></li>
+<li>QQ: <font color="red">530731251</font></li>
+</ul>
+</div>
+
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=3051539547&verifier=655ac839&colors=ffffff,d3f9bc,464646,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
+<li><a href="http://jianshu.io/">简书</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="outer">
+    <div id="footer-info" class="inner" style="text-align:center;">
+      <table width="100%" border="0">
+        <tr>
+          <td style="text-align:left" bgcolor="white">
+            Copyright &copy; 2014-2016 <a href="http://xukuang.github.io/about/" target="_blank">Xu Kuang</a> &nbsp; &nbsp;<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            Theme <a href="https://github.com/zippera/lightum" target="_blank">Lightum</a>&nbsp; &nbsp;
+            Hosted on <a href="http://github.com/" target="_blank">GitHub</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+</div></footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>
+

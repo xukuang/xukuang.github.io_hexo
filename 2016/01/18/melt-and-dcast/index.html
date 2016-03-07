@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>长宽数据之间的转化 | YiYuZhiJian</title>
+  <meta name="author" content="kuang xu">
+  
+  <meta name="description" content="Walk steps step by step">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="长宽数据之间的转化"/>
+  <meta property="og:site_name" content="YiYuZhiJian"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="YiYuZhiJian" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">YiYuZhiJian</a></h1>
+  <h2><a href="/">你害怕一件事，可还是要去做，那才是勇敢。</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	    <li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-01-18T02:32:19.000Z"><a href="/2016/01/18/melt-and-dcast/">1月18 2016</a></time>
+      
+      
+  
+    <h1 class="title">长宽数据之间的转化</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>这里将数据框分为两种：宽数据和长数据，宽数据便于数据成果的展示，长数据则便于数据在R中进行分析。reshape2包中的melt函数可以实现宽数据向长数据的转换，而dcast可以实现宽数据向长数据的转化。</p>
+<h2 id="宽数据转化为长数据">宽数据转化为长数据</h2><h3 id="melt函数">melt函数</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">melt(data, id<span class="class">.vars</span>, measure<span class="class">.vars</span>,</span><br><span class="line">  variable<span class="class">.name</span> = <span class="string">"variable"</span>, ..., na<span class="class">.rm</span> = FALSE, value<span class="class">.name</span> = <span class="string">"value"</span>,</span><br><span class="line">  factorsAsStrings = TRUE)</span><br></pre></td></tr></table></figure>
+<p><strong>data</strong> 要转化的数据，数据格式为数据框类型或者可以转化为数据框类型<br><strong>id.vars</strong> 数据的转化标准：依照那些列进行转化，数据格式为字符型或数字型的向量<br><strong>measure.vars</strong>    被转化的数据：将哪些列数据值转化，该参数在没有指定的默认情况下，会将id.vars中以外的所有列数据进行转化，数据格式为字符型或数字型的向量<br><strong>variable.name</strong>    对转化后的数据标准列重新命名，默认情况下，列名为variable<br><strong>na.rm</strong> 是否去除数据中的NA，默认情况下为FALSE，不去除NA<br><strong>value.name</strong> 对转化后的数据列重新命名，默认情况下，列名为value<br><strong>factorsAsStrings</strong>    转化过程中是否将因子类型数据转化为字符型数据，默认情况下为TRUE，将因子类型数据转化为字符型数据<br><a id="more"></a></p>
+<h3 id="实例">实例</h3><ul>
+<li><p>按Month和Day列将其他指标排成长数据</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 加载数据</span></span><br><span class="line"><span class="keyword">library</span>(reshape2)</span><br><span class="line">head(airquality)</span><br><span class="line">	<span class="comment">#   Ozone Solar.R Wind Temp Month Day</span></span><br><span class="line">	<span class="comment"># 1    41     190  7.4   67     5   1</span></span><br><span class="line">	<span class="comment"># 2    36     118  8.0   72     5   2</span></span><br><span class="line">	<span class="comment"># 3    12     149 12.6   74     5   3</span></span><br><span class="line">	<span class="comment"># 4    18     313 11.5   62     5   4</span></span><br><span class="line">	<span class="comment"># 5    NA      NA 14.3   56     5   5</span></span><br><span class="line">	<span class="comment"># 6    28      NA 14.9   66     5   6</span></span><br><span class="line">dim(airquality)	</span><br><span class="line">	<span class="comment"># [1] 153   6</span></span><br><span class="line">dat1 = melt(airquality, id.vars = c(<span class="string">'Month'</span>, <span class="string">'Day'</span>))</span><br><span class="line">head(dat1)</span><br><span class="line">	<span class="comment"># 	Month Day variable value</span></span><br><span class="line">	<span class="comment"># 1     5   1    Ozone    41</span></span><br><span class="line">	<span class="comment"># 2     5   2    Ozone    36</span></span><br><span class="line">	<span class="comment"># 3     5   3    Ozone    12</span></span><br><span class="line">	<span class="comment"># 4     5   4    Ozone    18</span></span><br><span class="line">	<span class="comment"># 5     5   5    Ozone    NA</span></span><br><span class="line">	<span class="comment"># 6     5   6    Ozone    28</span></span><br><span class="line">dim(dat1)</span><br><span class="line">	<span class="comment"># [1] 612   4</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按Month和Day列将Ozone和Solar.R列指标排成长数据</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">dat2</span> = melt(airquality, id.vars = c(<span class="string">'Month'</span>, <span class="string">'Day'</span>),</span><br><span class="line"> measure = c(<span class="string">'Ozone'</span>, <span class="string">'Solar.R'</span>))</span><br><span class="line">head(dat2)</span><br><span class="line">	<span class="comment"># 	Month Day variable value</span></span><br><span class="line">	<span class="comment"># 1     5   1    Ozone    41</span></span><br><span class="line">	<span class="comment"># 2     5   2    Ozone    36</span></span><br><span class="line">	<span class="comment"># 3     5   3    Ozone    12</span></span><br><span class="line">	<span class="comment"># 4     5   4    Ozone    18</span></span><br><span class="line">	<span class="comment"># 5     5   5    Ozone    NA</span></span><br><span class="line">	<span class="comment"># 6     5   6    Ozone    28</span></span><br><span class="line">dim(dat2) <span class="comment"># 函数是dat1的1/2</span></span><br><span class="line">	<span class="comment"># [1] 306   4</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对排列后的数据进行重命名</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">dat3 = melt(airquality, id.vars = c(<span class="string">'Month'</span>, <span class="string">'Day'</span>),</span><br><span class="line"><span class="built_in">variable</span>.name = <span class="string">'type'</span>, <span class="built_in">value</span>.name = <span class="string">'value.type'</span>)</span><br><span class="line">head(dat3) <span class="comment"># 列名发生变化</span></span><br><span class="line">	<span class="comment"># 	Month Day  type value.type</span></span><br><span class="line">	<span class="comment"># 1     5   1 Ozone         41</span></span><br><span class="line">	<span class="comment"># 2     5   2 Ozone         36</span></span><br><span class="line">	<span class="comment"># 3     5   3 Ozone         12</span></span><br><span class="line">	<span class="comment"># 4     5   4 Ozone         18</span></span><br><span class="line">	<span class="comment"># 5     5   5 Ozone         NA</span></span><br><span class="line">	<span class="comment"># 6     5   6 Ozone         28</span></span><br><span class="line">dim(dat2)</span><br><span class="line">	<span class="comment"># [1] 612   4</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>去除排列后数据中的NA</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#　 airquality$Ozone 数的前四列有44 个NA</span></span><br><span class="line">table(<span class="keyword">is</span>.na(airquality$Ozone)) <span class="preprocessor"># 37</span></span><br><span class="line">	<span class="preprocessor"># FALSE  TRUE </span></span><br><span class="line">	<span class="preprocessor">#   116    37 </span></span><br><span class="line">table(<span class="keyword">is</span>.na(airquality$Solar.R)) <span class="preprocessor"># 4</span></span><br><span class="line">	<span class="preprocessor"># FALSE  TRUE </span></span><br><span class="line">	<span class="preprocessor">#   146     7 </span></span><br><span class="line">table(<span class="keyword">is</span>.na(airquality$Temp)) <span class="preprocessor"># 0</span></span><br><span class="line">	<span class="preprocessor"># FALSE </span></span><br><span class="line">	<span class="preprocessor">#   153 </span></span><br><span class="line">table(<span class="keyword">is</span>.na(airquality$Wind)) <span class="preprocessor"># 0</span></span><br><span class="line">	<span class="preprocessor"># FALSE </span></span><br><span class="line">	<span class="preprocessor">#   153 </span></span><br><span class="line">dat4 = melt(airquality, id.vars = c(<span class="string">'Month'</span>, <span class="string">'Day'</span>),</span><br><span class="line">variable.name = <span class="string">'type'</span>, <span class="keyword">value</span>.name = <span class="string">'value.type'</span>, na.rm = TRUE)</span><br><span class="line">head(dat4)</span><br><span class="line">	<span class="preprocessor">#   Month Day  type value.type</span></span><br><span class="line">	<span class="preprocessor"># 1     5   1 Ozone         41</span></span><br><span class="line">	<span class="preprocessor"># 2     5   2 Ozone         36</span></span><br><span class="line">	<span class="preprocessor"># 3     5   3 Ozone         12</span></span><br><span class="line">	<span class="preprocessor"># 4     5   4 Ozone         18</span></span><br><span class="line">	<span class="preprocessor"># 6     5   6 Ozone         28</span></span><br><span class="line">	<span class="preprocessor"># 7     5   7 Ozone         23</span></span><br><span class="line">dim(dat4)<span class="preprocessor"># 比dat3多44行</span></span><br><span class="line">	<span class="preprocessor"># [1] 568   4</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>此外，还发现melt函数中所有参数名都可以只写’.’前的部分。<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">dat5 = melt(airquality, id = c(<span class="string">'Month'</span>, <span class="string">'Day'</span>),</span><br><span class="line"><span class="built_in">variable</span> = <span class="string">'type'</span>, <span class="built_in">value</span> = <span class="string">'value.type'</span>, na = <span class="constant">TRUE</span>)</span><br><span class="line">head(dat5)</span><br><span class="line">	<span class="comment"># 	Month Day  type value</span></span><br><span class="line">	<span class="comment"># 1     5   1 Ozone    41</span></span><br><span class="line">	<span class="comment"># 2     5   2 Ozone    36</span></span><br><span class="line">	<span class="comment"># 3     5   3 Ozone    12</span></span><br><span class="line">	<span class="comment"># 4     5   4 Ozone    18</span></span><br><span class="line">	<span class="comment"># 5     5   5 Ozone    NA</span></span><br><span class="line">	<span class="comment"># 6     5   6 Ozone    28</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="长数据转化为宽数据">长数据转化为宽数据</h2><h3 id="dcast函数">dcast函数</h3><figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dcast(data, formula, fun.aggregate = NULL, ..., margins = NULL,</span><br><span class="line">  subset = NULL,<span class="instruction"> fill </span>= NULL, drop = TRUE,</span><br><span class="line">  value.var =<span class="function"> guess_value(</span>data<span class="function">)</span><span class="function">)</span></span><br></pre></td></tr></table></figure>
+<p><strong>data</strong> 要转化的数据，数据格式为数据框类型或者可以转化为数据框类型<br><strong>formula</strong> 转化的标准，以公式的形式定义<br><strong>fun.aggregate</strong> 汇总函数。分类后，如果分类结果不唯一，就必须使用汇总函数。常用的汇总函数，包括求个数、和、平均值、标准差、方差，默认的为求个数<br><strong>margins</strong>    确定结果是否显示总的结果，默认不显示<br><strong>subset</strong> 是否只对某些标准内容进行计算，结合plyr包一起使用<br><strong>fill</strong> 不存在的组合值的显示结果。默认的显示为0。数据类型为数值型向量<br><strong>drop</strong> 确认不存在分分类组合是否显示，默认情况下不显示<br><strong>value.var</strong> 貌似对对转化后的数据进行命名，使用默认情况即可</p>
+<h3 id="实例-1">实例</h3><ul>
+<li><p>每个分类结果有一个数据，此时不需要使用汇总函数</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">air1 =  dcast(dat4, Month + Day ~ type)</span><br><span class="line">dim(air1)</span><br><span class="line">	<span class="comment"># [1] 153   6</span></span><br><span class="line">head(air1) <span class="comment"># 数据与airquality相同</span></span><br><span class="line">	<span class="comment"># 	Month Day Ozone Solar.R Wind Temp</span></span><br><span class="line">	<span class="comment"># 1     5   1    41     190  7.4   67</span></span><br><span class="line">	<span class="comment"># 2     5   2    36     118  8.0   72</span></span><br><span class="line">	<span class="comment"># 3     5   3    12     149 12.6   74</span></span><br><span class="line">	<span class="comment"># 4     5   4    18     313 11.5   62</span></span><br><span class="line">	<span class="comment"># 5     5   5    NA      NA 14.3   56</span></span><br><span class="line">	<span class="comment"># 6     5   6    28      NA 14.9   66</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按Month列排成宽数据，每个分类结果有多个数据，必须有汇总函数</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">air2</span> =  dcast(dat4, Month <span class="regexp">~ type,</span> sum) <span class="comment"># 这里使用sum函数</span></span><br><span class="line">dim(air2)</span><br><span class="line">	<span class="comment"># [1] 5 5</span></span><br><span class="line">head(air2)</span><br><span class="line">	<span class="comment"># 	Month Ozone Solar.R  Wind Temp</span></span><br><span class="line">	<span class="comment"># 1     5    NA      NA 360.3 2032</span></span><br><span class="line">	<span class="comment"># 2     6    NA    5705 308.0 2373</span></span><br><span class="line">	<span class="comment"># 3     7    NA    6711 277.2 2601</span></span><br><span class="line">	<span class="comment"># 4     8    NA      NA 272.6 2603</span></span><br><span class="line">	<span class="comment"># 5     9    NA    5023 305.4 2307</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>是否显示总的分类结果</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">air3</span> = dcast(dat4, Month <span class="regexp">~ type,</span> sum, margins = T) <span class="comment">#列、行的总汇总都显示</span></span><br><span class="line">dim(air3)</span><br><span class="line">	<span class="comment"># [1] 6 6</span></span><br><span class="line">head(air3)</span><br><span class="line">	<span class="comment">#   Month Ozone Solar.R   Wind  Temp (all)</span></span><br><span class="line">	<span class="comment"># 1     5    NA      NA  360.3  2032    NA</span></span><br><span class="line">	<span class="comment"># 2     6    NA    5705  308.0  2373    NA</span></span><br><span class="line">	<span class="comment"># 3     7    NA    6711  277.2  2601    NA</span></span><br><span class="line">	<span class="comment"># 4     8    NA      NA  272.6  2603    NA</span></span><br><span class="line">	<span class="comment"># 5     9    NA    5023  305.4  2307    NA</span></span><br><span class="line">	<span class="comment"># 6 (all)    NA      NA 1523.5 11916    NA</span></span><br><span class="line">dcast(dat4, Month <span class="regexp">~ type,</span> sum, margins = c(<span class="string">'Month'</span>))<span class="comment"># 只显示列的汇总</span></span><br><span class="line">	<span class="comment"># 	Month Ozone Solar.R   Wind  Temp</span></span><br><span class="line">	<span class="comment"># 1     5    NA      NA  360.3  2032</span></span><br><span class="line">	<span class="comment"># 2     6    NA    5705  308.0  2373</span></span><br><span class="line">	<span class="comment"># 3     7    NA    6711  277.2  2601</span></span><br><span class="line">	<span class="comment"># 4     8    NA      NA  272.6  2603</span></span><br><span class="line">	<span class="comment"># 5     9    NA    5023  305.4  2307</span></span><br><span class="line">	<span class="comment"># 6 (all)    NA      NA 1523.5 11916</span></span><br><span class="line">dcast(dat4, Month <span class="regexp">~ type,</span> sum, margins = c(<span class="string">'type'</span>))<span class="comment"># 只显示行的汇总</span></span><br><span class="line">	<span class="comment"># 	Month Ozone Solar.R  Wind Temp (all)</span></span><br><span class="line">	<span class="comment"># 1     5    NA      NA 360.3 2032    NA</span></span><br><span class="line">	<span class="comment"># 2     6    NA    5705 308.0 2373    NA</span></span><br><span class="line">	<span class="comment"># 3     7    NA    6711 277.2 2601    NA</span></span><br><span class="line">	<span class="comment"># 4     8    NA      NA 272.6 2603    NA</span></span><br><span class="line">	<span class="comment"># 5     9    NA    5023 305.4 2307    NA</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>只显示部分的分类内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">library(plyr)</span><br><span class="line">air4 = dcast(dat4, Month ~ <span class="built_in">type</span>, sum, subset = .(<span class="built_in">type</span> == <span class="string">'Wind'</span> )) <span class="comment"># 只显示type中Wind的情况</span></span><br><span class="line">dim(air4)</span><br><span class="line">	<span class="comment"># [1] 5 2</span></span><br><span class="line">head(air4)</span><br><span class="line">	<span class="comment"># 	Month  Wind</span></span><br><span class="line">	<span class="comment"># 1     5 360.3</span></span><br><span class="line">	<span class="comment"># 2     6 308.0</span></span><br><span class="line">	<span class="comment"># 3     7 277.2</span></span><br><span class="line">	<span class="comment"># 4     8 272.6</span></span><br><span class="line">	<span class="comment"># 5     9 305.4</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>不存在的分类是否显示，以及怎么显示</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">air5 =</span> dcast(dat4, Month + Day ~ type, length, <span class="variable">drop =</span> F) <span class="comment"># 组合上存在的结果都显示</span></span><br><span class="line">tail(air5) <span class="comment"># 这里的最后一行只是组合上存在，数据中并不在</span></span><br><span class="line">	<span class="comment"># 		 Month Day Ozone Solar.R Wind Temp</span></span><br><span class="line">	<span class="comment"># 150      9  26     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 151      9  27     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 152      9  28     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 153      9  29     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 154      9  30     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 155      9  31     0       0    0    0</span></span><br><span class="line">tail(dcast(dat4, Month + Day ~ type, length, <span class="variable">drop =</span> F, <span class="variable">fill=</span> -<span class="number">1</span>)) <span class="comment"># 更改不存在结果的显示值，最后一行显示为-1</span></span><br><span class="line">	<span class="comment"># 		Month Day Ozone Solar.R Wind Temp</span></span><br><span class="line">	<span class="comment"># 150     9  26     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 151     9  27     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 152     9  28     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 153     9  29     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 154     9  30     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 155     9  31    -1      -1   -1   -1</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/技术篇/">技术篇</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/R/">R</a>, <a href="/tags/reshape2/">reshape2</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    <a href="/2016/02/27/char-in-R/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2016/01/13/join-function/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+<section id="comment">
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="/2016/01/18/melt-and-dcast/" data-title="长宽数据之间的转化" data-url="http://xukuang.github.io/2016/01/18/melt-and-dcast/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yiyuzhijian"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+  
+</section>
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:xukuang.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/学习篇/">学习篇</a><small>2</small></li>
+  
+    <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
+  
+    <li><a href="/categories/技术篇/">技术篇</a><small>17</small></li>
+  
+    <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
+  
+    <li><a href="/categories/读书篇/">读书篇</a><small>7</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+  </div>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</font></h3>
+<ul class="entry">
+<li>姓名：<a href=http://xukuang.github.io/about/>匡旭</a></li>
+<li>现状：博士在读</li>
+<li>Theme: <a href="https://github.com/zippera/lightum">Lightum</a></li>
+<li>QQ: <font color="red">530731251</font></li>
+</ul>
+</div>
+
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=3051539547&verifier=655ac839&colors=ffffff,d3f9bc,464646,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
+<li><a href="http://jianshu.io/">简书</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="outer">
+    <div id="footer-info" class="inner" style="text-align:center;">
+      <table width="100%" border="0">
+        <tr>
+          <td style="text-align:left" bgcolor="white">
+            Copyright &copy; 2014-2016 <a href="http://xukuang.github.io/about/" target="_blank">Xu Kuang</a> &nbsp; &nbsp;<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            Theme <a href="https://github.com/zippera/lightum" target="_blank">Lightum</a>&nbsp; &nbsp;
+            Hosted on <a href="http://github.com/" target="_blank">GitHub</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+</div></footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>
+

@@ -1,0 +1,583 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>用R进行文件系统管理 | YiYuZhiJian</title>
+  <meta name="author" content="kuang xu">
+  
+  <meta name="description" content="Walk steps step by step">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="用R进行文件系统管理"/>
+  <meta property="og:site_name" content="YiYuZhiJian"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="YiYuZhiJian" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">YiYuZhiJian</a></h1>
+  <h2><a href="/">你害怕一件事，可还是要去做，那才是勇敢。</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	    <li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-03-01T09:24:47.000Z"><a href="/2016/03/01/docement-mangement/">3月1 2016</a></time>
+      
+      
+  
+    <h1 class="title">用R进行文件系统管理</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>学习中，已经体会到了R在数据处理方面的厉害，偶然看到张丹的博文<a href="http://blog.fens.me/r-file-folder/" target="_blank" rel="external">《用R进行文件系统管理》</a>，发现R居然还可以进行文件系统的管理，又一次全新的认识了世界（其实主要是R）。这里基本上是把张丹的文章照搬过来了，只是加了少许自己学习时心得。本文中提到的文件系统管理主要是指文件和目录（即文件夹）的创建、查看、重命名、复制、删除和文件权限处理。</p>
+<h2 id="文件操作">文件操作</h2><ul>
+<li><p>创建文件</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建一个空文件 A.txt</span></span><br><span class="line"><span class="built_in">file</span>.<span class="built_in">create</span>(<span class="string">"A.txt"</span>)</span><br><span class="line"><span class="comment"># 查看当前目录下的子目录和文件</span></span><br><span class="line">list.<span class="built_in">files</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建多个空文件 A1.txt，A2.txt，A3.txt</span></span><br><span class="line"><span class="built_in">file</span>.<span class="built_in">create</span>(<span class="string">"A1.txt"</span>, <span class="string">"A2.txt"</span>, <span class="string">"A3.txt"</span>)</span><br><span class="line"><span class="comment"># 查看当前目录下的子目录和文件</span></span><br><span class="line">list.<span class="built_in">files</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个有内容的文件 B.txt</span></span><br><span class="line">cat(<span class="string">"文件测试\n"</span>, <span class="built_in">file</span> = <span class="string">"B.txt"</span>)</span><br><span class="line">list.<span class="built_in">files</span>()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看文件</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># 显示当前目录中的目录和文件</span></span><br><span class="line"><span class="preprocessor">## 下面两句结果相同</span></span><br><span class="line">list.files() # 建议使用该命令，方便记忆</span><br><span class="line">dir()</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 检查文件是否存在</span></span><br><span class="line"><span class="preprocessor">## 存在的文件</span></span><br><span class="line">file.exists(<span class="string">"A.txt"</span>)</span><br><span class="line"><span class="preprocessor">## 不存在的文件</span></span><br><span class="line">file.exists(<span class="string">"readme.txt"</span>)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 判断是否是文件</span></span><br><span class="line">file_test(<span class="string">"-f"</span>, <span class="string">"A.txt"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<a id="more"></a>
+<ul>
+<li><p>读取文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文件A.txt读取</span></span><br><span class="line"><span class="built_in">read</span>Lines(<span class="string">"A.txt"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 文件B.txt读取</span></span><br><span class="line"><span class="built_in">read</span>Lines(<span class="string">"B.txt"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文件重命名</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 给文件A.txt重命名为AA.txt</span></span><br><span class="line"><span class="built_in">file</span>.<span class="built_in">rename</span>(<span class="string">"A.txt"</span>,<span class="string">"AA.txt"</span>)</span><br><span class="line">list.<span class="built_in">files</span>()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制文件</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">file</span>.<span class="keyword">copy</span>(<span class="string">"B.txt"</span>, <span class="string">"C.txt"</span>)</span><br><span class="line"><span class="comment"># 查看文件内容</span></span><br><span class="line">readLines(<span class="string">"C.txt"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>追加文件</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">file</span>.<span class="keyword">append</span>(<span class="string">"A.txt"</span>, rep(<span class="string">"B.txt"</span>, <span class="number">10</span>))</span><br><span class="line"># 查看文件内容</span><br><span class="line"><span class="keyword">readLines</span>(<span class="string">"A.txt"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除文件</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建文件</span></span><br><span class="line"><span class="built_in">file</span>.<span class="built_in">create</span>(<span class="string">"tempa1"</span>, <span class="string">"tempa2"</span>, <span class="string">"tempa3"</span>, <span class="string">"tempa4"</span>)</span><br><span class="line">list.<span class="built_in">files</span>()</span><br><span class="line"><span class="comment"># 删除文件</span></span><br><span class="line"><span class="built_in">file</span>.remove(<span class="string">"tempa1"</span>, <span class="string">"tempa2"</span>, <span class="string">"tempa3"</span>, <span class="string">"tempa4"</span>)</span><br><span class="line">list.<span class="built_in">files</span>()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文件权限</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># 查看文件完整信息</span></span><br><span class="line">file.info(<span class="string">"A.txt"</span>)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 查看文件访问权限</span></span><br><span class="line"><span class="preprocessor"># 0表示有相关权限</span></span><br><span class="line"><span class="preprocessor"># 1表示没有相关权限</span></span><br><span class="line"><span class="preprocessor">## 是否存在</span></span><br><span class="line">file.access(<span class="string">"A.txt"</span>,<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">## 是否可执行</span></span><br><span class="line">file.access(<span class="string">"A.txt"</span>,<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">## 是否可写</span></span><br><span class="line">file.access(<span class="string">"A.txt"</span>,<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">## 是否可读</span></span><br><span class="line">file.access(<span class="string">"A.txt"</span>,<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 文件权限修改</span></span><br><span class="line"><span class="preprocessor">## 查看文件信息</span></span><br><span class="line">file.info(<span class="string">"A.txt"</span>)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">## 修改文件权限，创建者可读可写可执行，其他人无权限</span></span><br><span class="line">Sys.chmod(<span class="string">"A.txt"</span>, mode = <span class="string">"0400"</span>, use_umask = TRUE)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">## 查看文件信息</span></span><br><span class="line">file.info(<span class="string">"A.txt"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="目录操作">目录操作</h2><ul>
+<li><p>创建目录</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建一个目录</span></span><br><span class="line">dir.<span class="built_in">create</span>(<span class="string">"test"</span>) <span class="comment"># 不能同时创建多个目录</span></span><br><span class="line">list.dirs()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 递归创建</span></span><br><span class="line">dir.<span class="built_in">create</span>(<span class="string">"test/test"</span>,recursive = <span class="constant">TRUE</span>)</span><br><span class="line">list.dirs()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看目录</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># 查看当前默认目录的一级目录和文件</span></span><br><span class="line">list.files() # 同时会显示目录下的文件</span><br><span class="line">dir()</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 查看当前默认目录的子目录</span></span><br><span class="line"><span class="preprocessor">## 默认递归显示各级子目录</span></span><br><span class="line">list.dirs()</span><br><span class="line"><span class="preprocessor">## 只显示一级子目录</span></span><br><span class="line">list.dirs(recursive= FALSE)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 通过系统命令查看目录结构</span></span><br><span class="line">system(<span class="string">"tree"</span>)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 检查目录是否存在</span></span><br><span class="line"><span class="preprocessor"># 存在的目录</span></span><br><span class="line">file.exists(<span class="string">"."</span>)</span><br><span class="line">file.exists(<span class="string">"./test"</span>)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 不存在的目录</span></span><br><span class="line">file.exists(<span class="string">"./test1"</span>)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 判断是否是目录</span></span><br><span class="line"><span class="preprocessor">## 下面两个语句结果相同</span></span><br><span class="line">file_test(<span class="string">"-d"</span>, <span class="string">"./test"</span>)</span><br><span class="line">file_test(<span class="string">"-d"</span>, <span class="string">"test"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>目录重命名</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看目录</span></span><br><span class="line">dir()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 对test目录重命名</span></span><br><span class="line"><span class="built_in">file</span>.<span class="built_in">rename</span>(<span class="string">"test"</span>, <span class="string">"test1"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看目录</span></span><br><span class="line">dir()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 目录重命名</span></span><br><span class="line"><span class="built_in">file</span>.<span class="built_in">rename</span>(<span class="string">"test1"</span>, <span class="string">"test"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除目录</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">dir.<span class="built_in">create</span>(<span class="string">'temp'</span>)</span><br><span class="line">dir.<span class="built_in">create</span>(<span class="string">'temp1/temp1'</span>, recursive = <span class="constant">TRUE</span>)</span><br><span class="line">dir()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除temp目录</span></span><br><span class="line">unlink(<span class="string">"temp"</span>, recursive = <span class="constant">TRUE</span>) <span class="comment"># unlink也可用来删除文件，此时不需要设置参数recursive</span></span><br><span class="line">dir()</span><br><span class="line"></span><br><span class="line">unlink(<span class="string">"temp1"</span>, recursive = <span class="constant">TRUE</span>) <span class="comment"># </span></span><br><span class="line">dir()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>目录的权限</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看目录完整信息</span></span><br><span class="line"><span class="built_in">file</span>.info(<span class="string">"."</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查目录的权限</span></span><br><span class="line">df&lt;-dir(full.names = <span class="constant">TRUE</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查文件或目录是否存在，mode=0</span></span><br><span class="line"><span class="built_in">file</span>.access(df, <span class="number">0</span>) == <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查文件或目录是否可执行，mode=1，目录为可以执行</span></span><br><span class="line"><span class="built_in">file</span>.access(df, <span class="number">1</span>) == <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查文件或目录是否可写，mode=2</span></span><br><span class="line"><span class="built_in">file</span>.access(df, <span class="number">2</span>) == <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查文件或目录是否可读，mode=4</span></span><br><span class="line"><span class="built_in">file</span>.access(df, <span class="number">4</span>) == <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改目录权限，所有用户只读</span></span><br><span class="line">Sys.chmod(<span class="string">"./test"</span>, mode = <span class="string">"0555"</span>, use_umask = <span class="constant">TRUE</span>)</span><br><span class="line"><span class="built_in">file</span>.info(<span class="string">"./test"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="其他功能函数">其他功能函数</h2><ul>
+<li><p>拼接目录字符串</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file.<span class="function"><span class="title">path</span><span class="params">(<span class="string">"p1"</span>,<span class="string">"p2"</span>,<span class="string">"p3"</span>)</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>所在目录</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">dirname</span><span class="params">(<span class="string">"/home/conan/R/fs/readme.txt"</span>)</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>最底层子目录或文件名</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">basename</span><span class="params">(<span class="string">"/home/conan/R/fs/readme.txt"</span>)</span></span></span><br><span class="line"><span class="function"><span class="title">basename</span><span class="params">(<span class="string">"/home/conan/R/fs"</span>)</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>win下标准路径转化</p>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">normalizePath<span class="list">(<span class="keyword">c</span><span class="list">(<span class="keyword">R</span>.home<span class="list">()</span>, tempdir<span class="list">()</span>)</span>)</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>短路径，缩减路径的显示长度，只在win中运行</p>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shortPathName<span class="list">(<span class="keyword">c</span><span class="list">(<span class="keyword">R</span>.home<span class="list">()</span>, tempdir<span class="list">()</span>)</span>)</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="几个特殊的目录">几个特殊的目录</h2><p><strong> R.home() </strong> 查看R软件的相关目录<br><strong> .Library </strong> 查看R核心包的目录<br><strong> .libPaths() </strong> 查看R所有包的存放目录<br><strong>  system.file() </strong> 查看指定包所在的目录</p>
+<ul>
+<li><p>R软件的相关目录</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># R.home() 查看R软件的相关目录</span></span><br><span class="line"><span class="preprocessor">## 打印R软件安装目录</span></span><br><span class="line">R.home()</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">## 打印R软件bin的目录</span></span><br><span class="line">R.home(component=<span class="string">"bin"</span>)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">## 打印R软件文件的目录</span></span><br><span class="line">R.home(component=<span class="string">"doc"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>R软件的包目录</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># 打印核心包的目录</span></span><br><span class="line">.Library</span><br><span class="line"><span class="preprocessor"># 打印所有包的存放目录</span></span><br><span class="line">.libPaths()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看指定包所在的目录</p>
+<figure class="highlight puppet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># base包的存放目录</span></span><br><span class="line"><span class="literal">system</span>.<span class="keyword">file</span>()</span><br><span class="line"><span class="comment"># dplyr包的存放目录</span></span><br><span class="line"><span class="literal">system</span>.<span class="keyword">file</span>(<span class="keyword">package</span> = <span class="string">"dplyr"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="小结">小结</h2><p>正如张丹所说，用R语言操作文件系统还是很方便的，但其对于函数命名不太规范,比如文件和目录的操作函数名有时区分，有时又不区分。最后，对文件和目录的操作进行简单的小结以方便自己的记忆。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">操作名称</th>
+<th style="text-align:center">文件操作</th>
+<th>目录操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">创建</td>
+<td style="text-align:center">file.create()</td>
+<td>dir.create()</td>
+</tr>
+<tr>
+<td style="text-align:center">查看</td>
+<td style="text-align:center">list.files()</td>
+<td>list.dirs()</td>
+</tr>
+<tr>
+<td style="text-align:center">读取</td>
+<td style="text-align:center">readLines()</td>
+<td>-</td>
+</tr>
+<tr>
+<td style="text-align:center">重命名</td>
+<td style="text-align:center">file.rename()</td>
+<td>file.rename()</td>
+</tr>
+<tr>
+<td style="text-align:center">复制</td>
+<td style="text-align:center">file.copy()</td>
+<td>-</td>
+</tr>
+<tr>
+<td style="text-align:center">追加</td>
+<td style="text-align:center">file.append()</td>
+<td>-</td>
+</tr>
+<tr>
+<td style="text-align:center">删除</td>
+<td style="text-align:center">file.remove()</td>
+<td>unlink()</td>
+</tr>
+<tr>
+<td style="text-align:center">权限查看</td>
+<td style="text-align:center">file.info()</td>
+<td>file.info()</td>
+</tr>
+<tr>
+<td style="text-align:center">权限查看</td>
+<td style="text-align:center">file.access()</td>
+<td>file.access()</td>
+</tr>
+<tr>
+<td style="text-align:center">权限修改</td>
+<td style="text-align:center">Sys.chomod()</td>
+<td>Sys.chomod()</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/技术篇/">技术篇</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/R/">R</a>, <a href="/tags/文件系统管理/">文件系统管理</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2016/02/27/char-in-R/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+<section id="comment">
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="/2016/03/01/docement-mangement/" data-title="用R进行文件系统管理" data-url="http://xukuang.github.io/2016/03/01/docement-mangement/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yiyuzhijian"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+  
+</section>
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:xukuang.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/学习篇/">学习篇</a><small>2</small></li>
+  
+    <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
+  
+    <li><a href="/categories/技术篇/">技术篇</a><small>17</small></li>
+  
+    <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
+  
+    <li><a href="/categories/读书篇/">读书篇</a><small>7</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+  </div>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</font></h3>
+<ul class="entry">
+<li>姓名：<a href=http://xukuang.github.io/about/>匡旭</a></li>
+<li>现状：博士在读</li>
+<li>Theme: <a href="https://github.com/zippera/lightum">Lightum</a></li>
+<li>QQ: <font color="red">530731251</font></li>
+</ul>
+</div>
+
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=3051539547&verifier=655ac839&colors=ffffff,d3f9bc,464646,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
+<li><a href="http://jianshu.io/">简书</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="outer">
+    <div id="footer-info" class="inner" style="text-align:center;">
+      <table width="100%" border="0">
+        <tr>
+          <td style="text-align:left" bgcolor="white">
+            Copyright &copy; 2014-2016 <a href="http://xukuang.github.io/about/" target="_blank">Xu Kuang</a> &nbsp; &nbsp;<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            Theme <a href="https://github.com/zippera/lightum" target="_blank">Lightum</a>&nbsp; &nbsp;
+            Hosted on <a href="http://github.com/" target="_blank">GitHub</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+</div></footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>
+

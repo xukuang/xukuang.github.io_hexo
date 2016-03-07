@@ -1,0 +1,480 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>三维图在R中的几种画法 | YiYuZhiJian</title>
+  <meta name="author" content="kuang xu">
+  
+  <meta name="description" content="Walk steps step by step">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="三维图在R中的几种画法"/>
+  <meta property="og:site_name" content="YiYuZhiJian"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="YiYuZhiJian" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">YiYuZhiJian</a></h1>
+  <h2><a href="/">你害怕一件事，可还是要去做，那才是勇敢。</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	    <li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-01-10T04:48:36.000Z"><a href="/2016/01/10/3dplot/">1月10 2016</a></time>
+      
+      
+  
+    <h1 class="title">三维图在R中的几种画法</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="基础函数persp">基础函数persp</h2><h3 id="persp函数">persp函数</h3><p>persp(x = seq(0, 1, length.out = nrow(z)),<br>      y = seq(0, 1, length.out = ncol(z)),<br>      z, xlim = range(x), ylim = range(y),<br>      zlim = range(z, na.rm = TRUE),<br>      xlab = NULL, ylab = NULL, zlab = NULL,<br>      main = NULL, sub = NULL,<br>      theta = 0, phi = 15, r = sqrt(3), d = 1,<br>      scale = TRUE, expand = 1,<br>      col = “white”, border = NULL, ltheta = -135, lphi = 0,<br>      shade = NA, box = TRUE, axes = TRUE, nticks = 5,<br>      ticktype = “simple”, …)<br><a id="more"></a></p>
+<ol>
+<li>参数x和y分别是两个数值向量，z是一个与前两个参数对应的矩阵</li>
+<li>xlim、ylim和zlim分别设定三个坐标轴的范围</li>
+<li>xlab、ylab和zlab分别设定三个坐标轴的标题</li>
+<li>theta和phi分别设定立体图形左右方向和上下方向旋转的角度</li>
+<li>r设定眼睛离透视图中心的距离，这个距离的远近会给我们一种从远近看物体的感觉</li>
+<li>d设定立体效果的程度，大于1的值会减弱立体程度，反之会增强立体程度</li>
+<li>scale为逻辑值，决定是否对三个坐标进行缩放，若为TRUE，则x、y和z都会被缩放到[0, 1]范围内，若为FALSE，那么所有坐标轴都按照数据的原始量纲处理，这样可以得到数据的真实比例</li>
+<li>expand为z轴的缩放因子，它决定了z轴的长短</li>
+<li>col为组成曲面的所有小方块的颜色；border为组成曲面的小方块的边框样式，设置为NA可以去掉边<br>框</li>
+<li>ltheta和lphi设置透视图的光源位置</li>
+<li>shade决定的阴影效果；box为逻辑值，设定透视图是否需要画外框</li>
+<li>axes决定是否画坐标轴；nticks为坐标轴刻度线的数目；ticktype设定坐标轴刻度类型，取值’simple’则简单画箭头表示坐标轴，’detailed’则将详细的刻度标记在坐标轴上      </li>
+</ol>
+<h3 id="实例">实例</h3><p>这里我们使用persp函数来展示一下二维正态分布密度函数图。<br>二维正态分布密度函数的公式：<br>$f(x1, x2) = \frac{ 1 }{2\pi \sigma1\sigma2\sqrt{1-r^2}}e^{-\frac{1}{2(1-r^2)}<br>[\frac{(x1-\mu_{x1})^2}{\sigma_{x1}^2} - \frac{2r(x1-\mu_{x1})(x2-\mu_{x2})}{\sigma_{x1} \sigma_{x2}} + \frac{(x2-\mu_{x2})^2}{\sigma_{x2}^2}]}$</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">mu1&lt;-<span class="number">0</span> <span class="comment"># setting the expected value of x1</span></span><br><span class="line">mu2&lt;-<span class="number">0</span> <span class="comment"># setting the expected value of x2</span></span><br><span class="line">s11&lt;-<span class="number">10</span> <span class="comment"># setting the variance of x1</span></span><br><span class="line">s12&lt;-<span class="number">15</span> <span class="comment"># setting the covariance between x1 and x2</span></span><br><span class="line">s22&lt;-<span class="number">10</span> <span class="comment"># setting the variance of x2</span></span><br><span class="line">rho&lt;-<span class="number">0.5</span> <span class="comment"># setting the correlation coefficient between x1 and x2</span></span><br><span class="line">x1&lt;-seq(-<span class="number">10</span>,<span class="number">10</span>,<span class="variable">length=</span><span class="number">41</span>) <span class="comment"># generating the vector series x1</span></span><br><span class="line">x2&lt;-x1 <span class="comment"># copying x1 to x2</span></span><br><span class="line"></span><br><span class="line">f&lt;-function(x1,x2)</span><br><span class="line">&#123;</span><br><span class="line">term1&lt;-<span class="number">1</span>/(<span class="number">2</span>*pi*sqrt(s11*s22*(<span class="number">1</span>-rho^<span class="number">2</span>)))</span><br><span class="line">term2&lt;--<span class="number">1</span>/(<span class="number">2</span>*(<span class="number">1</span>-rho^<span class="number">2</span>))</span><br><span class="line">term3&lt;-(x1-mu1)^<span class="number">2</span>/s11</span><br><span class="line">term4&lt;-(x2-mu2)^<span class="number">2</span>/s22</span><br><span class="line">term5&lt;--<span class="number">2</span>*rho*((x1-mu1)*(x2-mu2))/(sqrt(s11)*sqrt(s22))</span><br><span class="line"></span><br><span class="line">term1*exp(term2*(term3+term4-term5))</span><br><span class="line">&#125; <span class="comment"># setting up the function of the multivariate normal density</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">z&lt;-outer(x1,x2,f) <span class="comment"># calculating the density values</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">persp(x1, x2, z,</span><br><span class="line"><span class="variable">main=</span><span class="string">"Two dimensional Normal Distribution"</span>,</span><br><span class="line"><span class="variable">sub=</span>expression(italic(f)~(bold(x))==frac(<span class="number">1</span>,<span class="number">2</span>~pi~sqrt(sigma[<span class="number">11</span>]~</span><br><span class="line">sigma[<span class="number">22</span>]~(<span class="number">1</span>-rho^<span class="number">2</span>)))~phantom(<span class="number">0</span>)^bold(.)~exp~bgroup(<span class="string">"&#123;"</span>,</span><br><span class="line">list(-frac(<span class="number">1</span>,<span class="number">2</span>(<span class="number">1</span>-rho^<span class="number">2</span>)),</span><br><span class="line">bgroup(<span class="string">"["</span>, frac((x[<span class="number">1</span>]~-~mu[<span class="number">1</span>])^<span class="number">2</span>, sigma[<span class="number">11</span>])~-~<span class="number">2</span>~rho~frac(x[<span class="number">1</span>]~-~mu[<span class="number">1</span>],</span><br><span class="line">sqrt(sigma[<span class="number">11</span>]))~ frac(x[<span class="number">2</span>]~-~mu[<span class="number">2</span>],sqrt(sigma[<span class="number">22</span>]))~+~</span><br><span class="line">frac((x[<span class="number">2</span>]~-~mu[<span class="number">2</span>])^<span class="number">2</span>, sigma[<span class="number">22</span>]),<span class="string">"]"</span>)),<span class="string">"&#125;"</span>)),</span><br><span class="line"><span class="variable">col=</span><span class="string">"lightblue"</span>,</span><br><span class="line"><span class="variable">theta=</span><span class="number">30</span>, <span class="variable">phi=</span><span class="number">20</span>,</span><br><span class="line"><span class="variable">r=</span><span class="number">50</span>,</span><br><span class="line"><span class="variable">d=</span><span class="number">0.1</span>,</span><br><span class="line"><span class="variable">expand=</span><span class="number">0.5</span>,</span><br><span class="line"><span class="variable">ltheta=</span><span class="number">90</span>, <span class="variable">lphi=</span><span class="number">180</span>,</span><br><span class="line"><span class="variable">shade=</span><span class="number">0.75</span>,</span><br><span class="line"><span class="variable">ticktype=</span><span class="string">"detailed"</span>,</span><br><span class="line"><span class="variable">nticks=</span><span class="number">5</span>) <span class="comment"># produces the 3-D plot</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">mtext(expression(list(mu[<span class="number">1</span>]==<span class="number">0</span>,mu[<span class="number">2</span>]==<span class="number">0</span>,sigma[<span class="number">11</span>]==<span class="number">10</span>,sigma[<span class="number">22</span>]==<span class="number">10</span>,sigma[<span class="number">12</span></span><br><span class="line">]==<span class="number">15</span>,<span class="variable">rho=</span>=<span class="number">0.5</span>)), <span class="variable">side=</span><span class="number">3</span>) <span class="comment"># adding a text line to the graph</span></span><br></pre></td></tr></table></figure>
+<p><img src="/img/二维正态分布图.png" alt="二维正态分布图"></p>
+<h2 id="lattice包的函数">lattice包的函数</h2><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">library(lattice)</span><br><span class="line">data(iris)</span><br><span class="line">cloud(Sepal.Length ~ Petal.Length * Petal.Width, <span class="variable">data =</span> iris,</span><br><span class="line"><span class="variable">groups =</span> Species,</span><br><span class="line"><span class="variable">perspective =</span> FALSE,</span><br><span class="line"><span class="variable">key =</span> list(<span class="variable">title =</span> <span class="string">"Iris Data"</span>, <span class="variable">x =</span> .<span class="number">05</span>, <span class="variable">y=</span>.<span class="number">95</span>, <span class="variable">border =</span> TRUE,</span><br><span class="line"><span class="variable">points =</span> Rows(trellis.par.get(<span class="string">"superpose.symbol"</span>), <span class="number">1</span>:<span class="number">3</span>),</span><br><span class="line"><span class="variable">text =</span> list(levels(iris$Species))))</span><br></pre></td></tr></table></figure>
+<p><img src="/img/示例图.png" alt="示例图"></p>
+<h2 id="scatterplot3d包的函数">scatterplot3d包的函数</h2><p>scatterplot3d包主要包含三个函数，其中：</p>
+<ul>
+<li>scatterplotplot3d函数为包scatterplot3d的基础函数，能够打开画图，画出点或线</li>
+<li>points3d向用函数scatterplotplot3d画好的图上添加点或线</li>
+<li>plane3d向用函数scatterplotplot3d画好的图上添加趋势面<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">library(scatterplot3d)</span><br><span class="line">data(trees)</span><br><span class="line">s3d &lt;- scatterplot3d(trees, type=<span class="string">"h"</span>, highlight.<span class="number">3</span>d=TRUE,</span><br><span class="line">angle=<span class="number">55</span>, scale.<span class="keyword">y</span>=<span class="number">0</span>.<span class="number">7</span>, pch=<span class="number">16</span>, main=<span class="string">"Volume ~ Grith + Height"</span>)</span><br><span class="line"><span class="comment"># Now adding some points to the "scatterplot3d"</span></span><br><span class="line">s3d<span class="variable">$points3d</span>(se<span class="string">q(10,20,2)</span>, se<span class="string">q(85,60,-5)</span>, se<span class="string">q(60,10,-10)</span>,</span><br><span class="line">col=<span class="string">"blue"</span>, type=<span class="string">"h"</span>, pch=<span class="number">16</span>)</span><br><span class="line"><span class="comment"># Now adding a regression plane to the "scatterplot3d"</span></span><br><span class="line">attach(trees)</span><br><span class="line"><span class="keyword">my</span>.lm &lt;- lm(Volume ~ Girth + Height)</span><br><span class="line">s3d<span class="variable">$plane3d</span>(<span class="keyword">my</span>.lm)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="/img/趋势面.png" alt="树木体积与胸径和高度关系图"></p>
+<h2 id="rgl包的函数">rgl包的函数</h2><p>利用rgl包作出的三维图像，可以通过鼠标调整不同的角度。<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">library</span>(rgl)</span><br><span class="line"><span class="function">plot3d</span>(1<span class="value">:<span class="number">5</span>,<span class="number">1</span>:<span class="number">5</span>, z = <span class="function">c</span>(<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>, <span class="number">70</span>), col=<span class="string">"red"</span>, size=<span class="number">5</span>)</span><br><span class="line"># save image</span><br><span class="line">rgl.<span class="function">snapshot</span>(<span class="string">'plot1.png'</span>)</span><br><span class="line">rgl.<span class="function">postscript</span>(<span class="string">"plot1.pdf"</span>, <span class="string">"pdf"</span>, drawText = TRUE)</span><br><span class="line">  r3dDefaults</span><br><span class="line">    <span class="function">open3d</span>()</span><br><span class="line">    <span class="function">shade3d</span>(<span class="function">cube3d</span>(color = <span class="function">rep</span>(<span class="function">rainbow</span>(<span class="number">6</span>), <span class="function">rep</span>(<span class="number">4</span>, <span class="number">6</span>))))</span><br><span class="line">	rgl.<span class="function">snapshot</span>(<span class="string">'plot2.png'</span>)</span><br><span class="line">rgl.<span class="function">postscript</span>(<span class="string">"plot2.pdf"</span>, <span class="string">"pdf"</span>, drawText = TRUE)</span><br><span class="line">    save &lt;- <span class="function">par3d</span>(userMatrix = <span class="function">rotationMatrix</span>(<span class="number">90</span>*pi/<span class="number">180</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>))</span><br><span class="line">    save</span><br><span class="line">    <span class="function">par3d</span>(<span class="string">"userMatrix"</span>)    </span><br><span class="line">    <span class="function">par3d</span>(save)</span><br><span class="line">    <span class="function">par3d</span>(<span class="string">"userMatrix"</span>)</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="画外篇">画外篇</h3><p>下面的部分与文章主题没有关系，只是记述一下<strong>hexo</strong>中数学公式的表示方式。</p>
+<p> $\cos 2\theta = \cos^2 \theta - \sin^2 \theta =  2 \cos^2 \theta - 1$ </p>
+<p> $$\frac{\partial u}{\partial t} = h^2 \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2}\right)$$</p>
+<p>$$ i\hbar\frac{\partial \psi}{\partial t} = \frac{-\hbar^2}{2m} \left( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} \right) \psi + V \psi.$$</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/技术篇/">技术篇</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/R/">R</a>, <a href="/tags/三维图/">三维图</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    <a href="/2016/01/13/join-function/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2015/05/31/push-ups/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+<section id="comment">
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="/2016/01/10/3dplot/" data-title="三维图在R中的几种画法" data-url="http://xukuang.github.io/2016/01/10/3dplot/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yiyuzhijian"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+  
+</section>
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:xukuang.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/学习篇/">学习篇</a><small>2</small></li>
+  
+    <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
+  
+    <li><a href="/categories/技术篇/">技术篇</a><small>17</small></li>
+  
+    <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
+  
+    <li><a href="/categories/读书篇/">读书篇</a><small>7</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+  </div>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</font></h3>
+<ul class="entry">
+<li>姓名：<a href=http://xukuang.github.io/about/>匡旭</a></li>
+<li>现状：博士在读</li>
+<li>Theme: <a href="https://github.com/zippera/lightum">Lightum</a></li>
+<li>QQ: <font color="red">530731251</font></li>
+</ul>
+</div>
+
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=3051539547&verifier=655ac839&colors=ffffff,d3f9bc,464646,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
+<li><a href="http://jianshu.io/">简书</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="outer">
+    <div id="footer-info" class="inner" style="text-align:center;">
+      <table width="100%" border="0">
+        <tr>
+          <td style="text-align:left" bgcolor="white">
+            Copyright &copy; 2014-2016 <a href="http://xukuang.github.io/about/" target="_blank">Xu Kuang</a> &nbsp; &nbsp;<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            Theme <a href="https://github.com/zippera/lightum" target="_blank">Lightum</a>&nbsp; &nbsp;
+            Hosted on <a href="http://github.com/" target="_blank">GitHub</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+</div></footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>
+

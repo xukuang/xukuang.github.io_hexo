@@ -1,0 +1,479 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>summarise 和 mulate 函数使用 | YiYuZhiJian</title>
+  <meta name="author" content="kuang xu">
+  
+  <meta name="description" content="Walk steps step by step">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="summarise 和 mulate 函数使用"/>
+  <meta property="og:site_name" content="YiYuZhiJian"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="YiYuZhiJian" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">YiYuZhiJian</a></h1>
+  <h2><a href="/">你害怕一件事，可还是要去做，那才是勇敢。</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	    <li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-06-01T08:16:37.000Z"><a href="/2014/06/01/dots-in-plyr-of-r-packages/">6月1 2014</a></time>
+      
+      
+  
+    <h1 class="title">summarise 和 mulate 函数使用</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>　　<strong>summarise</strong>和<strong>mutate</strong>是<strong>R</strong>中<strong>plyr</strong>包的两个函数。<strong>plyr</strong>是<strong>R</strong>中用来数据汇总的超强R包，肖凯对<strong>plyr</strong>的使用在网易云课堂(该链接已经失效)有较为详细的讲述。本文只对其中的<strong>summarise</strong>和<strong>mutate</strong>函数进行简单介绍，并讲述一下它和<strong>ddply</strong>函数的搭配使用。(注意，这两个函数在plyr包升级后的dplyr包中依然适用)</p>
+<h2 id="summarise_和_mutate_函数">summarise 和 mutate 函数</h2><p>　　<strong>summarise</strong>和<strong>mutate</strong>函数都可以对一个数据框的某一列<strong>(而不是整个数据框)</strong>进行修改和汇总，两者的主要区别在于返回结果的方式不同，其中<strong>summarise</strong>函数返回一个只包含修改或汇总后数据的数据框，而<strong>mutate</strong>函数则返回一个由原始数据和修改或汇总后数据两部分构成的数据框。具体内容加下面代码：<a id="more"></a><br><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">require</span>(plyr)</span><br><span class="line">set.seed(<span class="number">1</span>) <span class="comment"># 保证每次产生的数据框的唯一性</span></span><br><span class="line">dfx &lt;- data.frame(</span><br><span class="line">  group = c(rep(<span class="string">'A'</span>, <span class="number">8</span>), rep(<span class="string">'B'</span>, <span class="number">15</span>), rep(<span class="string">'C'</span>, <span class="number">6</span>)),</span><br><span class="line">  sex = sample(c(<span class="string">"M"</span>, <span class="string">"F"</span>), size = <span class="number">29</span>, replace = <span class="literal">TRUE</span>),</span><br><span class="line">  age = sample(<span class="number">20</span>:<span class="number">30</span>, size = <span class="number">29</span>, replace = <span class="literal">TRUE</span>),</span><br><span class="line">  worktime = sample(<span class="number">1</span>:<span class="number">5</span>, size = <span class="number">29</span>, replace = <span class="literal">TRUE</span>)</span><br><span class="line">)</span><br><span class="line"><span class="comment">### 数据修改</span></span><br><span class="line">summarise(dfx, age = age + <span class="number">1</span>) <span class="comment"># 返回一个只含一列age的数据框</span></span><br><span class="line">mutate(dfx, age = age + <span class="number">1</span>) <span class="comment"># 返回一个和dfx列数一样的4列数据框，但age列的数值已经修改</span></span><br><span class="line"><span class="comment">### 数据汇总</span></span><br><span class="line">summarise(dfx, mean.age = mean(age), sd.age = sd(age)) <span class="comment"># 返回一个只含汇总结果的2列数据框</span></span><br><span class="line">mutate(dfx, mean.age = mean(age), sd.age = sd(age)) <span class="comment"># 返回一个由dfx和汇总结果组成的4列数据框</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="ddply函数">ddply函数</h2><p>　　<strong>ddply</strong>函数按数据框的某列对数据进行汇总，其形式如下：<br><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ddply(<span class="built_in">.</span><span class="built_in">data</span>, <span class="built_in">.</span>variables, <span class="built_in">.</span>fun <span class="subst">=</span> <span class="built_in">NULL</span>, <span class="attribute">...</span>, <span class="built_in">.</span>progress <span class="subst">=</span> <span class="string">"none"</span>,<span class="built_in">.</span>inform <span class="subst">=</span> <span class="literal">FALSE</span>, <span class="built_in">.</span>drop <span class="subst">=</span> <span class="literal">TRUE</span>, <span class="built_in">.</span>parallel <span class="subst">=</span> <span class="literal">FALSE</span>, <span class="built_in">.</span>paropts <span class="subst">=</span> <span class="built_in">NULL</span>)</span><br></pre></td></tr></table></figure></p>
+<p>这里对其中常用参数进行说明：<br>.data 要进行汇总的数据，这里要求数据格式为数据框<br>.variables 分类依据，这里是数据框中分类列的列名<br>.fun 汇总的方式，这里有三种常用的形式<br>.drop 是否去除不存在的汇总行，默认的方式是去除不存在的汇总行</p>
+<h2 id="单变量的汇总">单变量的汇总</h2><p>常见汇总方式有三种，这里我们用单变量进行举例说明</p>
+<h3 id="整个数据框的汇总（统计数据框的行数和列数，即nrow和ncol）">整个数据框的汇总（统计数据框的行数和列数，即nrow和ncol）</h3><pre><code><span class="comment"><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 数据框的汇总，只有函数，但其中没有参数</span></span><br><span class="line">ddply(dfx, .(sex), nrow) <span class="comment">#这里不能对汇总结果进行命名，即 numrow = nrow 是错误的</span></span><br><span class="line">ddply(dfx, .(sex), ncol) <span class="comment">#这里不能对汇总结果进行命名，即 numrow = nrow 是错误的</span></span><br><span class="line">ddply(dfx, .(sex), c(<span class="string">"nrow"</span>,<span class="string">"ncol"</span>))</span><br></pre></td></tr></table></figure></span>
+</code></pre><p>　　注意：这种方式是对整个数据框进行的，不能使用summarise或者mutate参数。</p>
+<h3 id="数据框中某一列的常见汇总（最大值，最小值，平均值，方差，标准差，_中位数）">数据框中某一列的常见汇总（最大值，最小值，平均值，方差，标准差， 中位数）</h3><pre><code><span class="comment"><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 数据框某一列的汇总，函数中包含参数，需借助summarise或mutate参数</span></span><br><span class="line"><span class="comment">## summarise参数和mutate参数的区别与函数summarise和mutate的区别一样，</span></span><br><span class="line"><span class="comment">## summarise参数返回的结果只包含汇总结果，mutate参数返回结果包含原始数据和汇总数据</span></span><br><span class="line">	<span class="comment">## summarise</span></span><br><span class="line">ddply(dfx, .(sex), summarise, max(worktime))</span><br><span class="line">ddply(dfx, .(sex), summarise, min(worktime))</span><br><span class="line">ddply(dfx, .(sex), summarise, mean(worktime))</span><br><span class="line">ddply(dfx, .(sex), summarise, sd(worktime))</span><br><span class="line">ddply(dfx, .(sex), summarise, median(worktime))</span><br><span class="line"><span class="comment">## mutate</span></span><br><span class="line">ddply(dfx, .(sex), mutate, max(worktime))</span><br><span class="line">ddply(dfx, .(sex), mutate, min(worktime))</span><br><span class="line">ddply(dfx, .(sex), mutate, mean(worktime))</span><br><span class="line">ddply(dfx, .(sex), mutate, sd(worktime))</span><br><span class="line">ddply(dfx, .(sex), mutate, median(worktime))</span><br></pre></td></tr></table></figure></span>
+</code></pre><p>　　注意：三种汇总方式中，只有这种方式可以选择性对汇总结果进行命名，即下面的使用方式也是对的。<br>    <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## summarise</span></span><br><span class="line">ddply(dfx, .(sex), summarise, worktime.max = max(worktime))</span><br><span class="line">ddply(dfx, .(sex), summarise, worktime.min = min(worktime))</span><br><span class="line">ddply(dfx, .(sex), summarise, worktime.mean = mean(worktime))</span><br><span class="line">ddply(dfx, .(sex), summarise, worktime.sd = sd(worktime))</span><br><span class="line">ddply(dfx, .(sex), summarise, worktime.sd = median(worktime))</span><br><span class="line"><span class="comment">## mutate</span></span><br><span class="line">ddply(dfx, .(sex), mutate, worktime.max = max(worktime))</span><br><span class="line">ddply(dfx, .(sex), mutate, worktime.min = min(worktime))</span><br><span class="line">ddply(dfx, .(sex), mutate, worktime.mean = mean(worktime))</span><br><span class="line">ddply(dfx, .(sex), mutate, worktime.sd = sd(worktime))</span><br><span class="line">ddply(dfx, .(sex), mutate, worktime.sd = median(worktime))</span><br></pre></td></tr></table></figure></p>
+<p>　　注意：这种方式下，summarise或者mutate参数至少要选择其中的一个，否则不能得到想要的结果</p>
+<h3 id="通用汇总方式（编写函数）">通用汇总方式（编写函数）</h3><p>　　这种汇总方式是最通用的汇总方式，其中的函数参数为数据框。事实上，1,2的汇总方式都可以通过3的汇总方式调用函数实现。</p>
+<ul>
+<li><p>1对应的函数调用方式</p>
+  <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ddply(dfx, .(sex), <span class="keyword">function</span>(x)&#123;nrow(x)&#125;) <span class="comment"># 不能对汇总结果进行重新命名，即numrow = nrow(x)是错误的</span></span><br><span class="line">ddply(dfx, .(sex), <span class="keyword">function</span>(x)&#123;ncol(x)&#125;) <span class="comment"># 不能对汇总结果进行重新命名，即numcol = ncol(x)是错误的</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2对应的函数调用方式</p>
+  <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 这里其实对应2中summarise参数的形式</span></span><br><span class="line">ddply(dfx, .(sex), <span class="keyword">function</span>(x)&#123;max(x$worktime)&#125;)</span><br><span class="line">ddply(dfx, .(sex), <span class="keyword">function</span>(x)&#123;min(x$worktime)&#125;)</span><br><span class="line">ddply(dfx, .(sex), <span class="keyword">function</span>(x)&#123;mean(x$worktime)&#125;)</span><br><span class="line">ddply(dfx, .(sex), <span class="keyword">function</span>(x)&#123;sd(x$worktime)&#125;)</span><br><span class="line">ddply(dfx, .(sex), <span class="keyword">function</span>(x)&#123;median(x$worktime)&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>colwise函数<br>　　colwise函数是plyr包的内置函数，可以对数据框中所有的数据列进行相同的操作，省去每一例的大量重复操作。(类似的功能在dplyr包中可以通过summarise_each或mutate_each来实现)</p>
+</li>
+<li>直接对数据列进行相同操作<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dfx<span class="class">.data</span> = dfx[, <span class="function"><span class="title">c</span><span class="params">(<span class="string">'age'</span>, <span class="string">'worktime'</span>)</span></span>]</span><br><span class="line">dfx<span class="class">.data</span></span><br><span class="line"><span class="function"><span class="title">colwise</span><span class="params">(mean)</span><span class="params">(dfx.data)</span></span></span><br><span class="line"><span class="function"><span class="title">colwise</span><span class="params">(mean)</span><span class="params">(dfx.data)</span></span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>　　这里对所有列求平均值时，如果某些列是字符无法进行相应操作，则为返回NA，只是有“warning messages:”的提示，但是并不影响最终的结果，因此，也可以直接求平均值。<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">colwise<span class="list">(<span class="keyword">mean</span>)</span><span class="list">(<span class="keyword">dfx</span>)</span></span><br><span class="line">colwise<span class="list">(<span class="keyword">mean</span>)</span><span class="list">(<span class="keyword">dfx</span>)</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>按指定类分类后进行相同操作<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ddply<span class="list">(<span class="keyword">dfx</span>, .<span class="list">(<span class="keyword">group</span>)</span>, colwise<span class="list">(<span class="keyword">mean</span>)</span>)</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>　　事实上，通用汇总方式的用途比我们的例子强大的多，这里有点就事论事的味道，反而限制了该方式的灵活运用。</p>
+<h2 id="多变量的汇总">多变量的汇总</h2><p>plyr包当然不仅仅可以对单一列变量进行分析，还可以以进行多变量的分析。<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ddply<span class="list">(<span class="keyword">dfx</span>, .<span class="list">(<span class="keyword">sex</span>, age)</span>, function<span class="list">(<span class="keyword">x</span>)</span>&#123;mean<span class="list">(<span class="keyword">x</span>$worktime)</span>&#125;)</span></span><br><span class="line"></span><br><span class="line">ddply<span class="list">(<span class="keyword">dfx</span>, .<span class="list">(<span class="keyword">sex</span>, age)</span>, function<span class="list">(<span class="keyword">x</span>)</span>&#123;mean<span class="list">(<span class="keyword">x</span>$worktime)</span>&#125;, .drop = F)</span></span><br></pre></td></tr></table></figure></p>
+<p>　　上面两句的结果并不完全一样，在参数.drop = F会把sex和age两类中原来并不存在的组合以NA的形式展示出来。(在dplyr包中默认情况下，所有组合的结果均显示，只是不存在的组合的结果为NA)</p>
+<p>　　最后，本文的所有方法只是个人的使用心得，可能有很多不对的地方，欢迎大家提出不同的意见。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/技术篇/">技术篇</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/R/">R</a>, <a href="/tags/plyr/">plyr</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    <a href="/2014/07/17/talk-abut-dropbox/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2014/05/27/xiaoqingren/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+<section id="comment">
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="/2014/06/01/dots-in-plyr-of-r-packages/" data-title="summarise 和 mulate 函数使用" data-url="http://xukuang.github.io/2014/06/01/dots-in-plyr-of-r-packages/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yiyuzhijian"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+  
+</section>
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:xukuang.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/学习篇/">学习篇</a><small>2</small></li>
+  
+    <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
+  
+    <li><a href="/categories/技术篇/">技术篇</a><small>17</small></li>
+  
+    <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
+  
+    <li><a href="/categories/读书篇/">读书篇</a><small>7</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+  </div>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</font></h3>
+<ul class="entry">
+<li>姓名：<a href=http://xukuang.github.io/about/>匡旭</a></li>
+<li>现状：博士在读</li>
+<li>Theme: <a href="https://github.com/zippera/lightum">Lightum</a></li>
+<li>QQ: <font color="red">530731251</font></li>
+</ul>
+</div>
+
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=3051539547&verifier=655ac839&colors=ffffff,d3f9bc,464646,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
+<li><a href="http://jianshu.io/">简书</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="outer">
+    <div id="footer-info" class="inner" style="text-align:center;">
+      <table width="100%" border="0">
+        <tr>
+          <td style="text-align:left" bgcolor="white">
+            Copyright &copy; 2014-2016 <a href="http://xukuang.github.io/about/" target="_blank">Xu Kuang</a> &nbsp; &nbsp;<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            Theme <a href="https://github.com/zippera/lightum" target="_blank">Lightum</a>&nbsp; &nbsp;
+            Hosted on <a href="http://github.com/" target="_blank">GitHub</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+</div></footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>
+

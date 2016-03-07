@@ -1,0 +1,496 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>数据合并-merge函数 | YiYuZhiJian</title>
+  <meta name="author" content="kuang xu">
+  
+  <meta name="description" content="Walk steps step by step">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="数据合并-merge函数"/>
+  <meta property="og:site_name" content="YiYuZhiJian"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="YiYuZhiJian" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">YiYuZhiJian</a></h1>
+  <h2><a href="/">你害怕一件事，可还是要去做，那才是勇敢。</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	    <li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-05-29T02:35:12.000Z"><a href="/2015/05/29/merge-function-in-R/">5月29 2015</a></time>
+      
+      
+  
+    <h1 class="title">数据合并-merge函数</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="merge函数介绍">merge函数介绍</h2><p>merge函数是R的基础包中的函数，不需要加载R包可以直接使用，主要用于数据框的合并。数据框的合并原理是这样的：首先在x表按指定列每一行的内容在y表的指定列都进行逐行匹配，直到x中所有行匹配完为止。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">merge</span>(x, y, <span class="keyword">by</span> = <span class="keyword">intersect</span>(<span class="keyword">names</span>(x), <span class="keyword">names</span>(y)),</span><br><span class="line">      <span class="keyword">by</span>.x = <span class="keyword">by</span>, <span class="keyword">by</span>.y = <span class="keyword">by</span>, <span class="keyword">all</span> = <span class="literal">FALSE</span>, <span class="keyword">all</span>.x = <span class="keyword">all</span>, <span class="keyword">all</span>.y = <span class="keyword">all</span>,</span><br><span class="line">      sort = <span class="literal">TRUE</span>, suffixes = c(<span class="string">".x"</span>,<span class="string">".y"</span>),</span><br><span class="line">      incomparables = <span class="literal">NULL</span>, ...)</span></span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p><strong>参数说明</strong></p>
+<ul>
+<li>x,y：指两个用于合并的数据框。如果x，y不是数据框，那么合并时也将被强制转换为数据框，所以x，y必须是数据框类型，或者可以转换为数据框的数据类型。</li>
+<li>by, by.x, by.y：这三个参数共同限定来说明x，y合并按哪一列进行。在没有特别指明参数值的情况下，x，y的合并以数据框中列名相同的相同的列进行（x，y合并时，x依照by.x指定的列进行合并，y依照by.y指定的列进行合并。在默认情况情况下，by.x，by.y 都等于by，而by为x，y中列名相同的列,所以默认情况下会依照两个数据框中列名相同的内容进行合并）。如果要修改x，y合并时依照的的条件，可以直接更改by.x和by.y的值。</li>
+<li>all, all.x, all.y：这三个参数共同限定来表明结果的输出方式。在没有特别指明参数值的情况下，结果只会显示x，y这两个数据框中指定列中的相同内容的整理结果，而不同内容根本不会显示（x，y合并时，结果依照all.x是否显示x中不相同的内容，依照all.y是否显示y中不相同的内容。在默认情况情况下，all.x，all.y 都等于all，而all = FALSE，所以结果只会显示x，y这两个数据框中指定列中的相同内容的整理结果。如果要更改x，y中的显示结果，可以相应更改更改all.x和all.y的参数设置。</li>
+<li>sort：指明是否按指定列中内容对结果排序显示。默认值为TRUE，表明默认情况下会对结果重新排序。</li>
+<li>suffsuffixes：合并时除了依照条件外还有相同的列名，则结果中这个列表名会添加.x和.y后缀以示区别。</li>
+<li>incomparables：合并时可以通过这个设置来排除相同列中部分相同内容的合并。</li>
+</ul>
+<p><strong>结果说明</strong><br>merge函数的结果展示时，当y中每个内容只有一个结果能跟x匹配上时，结果的行数就会与从x中提取出指定合并列的公有内容的函数相一致。一旦当y中某个内容有多个结果能跟x匹配上时，结果的行数就会发生变化。</p>
+<h2 id="实例说明">实例说明</h2><h3 id="数据说明">数据说明</h3><p>这里用到的数据有两个：作者信息数据和书籍信息数据。依照下面介绍的合并条件，这两个数据既有相同的内容，又有彼此中不存在的内容。</p>
+<ul>
+<li>作者信息数据<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">authors &lt;- data.frame(</span><br><span class="line">	id =  <span class="function"><span class="title">c</span><span class="params">(<span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">3</span>)</span></span>,</span><br><span class="line">	surname = <span class="function"><span class="title">I</span><span class="params">(c(<span class="string">"Tukey"</span>, <span class="string">"Venables"</span>, <span class="string">"Tierney"</span>, <span class="string">"Ripley"</span>, <span class="string">"McNeil"</span>, <span class="string">"kuangxu"</span>)</span></span>),</span><br><span class="line">	nationality = <span class="function"><span class="title">c</span><span class="params">(<span class="string">"US"</span>, <span class="string">"Australia"</span>, <span class="string">"US"</span>, <span class="string">"UK"</span>, <span class="string">"Australia"</span>, <span class="string">"China"</span>)</span></span>,</span><br><span class="line">	deceased = <span class="function"><span class="title">c</span><span class="params">(<span class="string">"yes"</span>, rep(<span class="string">"no"</span>, <span class="number">5</span>)</span></span>))</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>为了区别数据，就把自己的名字也给安排进去了，唯一的一个中国人啊。</p>
+<ul>
+<li>书籍信息数据<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">books &lt;- data.frame(</span><br><span class="line">	id = <span class="number">1</span>:<span class="number">7</span>,</span><br><span class="line">    name = I(c(<span class="string">"Tukey"</span>, <span class="string">"Venables"</span>, <span class="string">"Tierney"</span>,</span><br><span class="line">             <span class="string">"Ripley"</span>, <span class="string">"Ripley"</span>, <span class="string">"McNeil"</span>, <span class="string">"R Core"</span>)),</span><br><span class="line">    title = c(<span class="string">"Exploratory Data Analysis"</span>,</span><br><span class="line">              <span class="string">"Modern Applied Statistics ..."</span>,</span><br><span class="line">              <span class="string">"LISP-STAT"</span>,</span><br><span class="line">              <span class="string">"Spatial Statistics"</span>, <span class="string">"Stochastic Simulation"</span>,</span><br><span class="line">              <span class="string">"Interactive Data Analysis"</span>,</span><br><span class="line">              <span class="string">"An Introduction to R"</span>),</span><br><span class="line">    other.author = c(<span class="literal">NA</span>, <span class="string">"Ripley"</span>, <span class="literal">NA</span>, <span class="literal">NA</span>, <span class="literal">NA</span>, <span class="literal">NA</span>,</span><br><span class="line">                     <span class="string">"Venables &amp; Smith"</span>))</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="结果显示">结果显示</h3><h4 id="by未设定的默认情况下，依照列名相同的列进行展示而且只显示相同内容的整理结果">by未设定的默认情况下，依照列名相同的列进行展示而且只显示相同内容的整理结果</h4><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">merge(authors, books)</span><br><span class="line">	<span class="preprocessor">#   id  surname nationality deceased     name                         title     other.author</span></span><br><span class="line">	<span class="preprocessor"># 1  2    Tukey          US      yes Venables Modern Applied Statistics ...           Ripley</span></span><br><span class="line">	<span class="preprocessor"># 2  3  kuangxu       China       no  Tierney                     LISP-STAT             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 3  4 Venables   Australia       no   Ripley            Spatial Statistics             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 4  5  Tierney          US       no   Ripley         Stochastic Simulation             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 5  7   Ripley          UK       no   R Core          An Introduction to R Venables &amp; Smith</span></span><br></pre></td></tr></table></figure>
+<p>注意，哪个数据框在x的位置，结果将优先显示那个数据框的的列。     </p>
+<h4 id="by-x和by-y修改参照条件">by.x和by.y修改参照条件</h4><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">merge(authors, books, by<span class="variable">.x</span> = <span class="string">"surname"</span>, by<span class="variable">.y</span> = <span class="string">"name"</span>)</span><br><span class="line">	<span class="preprocessor">#    surname id.x nationality deceased id.y                         title other.author</span></span><br><span class="line">	<span class="preprocessor"># 1   McNeil    8   Australia       no    6     Interactive Data Analysis         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 2   Ripley    7          UK       no    4            Spatial Statistics         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 3   Ripley    7          UK       no    5         Stochastic Simulation         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 4  Tierney    5          US       no    3                     LISP-STAT         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 5    Tukey    2          US      yes    1     Exploratory Data Analysis         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 6 Venables    4   Australia       no    2 Modern Applied Statistics ...       Ripley</span></span><br></pre></td></tr></table></figure>
+<p>注意，两个数据框中都有相同的列id，但并没有把id作为合并依照的条件，在结果显示中分别显示为id.x和id.y。</p>
+<h4 id="all-x和all-y调整显示结果">all.x和all.y调整显示结果</h4><p>在未对参数设置时，只显示相同内容所在的行。</p>
+<ul>
+<li><p>显示x中所有的行（all.x = T）</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">merge(authors, books, by<span class="variable">.x</span> = <span class="string">"surname"</span>, by<span class="variable">.y</span> = <span class="string">"name"</span>, all<span class="variable">.x</span> = T)</span><br><span class="line">	<span class="preprocessor"># surname id.x nationality deceased id.y                         title other.author</span></span><br><span class="line">	<span class="preprocessor"># 1  kuangxu    3       China       no   NA                          <span class="title">&lt;NA&gt;</span>         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 2   McNeil    8   Australia       no    6     Interactive Data Analysis         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 3   Ripley    7          UK       no    4            Spatial Statistics         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 4   Ripley    7          UK       no    5         Stochastic Simulation         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 5  Tierney    5          US       no    3                     LISP-STAT         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 6    Tukey    2          US      yes    1     Exploratory Data Analysis         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 7 Venables    4   Australia       no    2 Modern Applied Statistics ...       Ripley</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>显示y中所有的行（all.y = T）</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">merge(authors, books, by<span class="variable">.x</span> = <span class="string">"surname"</span>, by<span class="variable">.y</span> = <span class="string">"name"</span>, all<span class="variable">.y</span> = T)</span><br><span class="line">	<span class="preprocessor"># surname id.x nationality deceased id.y                         title     other.author</span></span><br><span class="line">	<span class="preprocessor"># 1   McNeil    8   Australia       no    6     Interactive Data Analysis             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 2   R Core   NA        <span class="title">&lt;NA&gt;</span>     <span class="title">&lt;NA&gt;</span>    7          An Introduction to R Venables &amp; Smith</span></span><br><span class="line">	<span class="preprocessor"># 3   Ripley    7          UK       no    4            Spatial Statistics             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 4   Ripley    7          UK       no    5         Stochastic Simulation             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 5  Tierney    5          US       no    3                     LISP-STAT             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 6    Tukey    2          US      yes    1     Exploratory Data Analysis             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 7 Venables    4   Australia       no    2 Modern Applied Statistics ...           Ripley</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>显示x和y中所有的行（all.x = T, all.y = T）</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">merge(authors, books, by<span class="variable">.x</span> = <span class="string">"surname"</span>, by<span class="variable">.y</span> = <span class="string">"name"</span>, all<span class="variable">.x</span> = T, all<span class="variable">.y</span> = T)</span><br><span class="line">	<span class="preprocessor"># surname id.x nationality deceased id.y                         title     other.author</span></span><br><span class="line">	<span class="preprocessor"># 1  kuangxu    3       China       no   NA                          <span class="title">&lt;NA&gt;</span>             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 2   McNeil    8   Australia       no    6     Interactive Data Analysis             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 3   R Core   NA        <span class="title">&lt;NA&gt;</span>     <span class="title">&lt;NA&gt;</span>    7          An Introduction to R Venables &amp; Smith</span></span><br><span class="line">	<span class="preprocessor"># 4   Ripley    7          UK       no    4            Spatial Statistics             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 5   Ripley    7          UK       no    5         Stochastic Simulation             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 6  Tierney    5          US       no    3                     LISP-STAT             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 7    Tukey    2          US      yes    1     Exploratory Data Analysis             <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 8 Venables    4   Australia       no    2 Modern Applied Statistics ...           Ripley</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="sort是否对合并结果重新排序">sort是否对合并结果重新排序</h4><p>sort = F时，对合并结果不进行排序，注意这里的不排序是根据排序条件中内容出现的先后进行数据展示而非按原始数据的行的顺序进行数据展示。<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">merge(authors, books, by<span class="variable">.x</span> = <span class="string">"surname"</span>, by<span class="variable">.y</span> = <span class="string">"name"</span>, sort = F)</span><br><span class="line">	<span class="preprocessor"># surname id.x nationality deceased id.y                         title other.author</span></span><br><span class="line">	<span class="preprocessor"># 1    Tukey    2          US      yes    1     Exploratory Data Analysis         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 2 Venables    4   Australia       no    2 Modern Applied Statistics ...       Ripley</span></span><br><span class="line">	<span class="preprocessor"># 3  Tierney    5          US       no    3                     LISP-STAT         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 4   Ripley    7          UK       no    4            Spatial Statistics         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 5   Ripley    7          UK       no    5         Stochastic Simulation         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 6   McNeil    8   Australia       no    6     Interactive Data Analysis         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">merge(authors, books, by<span class="variable">.x</span> = <span class="string">"surname"</span>, by<span class="variable">.y</span> = <span class="string">"name"</span>)</span><br><span class="line">	<span class="preprocessor">#    surname id.x nationality deceased id.y                         title other.author</span></span><br><span class="line">	<span class="preprocessor"># 1   McNeil    8   Australia       no    6     Interactive Data Analysis         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 2   Ripley    7          UK       no    4            Spatial Statistics         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 3   Ripley    7          UK       no    5         Stochastic Simulation         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 4  Tierney    5          US       no    3                     LISP-STAT         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 5    Tukey    2          US      yes    1     Exploratory Data Analysis         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 6 Venables    4   Australia       no    2 Modern Applied Statistics ...       Ripley</span></span><br></pre></td></tr></table></figure></p>
+<p>注意，上面的程序显示的结果是根据x列的内容进行排序的，而下面的sort未设置的默认情况对结果按照排序条件进行了重新排序。</p>
+<h4 id="incomparables来排除相同列的不同内容">incomparables来排除相同列的不同内容</h4><ul>
+<li><p>未对incomparables设置</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">merge(authors, books, by<span class="variable">.x</span> = <span class="string">"surname"</span>, by<span class="variable">.y</span> = <span class="string">"name"</span>)</span><br><span class="line">	<span class="preprocessor">#    surname id.x nationality deceased id.y                         title other.author</span></span><br><span class="line">	<span class="preprocessor"># 1   McNeil    8   Australia       no    6     Interactive Data Analysis         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 2   Ripley    7          UK       no    4            Spatial Statistics         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 3   Ripley    7          UK       no    5         Stochastic Simulation         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 4  Tierney    5          US       no    3                     LISP-STAT         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 5    Tukey    2          US      yes    1     Exploratory Data Analysis         <span class="title">&lt;NA&gt;</span></span></span><br><span class="line">	<span class="preprocessor"># 6 Venables    4   Australia       no    2 Modern Applied Statistics ...       Ripley</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>incomparables = ‘Tukey’时，则即使’Tukey’为相同的内容也要排除在外</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">merge</span>(<span class="keyword">authors</span>, books, <span class="keyword">by</span>.x = <span class="string">"surname"</span>, <span class="keyword">by</span>.y = <span class="string">"name"</span>, incomparables = <span class="string">'Tukey'</span>)</span><br><span class="line">	# surname id.x nationality deceased id.y                         title other.author</span><br><span class="line">	# <span class="number">1</span>   McNeil    <span class="number">8</span>   Australia       <span class="keyword">no</span>    <span class="number">6</span>     Interactive <span class="keyword">Data</span> Analysis         &lt;NA&gt;</span><br><span class="line">	# <span class="number">2</span>   Ripley    <span class="number">7</span>          UK       <span class="keyword">no</span>    <span class="number">4</span>            Spatial Statistics         &lt;NA&gt;</span><br><span class="line">	# <span class="number">3</span>   Ripley    <span class="number">7</span>          UK       <span class="keyword">no</span>    <span class="number">5</span>         Stochastic Simulation         &lt;NA&gt;</span><br><span class="line">	# <span class="number">4</span>  Tierney    <span class="number">5</span>          US       <span class="keyword">no</span>    <span class="number">3</span>                     LISP-STAT         &lt;NA&gt;</span><br><span class="line">	# <span class="number">5</span> Venables    <span class="number">4</span>   Australia       <span class="keyword">no</span>    <span class="number">2</span> Modern Applied Statistics ...       Ripley</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="此外排序条件也可以针对多列">此外排序条件也可以针对多列</h4><p>merge(authors, books, by.x = c(“surname”, “id”), by.y = c(“name”, “id”))这条命令从理论上说也是对的，只是结果当中不存在相同的行。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/技术篇/">技术篇</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/R/">R</a>, <a href="/tags/数据合并/">数据合并</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    <a href="/2015/05/31/push-ups/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2015/05/16/common-methods-of-dealing-with-data-frame/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+<section id="comment">
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="/2015/05/29/merge-function-in-R/" data-title="数据合并-merge函数" data-url="http://xukuang.github.io/2015/05/29/merge-function-in-R/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yiyuzhijian"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+  
+</section>
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:xukuang.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/学习篇/">学习篇</a><small>2</small></li>
+  
+    <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
+  
+    <li><a href="/categories/技术篇/">技术篇</a><small>17</small></li>
+  
+    <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
+  
+    <li><a href="/categories/读书篇/">读书篇</a><small>7</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+  </div>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</font></h3>
+<ul class="entry">
+<li>姓名：<a href=http://xukuang.github.io/about/>匡旭</a></li>
+<li>现状：博士在读</li>
+<li>Theme: <a href="https://github.com/zippera/lightum">Lightum</a></li>
+<li>QQ: <font color="red">530731251</font></li>
+</ul>
+</div>
+
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=3051539547&verifier=655ac839&colors=ffffff,d3f9bc,464646,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
+<li><a href="http://jianshu.io/">简书</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="outer">
+    <div id="footer-info" class="inner" style="text-align:center;">
+      <table width="100%" border="0">
+        <tr>
+          <td style="text-align:left" bgcolor="white">
+            Copyright &copy; 2014-2016 <a href="http://xukuang.github.io/about/" target="_blank">Xu Kuang</a> &nbsp; &nbsp;<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            Theme <a href="https://github.com/zippera/lightum" target="_blank">Lightum</a>&nbsp; &nbsp;
+            Hosted on <a href="http://github.com/" target="_blank">GitHub</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+</div></footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>
+

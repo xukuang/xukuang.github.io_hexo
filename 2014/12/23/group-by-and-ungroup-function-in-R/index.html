@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>group和ungroup函数 | YiYuZhiJian</title>
+  <meta name="author" content="kuang xu">
+  
+  <meta name="description" content="Walk steps step by step">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="group和ungroup函数"/>
+  <meta property="og:site_name" content="YiYuZhiJian"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="YiYuZhiJian" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">YiYuZhiJian</a></h1>
+  <h2><a href="/">你害怕一件事，可还是要去做，那才是勇敢。</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	    <li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-23T00:11:11.000Z"><a href="/2014/12/23/group-by-and-ungroup-function-in-R/">12月23 2014</a></time>
+      
+      
+  
+    <h1 class="title">group和ungroup函数</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>　　<strong>dplyr</strong>包是<strong>Hadley</strong>即<strong>plyr</strong>包之后又推出的一个新的数据处理包。如果说相对于R中的基础函数，<strong>plyr</strong>包使输出结果更加友好，那么<strong>dplyr</strong>包不仅使输出的结果更加友好，而且大大提高了运算效率。无论如何，今天这篇文章，主要是介绍<strong>dplyr</strong>中极其小的一部分，<strong>group_by</strong>和<strong>ungroup</strong>函数的使用。(下文所有运行结果，都使用<strong>Tab</strong>进行退格，然后以<strong>#</strong>开始。也有部分结果太长没有展示)</p>
+<h2 id="group_by_&amp;_ungroup基础">group_by &amp; ungroup基础</h2><p><strong>group_by</strong>函数对数据进行分组，<strong>ungroup</strong>函数去除已分组数据的分组。此外，函数<strong>groups</strong>则能显示出分组数据的分组依据（对于已使用<strong>ungroup</strong>函数去除分组的数据，<strong>groups</strong>函数则显示为NULL）。</p>
+<h3 id="原始数据">原始数据</h3><p>原始数据的概况。<a id="more"></a></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(dplyr)</span><br><span class="line"><span class="comment">## 原始数据</span></span><br><span class="line"><span class="comment">### 这是一个32X12的数据框</span></span><br><span class="line">mtcars</span><br><span class="line">    <span class="comment">#                      mpg cyl  disp  hp drat    wt  qsec vs am gear carb</span></span><br><span class="line">    <span class="comment"># Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4</span></span><br><span class="line">    <span class="comment"># Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4</span></span><br><span class="line">    <span class="comment"># Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1</span></span><br><span class="line">    <span class="comment"># Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1</span></span><br><span class="line">    <span class="comment"># Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2</span></span><br><span class="line">    <span class="comment"># Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1</span></span><br><span class="line">    <span class="comment"># Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4</span></span><br><span class="line">    <span class="comment"># Merc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2</span></span><br><span class="line">    <span class="comment"># Merc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2</span></span><br><span class="line">    <span class="comment"># Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4</span></span><br><span class="line">    <span class="comment"># Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4</span></span><br><span class="line">    <span class="comment"># Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3</span></span><br><span class="line">    <span class="comment"># Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3</span></span><br><span class="line">    <span class="comment"># Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3</span></span><br><span class="line">    <span class="comment"># Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4</span></span><br><span class="line">    <span class="comment"># Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4</span></span><br><span class="line">    <span class="comment"># Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4</span></span><br><span class="line">    <span class="comment"># Fiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1</span></span><br><span class="line">    <span class="comment"># Honda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2</span></span><br><span class="line">    <span class="comment"># Toyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1</span></span><br><span class="line">    <span class="comment"># Toyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1</span></span><br><span class="line">    <span class="comment"># Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2</span></span><br><span class="line">    <span class="comment"># AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2</span></span><br><span class="line">    <span class="comment"># Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4</span></span><br><span class="line">    <span class="comment"># Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2</span></span><br><span class="line">    <span class="comment"># Fiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1</span></span><br><span class="line">    <span class="comment"># Porsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2</span></span><br><span class="line">    <span class="comment"># Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2</span></span><br><span class="line">    <span class="comment"># Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4</span></span><br><span class="line">    <span class="comment"># Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6</span></span><br><span class="line">    <span class="comment"># Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8</span></span><br><span class="line">    <span class="comment"># Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2</span></span><br></pre></td></tr></table></figure>
+<h3 id="group_by_&amp;_ungroup">group_by &amp; ungroup</h3><p><strong>group_by</strong>函数对数据进行分组时，默认情况下对处理的数据的分组情况是忽略掉的，只有把参数add = TRUE才在原始数据的基础上添加新的分类。因此，在默认情况下，在第二次分组时，可以对已分组数据直接进行第二次分组，而不必先用<strong>ungroup</strong>函数拆除已有分组指标。<br><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 对数据mtcars进行分组，分组依据为cyl</span></span><br><span class="line">by_cyl &lt;- group_by(mtcars, cyl)</span><br><span class="line">groups(by_cyl)</span><br><span class="line">    <span class="comment"># [[1]]</span></span><br><span class="line">    <span class="comment"># cyl</span></span><br><span class="line"><span class="comment">## 去除数据mtby_cyl分组依据后，分组依据为NULL</span></span><br><span class="line">ungroup(by_cyl)</span><br><span class="line">    <span class="comment"># NULL</span></span><br><span class="line"><span class="comment">## 这里对by_cyl先去除第一次的分组依据不是必须的</span></span><br><span class="line">groups(group_by(ungroup(by_cyl), vs, am))</span><br><span class="line">    <span class="comment"># [[1]]</span></span><br><span class="line">    <span class="comment"># vs</span></span><br><span class="line">    <span class="comment"># [[2]]</span></span><br><span class="line">    <span class="comment"># am</span></span><br><span class="line"><span class="comment">## 对已分组数据by_cyl进行再次分组，分组依据为vs和am，而没有cyl（参数add默认值为TRUE）</span></span><br><span class="line">groups(group_by(by_cyl, vs, am))</span><br><span class="line">    <span class="comment"># [[1]]</span></span><br><span class="line">    <span class="comment"># vs</span></span><br><span class="line">    <span class="comment"># [[2]]</span></span><br><span class="line">    <span class="comment"># am</span></span><br><span class="line"><span class="comment">## 对以分组数据by_cyl进行再次分组，分组依据为cyl、vs和am</span></span><br><span class="line">groups(group_by(by_cyl, vs, am, add = <span class="literal">TRUE</span>))</span><br><span class="line">    <span class="comment"># [[1]]</span></span><br><span class="line">    <span class="comment"># cyl</span></span><br><span class="line">    <span class="comment"># [[2]]</span></span><br><span class="line">    <span class="comment"># vs</span></span><br><span class="line">    <span class="comment"># [[3]]</span></span><br><span class="line">    <span class="comment"># am</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="group_by_&amp;_ungroup延伸">group_by &amp; ungroup延伸</h2><p>使用<strong>group_by</strong>函数进行分组的数据，数据本身常常包含着分组依据，所以在未去除分组（<strong>ungroup</strong>）或下一次分组（使用<strong>group_by</strong>）前，分组依据常常保留，这会影响函数的运算结果，包括<strong>filter</strong>，<strong>arrange</strong>，函数和指标函数(<strong>n</strong>，<strong>sum</strong>，<strong>mean</strong>，<strong>sd</strong>，<strong>var</strong>，<strong>min</strong>，<strong>max</strong>函数）</p>
+<h3 id="filter函数">filter函数</h3><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">### 这里按cyl进行分组，所以筛选结果有3条</span></span><br><span class="line">filter(by_cyl, disp == max(disp))</span><br><span class="line">    <span class="comment"># Source: local data frame [3 x 11]</span></span><br><span class="line">    <span class="comment"># Groups: cyl</span></span><br><span class="line">    <span class="comment">#    mpg cyl  disp  hp drat    wt  qsec vs am gear carb</span></span><br><span class="line">    <span class="comment"># 1 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1</span></span><br><span class="line">    <span class="comment"># 2 24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2</span></span><br><span class="line">    <span class="comment"># 3 10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4</span></span><br></pre></td></tr></table></figure>
+<h3 id="arrange函数">arrange函数</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">arrange</span><span class="params">(by_cyl, disp)</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="各指标函数(以平均值为例)">各指标函数(以平均值为例)</h3><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 分组前后结果的差异，即x1与x3、x2与x4的差异</span></span><br><span class="line"><span class="comment">### x1和x求的是整体的平均值，x3和x4求的是按cyl进行分组后的平均值</span></span><br><span class="line"><span class="variable">temp =</span> mtcars %&gt;% mutate(<span class="variable">x1 =</span> mean(disp), <span class="variable">x2 =</span> mean(hp)) %&gt;% group_by(cyl) %&gt;% mutate(<span class="variable">x3 =</span> mean(disp), <span class="variable">x4 =</span> mean(hp))</span><br><span class="line">groups(temp)</span><br><span class="line">    <span class="comment"># [[1]]</span></span><br><span class="line">    <span class="comment"># cyl</span></span><br><span class="line">temp</span><br><span class="line"></span><br><span class="line"><span class="comment">## 两次分组之间的差异</span></span><br><span class="line"><span class="comment">## nvs1 等于nvs2，不等于n.vs.am</span></span><br><span class="line"><span class="comment">## 第一次分组, 显示按vs分类，各组的个数</span></span><br><span class="line">by_vs &lt;- mtcars %&gt;% arrange(vs, am) %&gt;% group_by(vs) %&gt;% mutate(n.<span class="variable">vs1 =</span> n())</span><br><span class="line">groups(by_vs)</span><br><span class="line">    <span class="comment"># [[1]]</span></span><br><span class="line">    <span class="comment"># vs</span></span><br><span class="line">by_vs</span><br><span class="line"></span><br><span class="line"><span class="comment">## 第二次分组</span></span><br><span class="line"><span class="comment">## 第一次分组在遇到第二次分组后作用就会消失，只显示按am分组，各组的个数</span></span><br><span class="line">by_vs_am &lt;- by_vs %&gt;% mutate(n.<span class="variable">vs2 =</span> n()) %&gt;% group_by(am) %&gt;% arrange(am)  %&gt;% mutate(n.vs.<span class="variable">am =</span> n())</span><br><span class="line">groups(by_vs_am)</span><br><span class="line">    <span class="comment"># [[1]]</span></span><br><span class="line">    <span class="comment"># am</span></span><br><span class="line">by_vs_am</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/技术篇/">技术篇</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/R/">R</a>, <a href="/tags/dplyr/">dplyr</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    <a href="/2015/04/05/the-letters-of-shencongwen-s-family/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2014/12/17/jixinlin-dairy-at-Jinghua/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+<section id="comment">
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="/2014/12/23/group-by-and-ungroup-function-in-R/" data-title="group和ungroup函数" data-url="http://xukuang.github.io/2014/12/23/group-by-and-ungroup-function-in-R/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yiyuzhijian"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+  
+</section>
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:xukuang.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/学习篇/">学习篇</a><small>2</small></li>
+  
+    <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
+  
+    <li><a href="/categories/技术篇/">技术篇</a><small>17</small></li>
+  
+    <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
+  
+    <li><a href="/categories/读书篇/">读书篇</a><small>7</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+  </div>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</font></h3>
+<ul class="entry">
+<li>姓名：<a href=http://xukuang.github.io/about/>匡旭</a></li>
+<li>现状：博士在读</li>
+<li>Theme: <a href="https://github.com/zippera/lightum">Lightum</a></li>
+<li>QQ: <font color="red">530731251</font></li>
+</ul>
+</div>
+
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=3051539547&verifier=655ac839&colors=ffffff,d3f9bc,464646,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
+<li><a href="http://jianshu.io/">简书</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="outer">
+    <div id="footer-info" class="inner" style="text-align:center;">
+      <table width="100%" border="0">
+        <tr>
+          <td style="text-align:left" bgcolor="white">
+            Copyright &copy; 2014-2016 <a href="http://xukuang.github.io/about/" target="_blank">Xu Kuang</a> &nbsp; &nbsp;<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            Theme <a href="https://github.com/zippera/lightum" target="_blank">Lightum</a>&nbsp; &nbsp;
+            Hosted on <a href="http://github.com/" target="_blank">GitHub</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+</div></footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>
+
