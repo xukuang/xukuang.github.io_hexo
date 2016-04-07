@@ -229,7 +229,12 @@
     </header>
     <div class="entry">
       
-        <p>简单线性回归用于计算两个连续型变量(如X，Y)之间的线性关系，具体地说就是计算下面公式中的$\alpha和\beta$。<br>$$Y = \alpha + \beta X + \varepsilon,   其中\varepsilon称为残差$$<br>为了找到这条直线的位置，我们使用最小二乘法(least squares approach)。最小二乘法确保所有点处的残差的平方和最小时计算$\alpha和\beta$，即下面示意图中$\sum<em>{i=1}^{4}\varepsilon_i^2 = \varepsilon_1^2 + \varepsilon_2^2 + \varepsilon_3^2 + \varepsilon_4^2$有最小值。<br><img src="/img/y_x.png" alt="简单线性相关示意图"><br>运用最小二乘法找出的这条最优直线一定经过点$(\overline{x}, \overline{y})$，斜率的估计值$\overhat{\beta} = \frac{\sum</em>{i=1}{n}(x<em>i-\overline{x})(y_i-\overline{y})}{\sum</em>{i=1}{n}(x_i-\overline{x})^2}$，截距的估计值$\overhat{\alpha} = $。模型中的总的方差</p>
+        <h2 id="前话">前话</h2><p>简单线性回归用于计算两个连续型变量(如X，Y)之间的线性关系，具体地说就是计算下面公式中的$\alpha和\beta$。<br>$$Y = \alpha + \beta X + \varepsilon,   其中\varepsilon称为残差$$<br>为了找到这条直线的位置，我们使用最小二乘法(least squares approach)。最小二乘法确保所有点处的残差的平方和最小时计算$\alpha和\beta$，即下面示意图中$\sum_{i=1}^{4}\varepsilon_i^2 = \varepsilon_1^2 + \varepsilon_2^2 + \varepsilon_3^2 + \varepsilon_4^2$有最小值。<br><img src="/img/y_x.png" alt="简单线性相关示意图"></p>
+<h2 id="各指标的计算">各指标的计算</h2><p>运用最小二乘法找出的这条最优直线一定经过点$(\overline{x}, \overline{y})$。其中</p>
+<ul>
+<li>斜率的估计值<br>$$\overhat{\beta} = \frac{\sum<em>{i=1}{n}(x_i-\overline{x})(y_i-\overline{y})}{\sum</em>{i=1}{n}(x_i-\overline{x})^2}$，</li>
+<li>截距的估计值$\overhat{\alpha} = $$<br>模型中的总的方差</li>
+</ul>
 
       
     </div>
