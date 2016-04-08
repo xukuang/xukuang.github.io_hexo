@@ -234,14 +234,14 @@
 <ul>
 <li>斜率$\alpha$和截距$\beta$的估计值<br><img src="/img/beta.png" alt=""></li>
 </ul>
-<h2 id="相关系数r">相关系数r</h2><p>$$r_{xy} = \frac{\overline{xy} - \bar{x}\bar{y} }{ \sqrt{ \left(\overline{x^2} - \bar{x}^2\right)\left(\overline{y^2} - \bar{y}^2\right)}}$$ </p>
+<h2 id="Pearson相关系数r">Pearson相关系数r</h2><p>$$r_{xy} = \frac{\overline{xy} - \bar{x}\bar{y} }{ \sqrt{ \left(\overline{x^2} - \bar{x}^2\right)\left(\overline{y^2} - \bar{y}^2\right)}}$$ </p>
 <h2 id="方差分析">方差分析</h2><p>在方差分析(ANOVA)中，总的平方和包含回归平方和残差平方和两部分。</p>
 <ul>
 <li>总的平方和<br>$$SS_{tot}=\sum_i (y_i-\bar{y})^2$$</li>
 <li>回归的平方和<br>$$SS_\text{reg}=\sum_i (\hat y_i -\bar{y})^2$$</li>
 <li>残差的平方和<br>$$SS_\text{res}=\sum_i (y_i - \hat y_i)^2=\sum_i e_i^2$$</li>
 </ul>
-<p>决定系数<br>$$R^2 = \frac{SS<em>{reg}}{SS</em>{tot}} = 1 - \frac{SS<em>{res}}{SS</em>{tot}}$$</p>
+<p>决定系数(拟合优势度)<br>$$R^2 = \frac{SS<em>{reg}}{SS</em>{tot}} = 1 - \frac{SS<em>{res}}{SS</em>{tot}}$$<br>决定系数是用来解释模型的解释度的，理论上与相关系数没有关系，只是在简单线性回归中，决定系数$R^2$值等于Pearson相关系数r的平方。</p>
 
       
     </div>
