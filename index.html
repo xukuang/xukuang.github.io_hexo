@@ -219,26 +219,28 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-04-08T04:25:50.000Z"><a href="/2016/04/07/moment-in_statistics/">4月7 2016</a></time>
+        <time datetime="2016-04-07T20:50:50.000Z"><a href="/2016/04/07/simple-linear-regression/">4月7 2016</a></time>
       
       
   
-    <h1 class="title"><a href="/2016/04/07/moment-in_statistics/">离散型随机变量的常用统计指标</a></h1>
+    <h1 class="title"><a href="/2016/04/07/simple-linear-regression/">简单线性回归中各指标在R中的计算</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <h2 id="期望">期望</h2><p>$$E[X] = \sum_{i=1}^n x_i$$<br>期望存在一下特性:</p>
+        <h2 id="前话">前话</h2><p>简单线性回归用于计算两个连续型变量(如X，Y)之间的线性关系，具体地说就是计算下面公式中的$\alpha和\beta$。<br>$$Y = \alpha + \beta X + \varepsilon,   其中\varepsilon称为残差$$<br>为了找到这条直线的位置，我们使用最小二乘法(least squares approach)。最小二乘法确保所有点处的残差的平方和最小时计算$\alpha和\beta$，即下面示意图中$\sum_{i=1}^{4}\varepsilon_i^2 = \varepsilon_1^2 + \varepsilon_2^2 + \varepsilon_3^2 + \varepsilon_4^2$有最小值。<br><img src="/img/y_x_scatter_plot.png" alt="简单线性相关示意图"></p>
+<h2 id="各指标的计算">各指标的计算</h2><p>运用最小二乘法找出的这条最优直线一定经过点$(\overline{x}, \overline{y})$。其中</p>
 <ul>
-<li>$E[aX + bY] = aE[X] + bE(Y)$</li>
-<li>一般情况下，$E[X Y] \neq E[X]E(Y)$；当X和Y相互独立时，才有$E[X Y] = E[X]E(Y)$</li>
+<li>斜率$\alpha$和截距$\beta$的估计值<br><img src="/img/beta.png" alt=""><h2 id="相关系数r">相关系数r</h2>$$r_{xy} = \frac{\overline{xy} - \bar{x}\bar{y} }{ \sqrt{ \left(\overline{x^2} - \bar{x}^2\right)\left(\overline{y^2} - \bar{y}^2\right)}}$$ </li>
 </ul>
-<h2 id="方差">方差</h2><p>方差描述的是随机变量的离散程度，也就是该变量离其期望值的距离。<br>$$Var(X) = E[(X -E[X])] = E[X^{2} - 2X E[X] + (E[X])^{2}] = E[X^{2}] - (E[X])^{2}$$<br>此外，方差还可以看作是随机变量和自身的协方差$Var(X) = Cov(X, X)$</p>
-<h2 id="标准差">标准差</h2><p>标准差是一组数值自平均值分散开来的程度的一种测量观念。<br>总体的标准差$SD = \sqrt{\frac{Var(x)}{N}}$，样本的标准差$SD = \sqrt{\frac{Var(x)}{N - 1}}$</p>
-<h2 id="协方差">协方差</h2><p>协方差用于衡量两个变量的总体误差。而方差是协方差的一种特殊情况，即当两个变量是相同的情况。<br>$$Cov(X, Y) = E((X - E[X])(Y - E(Y)) = E[XY] - E[X] E[Y]$$<br>协方差表示的是两个变量的总体的误差，这与只表示一个变量误差的方差不同。 如果两个变量的变化趋势一致，也就是说如果其中一个大于自身的期望值，另外一个也大于自身的期望值，那么两个变量之间的协方差就是正值。如果两个变量的变化趋势相反，即其中一个大于自身的期望值，另外一个却小于自身的期望值，那么两个变量之间的协方差就是负值。如果X与Y是统计独立的，那么二者之间的协方差就是0，但是反过来并不成立，即如果X与Y的协方差为0，二者并不一定是统计独立的。</p>
-<h2 id="协方差的相关性η(线性相关)">协方差的相关性η(线性相关)</h2><p> $$\eta =  \frac{cov(X, Y)}{\sqrt{var(X) \cdot var(Y)}} $$<br>协方差的相关性η更准确地说是线性相关性，是一个衡量线性独立的无量纲数，其取值在[－1,+1]之间。相关性η = 1时称为“完全线性相关”(相关性η = -1时称为“完全线性负相关”)，此时将$Y<em>{i}$对$X</em>{i}$作Y-X散点图，将得到一组精确排列在直线上的点；相关性数值介于－1到1之间时，其绝对值越接近1表明线性相关性越好，作散点图得到的点的排布越接近一条直线.相关性为0(因而协方差也为0)的两个随机变量又被称为是不相关的，或者更准确地说叫作“线性无关”、“线性不相关”，这仅仅表明X 与Y两随机变量之间没有线性相关性，并非表示它们之间一定没有任何内在的（非线性）函数关系，和前面所说的“X、Y二者并不一定是统计独立的”说法一致。</p>
-<p><strong>本篇文章整理自维基百科。</strong></p>
+<h2 id="方差分析">方差分析</h2><p>在方差分析(ANOVA)中，总的平方和包含回归平方和残差平方和两部分.</p>
+<ul>
+<li>总的平方和<br>$$SS_{tot}=\sum_i (y_i-\bar{y})^2$$</li>
+<li>回归的平方和<br>$$SS_\text{reg}=\sum_i (f_i -\bar{y})^2$$</li>
+<li>残差的平方和<br>SS_\text{res}=\sum_i (y_i - f_i)^2=\sum_i e_i^2$$</li>
+</ul>
+<p>决定系数<br>$$R^2 = \frac{SS<em>{reg}{SS</em>{tot}} = 1 - \frac{SS<em>{res}{SS</em>{tot}}$$<br>$$R^2 \equiv 1 - {SS<em>{\rm res}\over SS</em>{\rm tot}}$$ </p>
 
       
     </div>
@@ -274,27 +276,28 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-04-07T20:50:50.000Z"><a href="/2016/04/07/simple-linear-regression/">4月7 2016</a></time>
+        <time datetime="2016-04-07T04:25:50.000Z"><a href="/2016/04/06/moment-in_statistics/">4月6 2016</a></time>
       
       
   
-    <h1 class="title"><a href="/2016/04/07/simple-linear-regression/">简单线性回归中各指标在R中的计算</a></h1>
+    <h1 class="title"><a href="/2016/04/06/moment-in_statistics/">离散型随机变量的常用统计指标</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <h2 id="前话">前话</h2><p>简单线性回归用于计算两个连续型变量(如X，Y)之间的线性关系，具体地说就是计算下面公式中的$\alpha和\beta$。<br>$$Y = \alpha + \beta X + \varepsilon,   其中\varepsilon称为残差$$<br>为了找到这条直线的位置，我们使用最小二乘法(least squares approach)。最小二乘法确保所有点处的残差的平方和最小时计算$\alpha和\beta$，即下面示意图中$\sum_{i=1}^{4}\varepsilon_i^2 = \varepsilon_1^2 + \varepsilon_2^2 + \varepsilon_3^2 + \varepsilon_4^2$有最小值。<br><img src="/img/y_x_scatter_plot.png" alt="简单线性相关示意图"></p>
-<h2 id="各指标的计算">各指标的计算</h2><p>运用最小二乘法找出的这条最优直线一定经过点$(\overline{x}, \overline{y})$。其中</p>
+        <h2 id="期望">期望</h2><p>$$E[X] = \sum_{i=1}^n x_i$$<br>期望存在一下特性:</p>
 <ul>
-<li>斜率的估计值<br><img src="/img/beta.png" alt=""><br>$$\hat{\beta} = \frac{\sum<em>{i=1}^{n}(x</em>{i}-\overline{x})(y<em>{i}-\overline{y})}{\sum</em>{i=1}{n}(x_{i}-\overline{x})^{2}}$$</li>
-<li>截距的估计值$\overhat{\alpha} = $$<br>模型中的总的方差</li>
-</ul>
-
+<li>$E[aX + bY] = aE[X] + bE(Y)$</li>
+<li>一般情况下，$E[X Y] \neq E[X]E(Y)$；当X和Y相互独立时，才有$E[X Y] = E[X]E(Y)$
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/2016/04/06/moment-in_statistics/#more" class="more-link">阅读全文</a>
+          </div>
         
         
       
