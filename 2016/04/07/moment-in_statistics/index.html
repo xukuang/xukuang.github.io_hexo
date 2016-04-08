@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>线性回归 | YiYuZhiJian</title>
+  <title>离散型随机变量的常用统计指标 | YiYuZhiJian</title>
   <meta name="author" content="kuang xu">
   
   <meta name="description" content="Walk steps step by step">
@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="离散型随机变量的常用统计指标"/>
   <meta property="og:site_name" content="YiYuZhiJian"/>
 
   
@@ -200,25 +200,108 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title tag">线性回归</h2>
-
-
-  <div class="archive">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
     
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2016-04-07T20:50:50.000Z"><a href="/2016/04/07/simple-linear-regression/">4月7 2016</a></time>
-            
-              <h1 class="title"><a href="/2016/04/07/simple-linear-regression/">简单线性回归中各指标在R中的计算</a></h1>
-            
-          </header>
-        </div>
-      </article>
+      <img src="">
     
   </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-04-08T04:25:50.000Z"><a href="/2016/04/07/moment-in_statistics/">4月7 2016</a></time>
+      
+      
+  
+    <h1 class="title">离散型随机变量的常用统计指标</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="期望">期望</h2><p>$$E[X] = \sum<em>{i=1}^{n} x</em>{i}$$<br>期望存在一下特性，</p>
+<ul>
+<li>$E[aX + bY] = aE[X] + bE(Y)$</li>
+<li>一般情况下，$E[X Y] \neq E[X]E(Y)$；当X和Y相互独立时，才有$E[X Y] = E[X]E(Y)$<h2 id="方差">方差</h2>方差描述的是随机变量的离散程度，也就是该变量离其期望值的距离。<br>$$Var(X) = E[(X -E[X])] = E[X^{2} - 2X E[X] + (E[X])^{2}] = E[X^{2}] - (E[X])^{2}$$<br>此外，方差还可以看作是随机变量和自身的协方差$Var(X) = Cov(X, X)$<h2 id="标准差">标准差</h2>标准差是一组数值自平均值分散开来的程度的一种测量观念。<br>总体的标准差$SD = \sqrt[\frac{Var(x)}{N}]$，样本的标准差$SD = \sqrt[\frac{Var(x)}{N - 1}]$<h2 id="协方差">协方差</h2>协方差用于衡量两个变量的总体误差。而方差是协方差的一种特殊情况，即当两个变量是相同的情况。<br>$$Cov(X, Y) = E((X - E[X])(Y - E(Y)) = E[XY] - E[X] E[Y]$$<br>协方差表示的是两个变量的总体的误差，这与只表示一个变量误差的方差不同。 如果两个变量的变化趋势一致，也就是说如果其中一个大于自身的期望值，另外一个也大于自身的期望值，那么两个变量之间的协方差就是正值。如果两个变量的变化趋势相反，即其中一个大于自身的期望值，另外一个却小于自身的期望值，那么两个变量之间的协方差就是负值。如果X与Y是统计独立的，那么二者之间的协方差就是0，但是反过来并不成立，即如果X与Y的协方差为0，二者并不一定是统计独立的。<h2 id="协方差的相关性η(线性相关)">协方差的相关性η(线性相关)</h2>$$\eta =  \frac[cov(X, Y)}{\sqrt{var(X) \cdot \operatorname{var}(Y)}} $$<br>协方差的相关性η更准确地说是线性相关性，是一个衡量线性独立的无量纲数，其取值在[－1,+1]之间。相关性η = 1时称为“完全线性相关”(相关性η = -1时称为“完全线性负相关”)，此时将$Y<em>{i}$对$X</em>{i}$作Y-X散点图，将得到一组精确排列在直线上的点；相关性数值介于－1到1之间时，其绝对值越接近1表明线性相关性越好，作散点图得到的点的排布越接近一条直线.相关性为0(因而协方差也为0)的两个随机变量又被称为是不相关的，或者更准确地说叫作“线性无关”、“线性不相关”，这仅仅表明X 与Y两随机变量之间没有线性相关性，并非表示它们之间一定没有任何内在的（非线性）函数关系，和前面所说的“X、Y二者并不一定是统计独立的”说法一致。</li>
+</ul>
+<p><strong>本篇文章整理自维基百科。</strong></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/技术篇/">技术篇</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/R/">R</a>, <a href="/tags/统计/">统计</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2016/04/07/simple-linear-regression/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+<section id="comment">
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="/2016/04/07/moment-in_statistics/" data-title="离散型随机变量的常用统计指标" data-url="http://xukuang.github.io/2016/04/07/moment-in_statistics/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yiyuzhijian"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+  
+</section>
+
+
+
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
@@ -237,7 +320,7 @@
   
     <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
   
-    <li><a href="/categories/技术篇/">技术篇</a><small>18</small></li>
+    <li><a href="/categories/技术篇/">技术篇</a><small>19</small></li>
   
     <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
   
@@ -251,7 +334,7 @@
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/线性回归/" style="font-size: 10px;">线性回归</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/统计/" style="font-size: 12px;">统计</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
   </div>
 </div>
 

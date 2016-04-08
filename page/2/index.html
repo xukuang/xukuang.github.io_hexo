@@ -219,6 +219,60 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2016-01-14T03:14:06.000Z"><a href="/2016/01/13/join-function/">1月13 2016</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2016/01/13/join-function/">数据合并-join函数</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>前面介绍了数据框合并的merge函数方法，其实还可以借助plyr和dplyr包中的join函数进行数据框的合并，它们数据框合并的原理同样是数据框的合并原理是这样的：首先在x表按指定列每一行的内容在y表的指定列都进行逐行匹配，直到x中所有行匹配完为止。</p>
+<h2 id="数据说明">数据说明</h2><p>这里的数据仍使用merge函数中的两个数据(略有修改)：作者信息数据和书籍信息数据。依照下面介绍的合并条件，这两个数据既有相同的内容，又有彼此中不存在的内容。</p>
+<ul>
+<li>作者信息数据<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">authors &lt;- data.frame(</span><br><span class="line">	id =  <span class="function"><span class="title">c</span><span class="params">(<span class="number">2</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">3</span>)</span></span>,</span><br><span class="line">	surname = <span class="function"><span class="title">I</span><span class="params">(c(<span class="string">"Tukey"</span>, <span class="string">"Venables"</span>, <span class="string">'kx'</span>, <span class="string">"Tierney"</span>, <span class="string">"Ripley"</span>, <span class="string">"McNeil"</span>, <span class="string">"kuangxu"</span>)</span></span>),</span><br><span class="line">	nationality = <span class="function"><span class="title">c</span><span class="params">(<span class="string">"US"</span>, <span class="string">"Australia"</span>, <span class="string">'China'</span>, <span class="string">"US"</span>, <span class="string">"UK"</span>, <span class="string">"Australia"</span>, <span class="string">"China"</span>)</span></span>,</span><br><span class="line">	deceased = <span class="function"><span class="title">c</span><span class="params">(<span class="string">"yes"</span>, rep(<span class="string">"no"</span>, <span class="number">6</span>)</span></span>))</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2016/01/13/join-function/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2016-01-10T19:48:36.000Z"><a href="/2016/01/10/3dplot/">1月10 2016</a></time>
       
       
@@ -398,55 +452,6 @@
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-05-16T15:28:19.000Z"><a href="/2015/05/16/daqingxiangguo/">5月16 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/05/16/daqingxiangguo/">大清相国</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h2 id="读这本书的原因">读这本书的原因</h2><p>在辽宁省委直属机关党校的阅览室看到的这本书，话说省委党校阅览室的书籍真不错，很多书看了名字就有让人想读的欲望。选这本书，只是觉得历史小说应该会很有趣，在加上以前读过二月河的《康熙大帝》，但是对主人公陈廷敬印象不深，就想看看。回来后接着读的时候，在网上发现，这本书原来还被王岐山极力推崇，这才突然有些明白，省委党校的书质量不错是有原因的。不过，发现自己读书还是多痴迷于故事情节的曲折(这要在以后的阅读中更加注意)，这本书可以说是不分昼夜地迅速看完啊。
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/05/16/daqingxiangguo/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
 
 <nav id="pagination">
   
@@ -474,7 +479,7 @@
   
     <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
   
-    <li><a href="/categories/技术篇/">技术篇</a><small>18</small></li>
+    <li><a href="/categories/技术篇/">技术篇</a><small>19</small></li>
   
     <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
   
@@ -488,7 +493,7 @@
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/线性回归/" style="font-size: 10px;">线性回归</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/统计/" style="font-size: 12px;">统计</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
   </div>
 </div>
 
