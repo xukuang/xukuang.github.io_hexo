@@ -219,6 +219,56 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2015-05-16T21:23:57.000Z"><a href="/2015/05/16/common-methods-of-dealing-with-data-frame/">5月16 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/05/16/common-methods-of-dealing-with-data-frame/">数据框基本操作的常见方法</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>本文所说的数据框基本操作，主要包括添加新列、数据排列、数据筛选、数据选择和对所有列进行相同操作，针对每一种操作在基础包和dplyr包中使用方法进行了对比介绍。相对基础包的处理方法，dplyr包中的方法除了更加灵活外，处理速度也会大幅度提升。</p>
+<h2 id="添加新列">添加新列</h2><p>使用的数据companiesData来自于网络，它是苹果、谷歌以及微软等三家公司在2010到2013年3年间的营收与利润数额，其中fy为年份，company为公司名称，revenue为公司营收，profit为公司利润。创建两列：公司所属国家(country)，其值为America；利润列（margin），其值等于利润(profit)除以营收(revenue)再乘以100。<br><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fy &lt;- c(<span class="number">2010</span>,<span class="number">2011</span>,<span class="number">2012</span>,<span class="number">2010</span>,<span class="number">2011</span>,<span class="number">2012</span>,<span class="number">2010</span>,<span class="number">2011</span>,<span class="number">2012</span>)  </span><br><span class="line">company &lt;- c(<span class="string">"Apple"</span>,<span class="string">"Apple"</span>,<span class="string">"Apple"</span>,<span class="string">"Google"</span>,<span class="string">"Google"</span>,<span class="string">"Google"</span>,<span class="string">"Microsoft"</span>,  </span><br><span class="line"><span class="string">"Microsoft"</span>,<span class="string">"Microsoft"</span>)  </span><br><span class="line">revenue &lt;- c(<span class="number">65225</span>,<span class="number">108249</span>,<span class="number">156508</span>,<span class="number">29321</span>,<span class="number">37905</span>,<span class="number">50175</span>,<span class="number">62484</span>,<span class="number">69943</span>,<span class="number">73723</span>)  </span><br><span class="line">profit &lt;- c(<span class="number">14013</span>,<span class="number">25922</span>,<span class="number">41733</span>,<span class="number">8505</span>,<span class="number">9737</span>,<span class="number">10737</span>,<span class="number">18760</span>,<span class="number">23150</span>,<span class="number">16978</span>)  </span><br><span class="line">companiesData &lt;- data.frame(fy, company, revenue, profit)</span><br></pre></td></tr></table></figure></p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/05/16/common-methods-of-dealing-with-data-frame/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2015-05-16T15:28:19.000Z"><a href="/2015/05/16/daqingxiangguo/">5月16 2015</a></time>
       
       
@@ -403,56 +453,6 @@
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-04-21T16:16:25.000Z"><a href="/2015/04/21/fuctions-in-dplyr/">4月21 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/04/21/fuctions-in-dplyr/">dplyr包中的基础操作</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>以前在网上看到的关于dplyr包基础函数的文章，放在这儿可以方便自己以后使用的时候随时查询,下文所有程序运行的结果，都使用Tab进行退格(仓皇上传，版面相当粗糙，后面抽时间详细整理一下)。</p>
-<h2 id="dplyr包的加载">dplyr包的加载</h2><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># dplyr包加载</span></span><br><span class="line"><span class="keyword">library</span>(dplyr)</span><br><span class="line"><span class="comment"># 加载使用到其中数据的这些包</span></span><br><span class="line"><span class="keyword">library</span>(Lahman) <span class="comment"># Lahman包的棒球比赛数据</span></span><br><span class="line"><span class="keyword">library</span>(hflights) <span class="comment"># hflights包里的飞机航班数据</span></span><br><span class="line">head(hflights)</span><br><span class="line">		 Year Month DayofMonth DayOfWeek DepTime ArrTime UniqueCarrier FlightNum TailNum ActualElapsedTime</span><br><span class="line">	<span class="number">5424</span> <span class="number">2011</span>     <span class="number">1</span>          <span class="number">1</span>         <span class="number">6</span>    <span class="number">1400</span>    <span class="number">1500</span>            AA       <span class="number">428</span>  N576AA                <span class="number">60</span></span><br><span class="line">	<span class="number">5425</span> <span class="number">2011</span>     <span class="number">1</span>          <span class="number">2</span>         <span class="number">7</span>    <span class="number">1401</span>    <span class="number">1501</span>            AA       <span class="number">428</span>  N557AA                <span class="number">60</span></span><br><span class="line">	<span class="number">5426</span> <span class="number">2011</span>     <span class="number">1</span>          <span class="number">3</span>         <span class="number">1</span>    <span class="number">1352</span>    <span class="number">1502</span>            AA       <span class="number">428</span>  N541AA                <span class="number">70</span></span><br><span class="line">	<span class="number">5427</span> <span class="number">2011</span>     <span class="number">1</span>          <span class="number">4</span>         <span class="number">2</span>    <span class="number">1403</span>    <span class="number">1513</span>            AA       <span class="number">428</span>  N403AA                <span class="number">70</span></span><br><span class="line">	<span class="number">5428</span> <span class="number">2011</span>     <span class="number">1</span>          <span class="number">5</span>         <span class="number">3</span>    <span class="number">1405</span>    <span class="number">1507</span>            AA       <span class="number">428</span>  N492AA                <span class="number">62</span></span><br><span class="line">	<span class="number">5429</span> <span class="number">2011</span>     <span class="number">1</span>          <span class="number">6</span>         <span class="number">4</span>    <span class="number">1359</span>    <span class="number">1503</span>            AA       <span class="number">428</span>  N262AA                <span class="number">64</span></span><br><span class="line">		 AirTime ArrDelay DepDelay Origin Dest Distance TaxiIn TaxiOut Cancelled CancellationCode Diverted</span><br><span class="line">	<span class="number">5424</span>      <span class="number">40</span>      -<span class="number">10</span>        <span class="number">0</span>    IAH  DFW      <span class="number">224</span>      <span class="number">7</span>      <span class="number">13</span>         <span class="number">0</span>                         <span class="number">0</span></span><br><span class="line">	<span class="number">5425</span>      <span class="number">45</span>       -<span class="number">9</span>        <span class="number">1</span>    IAH  DFW      <span class="number">224</span>      <span class="number">6</span>       <span class="number">9</span>         <span class="number">0</span>                         <span class="number">0</span></span><br><span class="line">	<span class="number">5426</span>      <span class="number">48</span>       -<span class="number">8</span>       -<span class="number">8</span>    IAH  DFW      <span class="number">224</span>      <span class="number">5</span>      <span class="number">17</span>         <span class="number">0</span>                         <span class="number">0</span></span><br><span class="line">	<span class="number">5427</span>      <span class="number">39</span>        <span class="number">3</span>        <span class="number">3</span>    IAH  DFW      <span class="number">224</span>      <span class="number">9</span>      <span class="number">22</span>         <span class="number">0</span>                         <span class="number">0</span></span><br><span class="line">	<span class="number">5428</span>      <span class="number">44</span>       -<span class="number">3</span>        <span class="number">5</span>    IAH  DFW      <span class="number">224</span>      <span class="number">9</span>       <span class="number">9</span>         <span class="number">0</span>                         <span class="number">0</span></span><br><span class="line">	<span class="number">5429</span>      <span class="number">45</span>       -<span class="number">7</span>       -<span class="number">1</span>    IAH  DFW      <span class="number">224</span>      <span class="number">6</span>      <span class="number">13</span>         <span class="number">0</span>                         <span class="number">0</span></span><br><span class="line">class(hflights)</span><br><span class="line">	[<span class="number">1</span>] <span class="string">"data.frame"</span></span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/04/21/fuctions-in-dplyr/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
 
 <nav id="pagination">
   
@@ -480,7 +480,7 @@
   
     <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
   
-    <li><a href="/categories/技术篇/">技术篇</a><small>19</small></li>
+    <li><a href="/categories/技术篇/">技术篇</a><small>20</small></li>
   
     <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
   
@@ -494,7 +494,7 @@
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/统计/" style="font-size: 12px;">统计</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/tidyr/" style="font-size: 10px;">tidyr</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/统计/" style="font-size: 12px;">统计</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
   </div>
 </div>
 

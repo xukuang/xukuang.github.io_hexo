@@ -1,0 +1,477 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>长宽数据之间的转化(二) | YiYuZhiJian</title>
+  <meta name="author" content="kuang xu">
+  
+  <meta name="description" content="Walk steps step by step">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="长宽数据之间的转化(二)"/>
+  <meta property="og:site_name" content="YiYuZhiJian"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="YiYuZhiJian" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">YiYuZhiJian</a></h1>
+  <h2><a href="/">你害怕一件事，可还是要去做，那才是勇敢。</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	    <li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-04-10T16:32:19.000Z"><a href="/2016/04/10/data-fomrat/">4月10 2016</a></time>
+      
+      
+  
+    <h1 class="title">长宽数据之间的转化(二)</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>前面一篇文章讲了用reshape2包中实现长宽数据的转化。这篇文章中介绍一下如何使用tidyr包中的函数实现长宽数据的转化。</p>
+<h2 id="宽数据转化为长数据">宽数据转化为长数据</h2><h3 id="gather函数">gather函数</h3><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gather(<span class="built_in">data</span>, key, value, <span class="attribute">...</span>, na<span class="built_in">.</span>rm <span class="subst">=</span> <span class="literal">FALSE</span>, convert <span class="subst">=</span> <span class="literal">FALSE</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>data</strong> 要转化的数据，数据格式为数据框类型或者可以转化为数据框类型<br><strong>key</strong>  转化后数据框的指标列的列名，用于存放原数据中不同的数据指标<br><strong>value</strong>  转化后数据框的数据列的列名，用于存放原数据中不同的数据指标对应的值<br><strong>…</strong> 可以指定哪些列聚到一列中。按那些列数据作为标准转化，这个参数接不能有那些列<br><strong>na.rm</strong> 是否去除数据中的NA，默认情况下为FALSE，不去除NA<br><a id="more"></a></p>
+<h3 id="实例">实例</h3><ul>
+<li><p>按所有列排成长数据)(默认情况下)</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 加载数据</span></span><br><span class="line">library(reshape2)</span><br><span class="line">head(airquality)</span><br><span class="line">    <span class="comment">#    time value</span></span><br><span class="line">    <span class="comment"># 1 Ozone    41</span></span><br><span class="line">    <span class="comment"># 2 Ozone    36</span></span><br><span class="line">    <span class="comment"># 3 Ozone    12</span></span><br><span class="line">    <span class="comment"># 4 Ozone    18</span></span><br><span class="line">    <span class="comment"># 5 Ozone    NA</span></span><br><span class="line">    <span class="comment"># 6 Ozone    28</span></span><br><span class="line">tail(airquality)</span><br><span class="line">    <span class="comment">#         time value</span></span><br><span class="line">    <span class="comment"># 913  Day    25</span></span><br><span class="line">    <span class="comment"># 914  Day    26</span></span><br><span class="line">    <span class="comment"># 915  Day    27</span></span><br><span class="line">    <span class="comment"># 916  Day    28</span></span><br><span class="line">    <span class="comment"># 917  Day    29</span></span><br><span class="line">    <span class="comment"># 918  Day    30</span></span><br><span class="line">dim(airquality)	</span><br><span class="line">	<span class="comment"># [1] 918   2</span></span><br><span class="line">library(tidyr)</span><br><span class="line">dat1 = gather(airquality, <span class="built_in">time</span>, <span class="built_in">value</span>)</span><br><span class="line">head(dat1)</span><br><span class="line">	<span class="comment"># 	Month Day variable value</span></span><br><span class="line">	<span class="comment"># 1     5   1    Ozone    41</span></span><br><span class="line">	<span class="comment"># 2     5   2    Ozone    36</span></span><br><span class="line">	<span class="comment"># 3     5   3    Ozone    12</span></span><br><span class="line">	<span class="comment"># 4     5   4    Ozone    18</span></span><br><span class="line">	<span class="comment"># 5     5   5    Ozone    NA</span></span><br><span class="line">	<span class="comment"># 6     5   6    Ozone    28</span></span><br><span class="line">dim(dat1)</span><br><span class="line">	<span class="comment"># [1] 612   4</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按Month将其他指标排成长数据</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 加载数据</span></span><br><span class="line"><span class="comment"># 方法一</span></span><br><span class="line">dat2 = gather(airquality, <span class="built_in">time</span>, <span class="built_in">value</span>, Ozone:Temp, Day)</span><br><span class="line"><span class="comment"># 方法二</span></span><br><span class="line">dat2 = gather(airquality, <span class="built_in">time</span>, <span class="built_in">value</span>, -Month)</span><br><span class="line">head(dat2)</span><br><span class="line">	<span class="comment">#    Month Day  time value</span></span><br><span class="line">	<span class="comment"># 1     5   1 Ozone    41</span></span><br><span class="line">	<span class="comment"># 2     5   2 Ozone    36</span></span><br><span class="line">	<span class="comment"># 3     5   3 Ozone    12</span></span><br><span class="line">	<span class="comment"># 4     5   4 Ozone    18</span></span><br><span class="line">	<span class="comment"># 5     5   5 Ozone    NA</span></span><br><span class="line">	<span class="comment"># 6     5   6 Ozone    28</span></span><br><span class="line">tail(dat2)</span><br><span class="line">	<span class="comment">#     Month Day time value</span></span><br><span class="line">	<span class="comment"># 607     9  25 Temp    63</span></span><br><span class="line">	<span class="comment"># 608     9  26 Temp    70</span></span><br><span class="line">	<span class="comment"># 609     9  27 Temp    77</span></span><br><span class="line">	<span class="comment"># 610     9  28 Temp    75</span></span><br><span class="line">	<span class="comment"># 611     9  29 Temp    76</span></span><br><span class="line">	<span class="comment"># 612     9  30 Temp    68</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按Month和Day列将其它列指标排成长数据</p>
+<figure class="highlight rsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">dat3 = <span class="shading"><span class="keyword">gather</span>(</span>airquality, id.vars = c(<span class="string">'Month'</span>, <span class="string">'Day'</span>),</span><br><span class="line"> measure = c(<span class="string">'Ozone'</span>, <span class="string">'Solar.R'</span>))</span><br><span class="line">head(dat2)</span><br><span class="line">	<span class="preprocessor"># 	Month Day variable value</span></span><br><span class="line">	<span class="preprocessor"># 1     5   1    Ozone    41</span></span><br><span class="line">	<span class="preprocessor"># 2     5   2    Ozone    36</span></span><br><span class="line">	<span class="preprocessor"># 3     5   3    Ozone    12</span></span><br><span class="line">	<span class="preprocessor"># 4     5   4    Ozone    18</span></span><br><span class="line">	<span class="preprocessor"># 5     5   5    Ozone    NA</span></span><br><span class="line">	<span class="preprocessor"># 6     5   6    Ozone    28</span></span><br><span class="line">dim(dat2)</span><br><span class="line">	<span class="preprocessor"># [1] 306   4</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对排列后的数据进行重命名</p>
+<figure class="highlight julia"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">dat3 = gather(airquality, <span class="keyword">type</span>, value.<span class="keyword">type</span>, Ozone:Temp)</span><br><span class="line">dat3 = gather(airquality, <span class="keyword">type</span>, value.<span class="keyword">type</span>, -Month, -Day)</span><br><span class="line">head(dat3) </span><br><span class="line">	<span class="comment"># 	 Month Day  type value.type</span></span><br><span class="line">	<span class="comment"># 1     5   1 Ozone         41</span></span><br><span class="line">	<span class="comment"># 2     5   2 Ozone         36</span></span><br><span class="line">	<span class="comment"># 3     5   3 Ozone         12</span></span><br><span class="line">	<span class="comment"># 4     5   4 Ozone         18</span></span><br><span class="line">	<span class="comment"># 5     5   5 Ozone         NA</span></span><br><span class="line">	<span class="comment"># 6     5   6 Ozone         28</span></span><br><span class="line">dim(dat3)</span><br><span class="line">	<span class="comment"># [1] 612   4</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>去除排列后数据中的NA</p>
+<figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#　 airquality$Ozone 数的前四列有44 个NA</span></span><br><span class="line"><span class="built_in">table</span>(is.na(airquality<span class="variable">$Ozone</span>)) <span class="comment"># 37</span></span><br><span class="line">	<span class="comment"># FALSE  TRUE </span></span><br><span class="line">	<span class="comment">#   116    37 </span></span><br><span class="line"><span class="built_in">table</span>(is.na(airquality<span class="variable">$Solar</span>.R)) <span class="comment"># 4</span></span><br><span class="line">	<span class="comment"># FALSE  TRUE </span></span><br><span class="line">	<span class="comment">#   146     7 </span></span><br><span class="line"><span class="built_in">table</span>(is.na(airquality<span class="variable">$Temp</span>)) <span class="comment"># 0</span></span><br><span class="line">	<span class="comment"># FALSE </span></span><br><span class="line">	<span class="comment">#   153 </span></span><br><span class="line"><span class="built_in">table</span>(is.na(airquality<span class="variable">$Wind</span>)) <span class="comment"># 0</span></span><br><span class="line">	<span class="comment"># FALSE </span></span><br><span class="line">	<span class="comment">#   153 </span></span><br><span class="line">dat4 = gather(airquality, type, value.type, Ozone:Temp, na.rm = TRUE)</span><br><span class="line">head(dat4)</span><br><span class="line">	<span class="comment">#   Month Day  type value.type</span></span><br><span class="line">	<span class="comment"># 1     5   1 Ozone         41</span></span><br><span class="line">	<span class="comment"># 2     5   2 Ozone         36</span></span><br><span class="line">	<span class="comment"># 3     5   3 Ozone         12</span></span><br><span class="line">	<span class="comment"># 4     5   4 Ozone         18</span></span><br><span class="line">	<span class="comment"># 6     5   6 Ozone         28</span></span><br><span class="line">	<span class="comment"># 7     5   7 Ozone         23</span></span><br><span class="line">dim(dat4)<span class="comment"># 比dat3少44行</span></span><br><span class="line">	<span class="comment"># [1] 568   4</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="长数据转化为宽数据">长数据转化为宽数据</h2><h3 id="spread函数">spread函数</h3><figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spread(data, key, value,<span class="instruction"> fill </span>= NA, convert = FALSE, drop = TRUE<span class="function">)</span></span><br></pre></td></tr></table></figure>
+<p><strong>data</strong> 要转化的数据，数据格式为数据框类型或者可以转化为数据框类型<br><strong>key</strong>  需要将变量值拓展为字段的变量<br><strong>value</strong>  需要分散的值<br><strong>fill</strong> 不存在的组合值的显示结果。默认的显示为NA。数据类型为数值型向量<br><strong>drop</strong> 确认不存在分分类组合是否显示，默认情况下显示</p>
+<h3 id="实例-1">实例</h3><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">air1 =  spread(dat4, type, value.type)</span><br><span class="line">dim(air1)</span><br><span class="line">	<span class="comment"># [1] 153   6</span></span><br><span class="line">head(air1) <span class="comment"># 数据与airquality相同</span></span><br><span class="line">	<span class="comment"># 	Month Day Ozone Solar.R Wind Temp</span></span><br><span class="line">	<span class="comment"># 1     5   1    41     190  7.4   67</span></span><br><span class="line">	<span class="comment"># 2     5   2    36     118  8.0   72</span></span><br><span class="line">	<span class="comment"># 3     5   3    12     149 12.6   74</span></span><br><span class="line">	<span class="comment"># 4     5   4    18     313 11.5   62</span></span><br><span class="line">	<span class="comment"># 5     5   5    NA      NA 14.3   56</span></span><br><span class="line">	<span class="comment"># 6     5   6    28      NA 14.9   66</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>不存在的分类是否显示，以及怎么显示<figure class="highlight julia"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">air5 = spread(dat4, <span class="keyword">type</span>, value.<span class="keyword">type</span>, drop = F) <span class="comment"># 组合上存在的结果都显示</span></span><br><span class="line">tail(air5) <span class="comment"># 这里的最后一行只是组合上存在，数据中并不在</span></span><br><span class="line">	<span class="comment"># 		 Month Day Ozone Solar.R Wind Temp</span></span><br><span class="line">	<span class="comment"># 150      9  26     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 151      9  27     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 152      9  28     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 153      9  29     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 154      9  30     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 155      9  31     0       0    0    0</span></span><br><span class="line">tail(spread(dat4, <span class="keyword">type</span>, value.<span class="keyword">type</span>, drop = F, fill= -<span class="number">1</span>)) <span class="comment"># 更改不存在结果的显示值，最后一行显示为-1</span></span><br><span class="line">	<span class="comment"># 		Month Day Ozone Solar.R Wind Temp</span></span><br><span class="line">	<span class="comment"># 150     9  26     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 151     9  27     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 152     9  28     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 153     9  29     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 154     9  30     1       1    1    1</span></span><br><span class="line">	<span class="comment"># 155     9  31    -1      -1   -1   -1</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="tidyr包中的其它函数">tidyr包中的其它函数</h2><h3 id="seperate函数">seperate函数</h3><p>unite()函数可将多列合并为一列。<br><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unite(<span class="built_in">data</span>, col, <span class="attribute">...</span>, sep <span class="subst">=</span> <span class="string">"_"</span>, remove <span class="subst">=</span> <span class="literal">TRUE</span>)</span><br></pre></td></tr></table></figure></p>
+<p><strong>data</strong> 要处理的数据框<br><strong>col</strong> 被组合的新列名称<br><strong>…</strong> 指定哪些列需要被组合<br><strong>sep</strong> 组合列之间的连接符，默认为下划线<br><strong>remove</strong> 是否删除被组合的列，默认删除<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span>.seed(<span class="number">10</span>)</span><br><span class="line"><span class="built_in">date</span> &lt;- <span class="keyword">as</span>.Date(<span class="string">'2016-04-10'</span>) + <span class="number">0</span>:<span class="number">14</span></span><br><span class="line">hour &lt;- sample(<span class="number">1</span>:<span class="number">24</span>, <span class="number">15</span>)</span><br><span class="line"><span class="built_in">min</span> &lt;- sample(<span class="number">1</span>:<span class="number">60</span>, <span class="number">15</span>)</span><br><span class="line"><span class="keyword">second</span> &lt;- sample(<span class="number">1</span>:<span class="number">60</span>, <span class="number">15</span>)</span><br><span class="line">event &lt;- sample(letters, <span class="number">15</span>)</span><br><span class="line">data &lt;- data.frame(<span class="built_in">date</span>, hour, <span class="built_in">min</span>, <span class="keyword">second</span>, event)</span><br><span class="line">data</span><br><span class="line">	<span class="comment"># 			date hour min second event</span></span><br><span class="line">	<span class="comment"># 1  2016-04-10   13  26     33     e</span></span><br><span class="line">	<span class="comment"># 2  2016-04-11    8   4      6     a</span></span><br><span class="line">	<span class="comment"># 3  2016-04-12   10  16     10     l</span></span><br><span class="line">	<span class="comment"># 4  2016-04-13   15  23     52     c</span></span><br><span class="line">	<span class="comment"># 5  2016-04-14    2  47     24     r</span></span><br><span class="line">	<span class="comment"># 6  2016-04-15    5  48     42     h</span></span><br><span class="line">	<span class="comment"># 7  2016-04-16   19  34     45     s</span></span><br><span class="line">	<span class="comment"># 8  2016-04-17   18  42     51     z</span></span><br><span class="line">	<span class="comment"># 9  2016-04-18   22  19     36     i</span></span><br><span class="line">	<span class="comment"># 10 2016-04-19    7  21     26     d</span></span><br><span class="line">	<span class="comment"># 11 2016-04-20   16  36     14     j</span></span><br><span class="line">	<span class="comment"># 12 2016-04-21   23  53     12     g</span></span><br><span class="line">	<span class="comment"># 13 2016-04-22   20  12      1     o</span></span><br><span class="line">	<span class="comment"># 14 2016-04-23   21  37     35     f</span></span><br><span class="line">	<span class="comment"># 15 2016-04-24    4  17     49     n</span></span><br><span class="line"></span><br><span class="line">dataNew &lt;- data %&gt;%</span><br><span class="line">  unite(datehour, <span class="built_in">date</span>, hour, sep = <span class="string">' '</span>) %&gt;%</span><br><span class="line">  unite(datetime, datehour, <span class="built_in">min</span>, <span class="keyword">second</span>, sep = <span class="string">':'</span>)</span><br><span class="line">	<span class="comment">#              datetime event</span></span><br><span class="line">	<span class="comment">#1  2016-04-10 13:26:33     e</span></span><br><span class="line">	<span class="comment">#2     2016-04-11 8:4:6     a</span></span><br><span class="line">	<span class="comment">#3  2016-04-12 10:16:10     l</span></span><br><span class="line">	<span class="comment">#4  2016-04-13 15:23:52     c</span></span><br><span class="line">	<span class="comment">#5   2016-04-14 2:47:24     r</span></span><br><span class="line">	<span class="comment">#6   2016-04-15 5:48:42     h</span></span><br><span class="line">	<span class="comment">#7  2016-04-16 19:34:45     s</span></span><br><span class="line">	<span class="comment">#8  2016-04-17 18:42:51     z</span></span><br><span class="line">	<span class="comment">#9  2016-04-18 22:19:36     i</span></span><br><span class="line">	<span class="comment">#10  2016-04-19 7:21:26     d</span></span><br><span class="line">	<span class="comment">#11 2016-04-20 16:36:14     j</span></span><br><span class="line">	<span class="comment">#12 2016-04-21 23:53:12     g</span></span><br><span class="line">	<span class="comment">#13  2016-04-22 20:12:1     o</span></span><br><span class="line">	<span class="comment">#14 2016-04-23 21:37:35     f</span></span><br><span class="line">	<span class="comment">#15  2016-04-24 4:17:49     n</span></span><br></pre></td></tr></table></figure></p>
+<p>tidyr包中的函数也可使用管道操作符%&gt;%。</p>
+<h3 id="seperate函数-1">seperate函数</h3><p>separate()函数可将一列拆分为多列，一般可用于日志数据或日期时间型数据的拆分。<br><figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">separate(data, col, into, sep = <span class="string">"[^[:alnum:]]+"</span>, remove = TRUE,</span><br><span class="line">  convert = FALSE, extra = <span class="string">"warn"</span>,<span class="instruction"> fill </span>= <span class="string">"warn"</span>, ...<span class="function">)</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>data</strong> 要处理的数据框<br><strong>col</strong> 需要被拆分的列<br><strong>into</strong> 新建的列名，为字符串向量<br><strong>sep</strong> 被拆分列的分隔符<br><strong>remove</strong> 是否删除被分割的列，默认删除<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">dataold &lt;- dataNew %&gt;% </span><br><span class="line">  separate(datetime, c(<span class="string">'date'</span>, <span class="string">'time'</span>), sep = <span class="string">' '</span>) %&gt;% </span><br><span class="line">  separate(<span class="built_in">time</span>, c(<span class="string">'hour'</span>, <span class="string">'min'</span>, <span class="string">'second'</span>), sep = <span class="string">':'</span>)</span><br><span class="line">dataold</span><br><span class="line">	<span class="comment"># 		date hour min second event</span></span><br><span class="line">	<span class="comment"># 1  2016-04-10   13  26     33     e</span></span><br><span class="line">	<span class="comment"># 2  2016-04-11    8   4      6     a</span></span><br><span class="line">	<span class="comment"># 3  2016-04-12   10  16     10     l</span></span><br><span class="line">	<span class="comment"># 4  2016-04-13   15  23     52     c</span></span><br><span class="line">	<span class="comment"># 5  2016-04-14    2  47     24     r</span></span><br><span class="line">	<span class="comment"># 6  2016-04-15    5  48     42     h</span></span><br><span class="line">	<span class="comment"># 7  2016-04-16   19  34     45     s</span></span><br><span class="line">	<span class="comment"># 8  2016-04-17   18  42     51     z</span></span><br><span class="line">	<span class="comment"># 9  2016-04-18   22  19     36     i</span></span><br><span class="line">	<span class="comment"># 10 2016-04-19    7  21     26     d</span></span><br><span class="line">	<span class="comment"># 11 2016-04-20   16  36     14     j</span></span><br><span class="line">	<span class="comment"># 12 2016-04-21   23  53     12     g</span></span><br><span class="line">	<span class="comment"># 13 2016-04-22   20  12      1     o</span></span><br><span class="line">	<span class="comment"># 14 2016-04-23   21  37     35     f</span></span><br><span class="line">	<span class="comment"># 15 2016-04-24    4  17     49     n</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/技术篇/">技术篇</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/R/">R</a>, <a href="/tags/tidyr/">tidyr</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2016/04/07/simple-linear-regression/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+<section id="comment">
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="/2016/04/10/data-fomrat/" data-title="长宽数据之间的转化(二)" data-url="http://xukuang.github.io/2016/04/10/data-fomrat/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yiyuzhijian"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+  
+</section>
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:xukuang.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/学习篇/">学习篇</a><small>2</small></li>
+  
+    <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
+  
+    <li><a href="/categories/技术篇/">技术篇</a><small>20</small></li>
+  
+    <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
+  
+    <li><a href="/categories/读书篇/">读书篇</a><small>7</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/tidyr/" style="font-size: 10px;">tidyr</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/统计/" style="font-size: 12px;">统计</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+  </div>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</font></h3>
+<ul class="entry">
+<li>姓名：<a href=http://xukuang.github.io/about/>匡旭</a></li>
+<li>现状：博士在读</li>
+<li>Theme: <a href="https://github.com/zippera/lightum">Lightum</a></li>
+<li>QQ: <font color="red">530731251</font></li>
+</ul>
+</div>
+
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=3051539547&verifier=655ac839&colors=ffffff,d3f9bc,464646,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
+<li><a href="http://jianshu.io/">简书</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="outer">
+    <div id="footer-info" class="inner" style="text-align:center;">
+      <table width="100%" border="0">
+        <tr>
+          <td style="text-align:left" bgcolor="white">
+            Copyright &copy; 2014-2016 <a href="http://xukuang.github.io/about/" target="_blank">Xu Kuang</a> &nbsp; &nbsp;<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            Theme <a href="https://github.com/zippera/lightum" target="_blank">Lightum</a>&nbsp; &nbsp;
+            Hosted on <a href="http://github.com/" target="_blank">GitHub</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+</div></footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>
+

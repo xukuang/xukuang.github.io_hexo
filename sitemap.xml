@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://xukuang.github.io/2016/04/10/data-fomrat/</loc>
+    
+    <lastmod>2016-04-10T22:10:40.323Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://xukuang.github.io/2016/01/18/melt-and-dcast/</loc>
+    
+    <lastmod>2016-04-10T21:27:28.363Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://xukuang.github.io/2016/04/07/simple-linear-regression/</loc>
     
     <lastmod>2016-04-08T22:16:29.572Z</lastmod>
@@ -33,13 +47,6 @@
     <loc>http://xukuang.github.io/2016/03/01/docement-mangement/</loc>
     
     <lastmod>2016-03-02T09:26:40.196Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://xukuang.github.io/2016/01/18/melt-and-dcast/</loc>
-    
-    <lastmod>2016-02-03T03:10:08.000Z</lastmod>
     
   </url>
   
