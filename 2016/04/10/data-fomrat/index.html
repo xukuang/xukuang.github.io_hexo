@@ -228,7 +228,7 @@
     </header>
     <div class="entry">
       
-        <p>前面一篇<img src="http://xukuang.github.io/2016/01/18/melt-and-dcast/" alt="文章">讲了用reshape2包中的函数实现长宽数据的转化。这篇文章中介绍一下如何使用tidyr包中的函数实现长宽数据的转化。</p>
+        <p>前面一篇<a href="http://xukuang.github.io/2016/01/18/melt-and-dcast/" target="_blank" rel="external">文章</a>讲了用reshape2包中的函数实现长宽数据的转化。这篇文章中介绍一下如何使用tidyr包中的函数实现长宽数据的转化。</p>
 <h2 id="宽数据转化为长数据">宽数据转化为长数据</h2><h3 id="gather函数">gather函数</h3><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gather(<span class="built_in">data</span>, key, value, <span class="attribute">...</span>, na<span class="built_in">.</span>rm <span class="subst">=</span> <span class="literal">FALSE</span>, convert <span class="subst">=</span> <span class="literal">FALSE</span>)</span><br></pre></td></tr></table></figure>
 <p><strong>data</strong> 要转化的数据，数据格式为数据框类型或者可以转化为数据框类型<br><strong>key</strong>  指定转化后数据框的指标列的列名，用于存放原数据中不同的数据指标<br><strong>value</strong>  指定转化后数据框的数据列的列名，用于存放原数据中不同的数据指标对应的值<br><strong>…</strong> 指定哪些列聚到一列中。按那些列数据作为标准转化，这个参数接不能有那些列<br><strong>na.rm</strong> 确定是否去除数据中的NA，默认情况下为FALSE，不去除NA<br><a id="more"></a></p>
 <h3 id="实例">实例</h3><ul>
