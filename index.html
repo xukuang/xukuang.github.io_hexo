@@ -219,6 +219,56 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2016-04-13T19:56:01.000Z"><a href="/2016/04/13/data-table-in-R/">4月13 2016</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2016/04/13/data-table-in-R/">data.table的包的简单介绍</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>相比dplyr包，data.table包能够更大程度地提高数据的处理速度，这里就简单介绍一下data.tale包的使用方法。</p>
+<h2 id="data-table_的创建">data.table 的创建</h2><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">library(data.table)</span><br><span class="line"><span class="variable">DT =</span> data.table(<span class="variable">x=</span>rep(c(<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>),<span class="variable">each=</span><span class="number">3</span>), <span class="variable">y=</span>c(<span class="number">1</span>,<span class="number">3</span>,<span class="number">6</span>), <span class="variable">v=</span><span class="number">1</span>:<span class="number">9</span>)</span><br><span class="line">DT</span><br><span class="line">	<span class="comment">#    x y v</span></span><br><span class="line">	<span class="comment"># 1: a 1 1</span></span><br><span class="line">	<span class="comment"># 2: a 3 2</span></span><br><span class="line">	<span class="comment"># 3: a 6 3</span></span><br><span class="line">	<span class="comment"># 4: b 1 4</span></span><br><span class="line">	<span class="comment"># 5: b 3 5</span></span><br><span class="line">	<span class="comment"># 6: b 6 6</span></span><br><span class="line">	<span class="comment"># 7: c 1 7</span></span><br><span class="line">	<span class="comment"># 8: c 3 8</span></span><br><span class="line">	<span class="comment"># 9: c 6 9</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2016/04/13/data-table-in-R/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2016-04-10T16:32:19.000Z"><a href="/2016/04/10/data-fomrat/">4月10 2016</a></time>
       
       
@@ -410,58 +460,6 @@
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-02-28T00:14:59.000Z"><a href="/2016/02/27/char-in-R/">2月27 2016</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2016/02/27/char-in-R/">R中的文本处理</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <blockquote>
-<p>处理文本是每一种计算机语言都应该具备的功能，但不是每一种语言都侧重于处理文本。R语言是统计的语言，处理文本不是它的强项。尽管R语言处理文本的能力不够强，但适当使用可以大幅提高工作效率的，而且有些文本操作还不得不用。高效处理文本少不了正则表达式（regular expression），虽然R在这方面先天不高效，但其中处理文本的绝大多数函数都支持正则表达式。</p>
-</blockquote>
-<h2 id="正则表达式">正则表达式</h2><p>正则表达式是用于描述/匹配一个文本集合的表达式。它不是R的专属内容，这里也只简单介绍，更详细的内容请查阅其他文章。
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2016/02/27/char-in-R/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
 
 <nav id="pagination">
   
@@ -487,7 +485,7 @@
   
     <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
   
-    <li><a href="/categories/技术篇/">技术篇</a><small>20</small></li>
+    <li><a href="/categories/技术篇/">技术篇</a><small>21</small></li>
   
     <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
   
@@ -501,7 +499,7 @@
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/tidyr/" style="font-size: 10px;">tidyr</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/统计/" style="font-size: 12px;">统计</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
+    <a href="/tags/R/" style="font-size: 20px;">R</a><a href="/tags/data-talbe/" style="font-size: 10px;">data.talbe</a><a href="/tags/dplyr/" style="font-size: 16px;">dplyr</a><a href="/tags/dropbox/" style="font-size: 10px;">dropbox</a><a href="/tags/hexo/" style="font-size: 12px;">hexo</a><a href="/tags/plyr/" style="font-size: 12px;">plyr</a><a href="/tags/python/" style="font-size: 14px;">python</a><a href="/tags/reshape2/" style="font-size: 10px;">reshape2</a><a href="/tags/tidyr/" style="font-size: 10px;">tidyr</a><a href="/tags/三维图/" style="font-size: 10px;">三维图</a><a href="/tags/坐标轴/" style="font-size: 10px;">坐标轴</a><a href="/tags/坚持/" style="font-size: 12px;">坚持</a><a href="/tags/娱乐/" style="font-size: 10px;">娱乐</a><a href="/tags/援助/" style="font-size: 10px;">援助</a><a href="/tags/摘录/" style="font-size: 18px;">摘录</a><a href="/tags/数据合并/" style="font-size: 12px;">数据合并</a><a href="/tags/文件系统管理/" style="font-size: 10px;">文件系统管理</a><a href="/tags/文本/" style="font-size: 10px;">文本</a><a href="/tags/旁观者/" style="font-size: 10px;">旁观者</a><a href="/tags/统计/" style="font-size: 12px;">统计</a><a href="/tags/美食/" style="font-size: 10px;">美食</a><a href="/tags/英语/" style="font-size: 10px;">英语</a><a href="/tags/计划/" style="font-size: 10px;">计划</a><a href="/tags/重命名/" style="font-size: 10px;">重命名</a><a href="/tags/高调/" style="font-size: 10px;">高调</a>
   </div>
 </div>
 
