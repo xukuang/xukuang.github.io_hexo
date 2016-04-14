@@ -1,745 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
+  
   <url>
     <loc>http://xukuang.github.io/2016/04/13/data-table-in-R/</loc>
-    <lastmod>2016-04-13T23:03:24.677Z</lastmod>
-    <data>
-        <display>
-        <title>data.table的包的简单介绍</title>
-        <pubTime>2016-04-13T19:56:01.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>data.talbe </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-04-14T18:24:25.880Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2016/04/10/data-fomrat/</loc>
-    <lastmod>2016-04-10T22:36:15.429Z</lastmod>
-    <data>
-        <display>
-        <title>长宽数据之间的转化(二)</title>
-        <pubTime>2016-04-10T16:32:19.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>tidyr </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-04-10T22:36:15.429Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2016/01/18/melt-and-dcast/</loc>
-    <lastmod>2016-04-10T21:27:28.363Z</lastmod>
-    <data>
-        <display>
-        <title>长宽数据之间的转化(一)</title>
-        <pubTime>2016-01-18T17:32:19.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>reshape2 </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-04-10T21:27:28.363Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2016/04/07/simple-linear-regression/</loc>
-    <lastmod>2016-04-08T22:16:29.572Z</lastmod>
-    <data>
-        <display>
-        <title>简单线性回归中各指标在R中的计算</title>
-        <pubTime>2016-04-07T20:50:50.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>统计 </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-04-08T22:16:29.572Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2016/04/06/moment-in_statistics/</loc>
-    <lastmod>2016-04-08T21:54:54.390Z</lastmod>
-    <data>
-        <display>
-        <title>离散型随机变量的常用统计指标</title>
-        <pubTime>2016-04-07T04:25:50.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>统计 </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-04-08T21:54:54.390Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/05/16/common-methods-of-dealing-with-data-frame/</loc>
-    <lastmod>2016-03-07T08:15:48.038Z</lastmod>
-    <data>
-        <display>
-        <title>数据框基本操作的常见方法</title>
-        <pubTime>2015-05-16T21:23:57.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>dplyr </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-03-07T08:15:48.038Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2016/02/27/char-in-R/</loc>
-    <lastmod>2016-03-03T02:04:52.159Z</lastmod>
-    <data>
-        <display>
-        <title>R中的文本处理</title>
-        <pubTime>2016-02-28T00:14:59.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>文本 </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-03-03T02:04:52.159Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2016/03/01/docement-mangement/</loc>
-    <lastmod>2016-03-02T09:26:40.196Z</lastmod>
-    <data>
-        <display>
-        <title>用R进行文件系统管理</title>
-        <pubTime>2016-03-02T00:24:47.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>文件系统管理 </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-03-02T09:26:40.196Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2016/01/13/join-function/</loc>
-    <lastmod>2016-01-18T06:28:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>数据合并-join函数</title>
-        <pubTime>2016-01-14T03:14:06.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>dplyr </tag>
-         
-        <tag>plyr </tag>
-         
-        <tag>数据合并 </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-01-18T06:28:18.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/05/29/merge-function-in-R/</loc>
-    <lastmod>2016-01-13T13:59:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>数据合并-merge函数</title>
-        <pubTime>2015-05-29T16:35:12.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>数据合并 </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-01-13T13:59:26.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2014/06/01/dots-in-plyr-of-r-packages/</loc>
-    <lastmod>2016-01-13T12:54:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>summarise 和 mulate 函数使用</title>
-        <pubTime>2014-06-01T22:16:37.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>plyr </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-01-13T12:54:34.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2014/12/23/group-by-and-ungroup-function-in-R/</loc>
-    <lastmod>2016-01-13T11:41:53.000Z</lastmod>
-    <data>
-        <display>
-        <title>group和ungroup函数</title>
-        <pubTime>2014-12-23T15:11:11.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>dplyr </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-01-13T11:41:53.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/04/21/fuctions-in-dplyr/</loc>
-    <lastmod>2016-01-13T10:34:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>dplyr包中的基础操作</title>
-        <pubTime>2015-04-21T16:16:25.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>dplyr </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-01-13T10:34:11.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2016/01/10/3dplot/</loc>
-    <lastmod>2016-01-12T08:33:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>三维图在R中的几种画法</title>
-        <pubTime>2016-01-10T19:48:36.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>三维图 </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2016-01-12T08:33:48.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/04/11/life-in-shenyang/</loc>
-    <lastmod>2015-11-12T11:50:13.000Z</lastmod>
-    <data>
-        <display>
-        <title>生态所周围的地方</title>
-        <pubTime>2015-04-12T01:01:10.000Z</pubTime>
-        
-        <tag>娱乐 </tag>
-         
-        <tag>美食 </tag>
-         
-         
-           
-             
-              <breadCrumb title="生活篇" url="http://xukuang.github.io/categories/%E7%94%9F%E6%B4%BB%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-11-12T11:50:13.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/05/31/push-ups/</loc>
+    
     <lastmod>2015-07-10T07:27:58.000Z</lastmod>
-    <data>
-        <display>
-        <title>关于俯卧撑的那些事</title>
-        <pubTime>2015-05-31T14:59:39.000Z</pubTime>
-        
-        <tag>坚持 </tag>
-         
-         
-           
-             
-              <breadCrumb title="生活篇" url="http://xukuang.github.io/categories/%E7%94%9F%E6%B4%BB%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+  </url>
+  
+  <url>
+    <loc>http://xukuang.github.io/about/index.html</loc>
     
+    <lastmod>2015-07-03T00:28:59.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/05/07/flaunt/</loc>
-    <lastmod>2015-06-08T04:41:07.000Z</lastmod>
-    <data>
-        <display>
-        <title>高调也许不是件坏事情</title>
-        <pubTime>2015-05-08T03:08:28.000Z</pubTime>
-        
-        <tag>坚持 </tag>
-         
-        <tag>高调 </tag>
-         
-         
-           
-             
-              <breadCrumb title="心理篇" url="http://xukuang.github.io/categories/%E5%BF%83%E7%90%86%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-06-08T04:41:07.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2014/05/10/hello-world/</loc>
-    <lastmod>2015-05-17T08:48:45.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2014-05-11T03:55:27.000Z</pubTime>
-        
-        <tag>hexo </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-05-17T08:48:45.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/05/16/daqingxiangguo/</loc>
-    <lastmod>2015-05-16T02:43:38.000Z</lastmod>
-    <data>
-        <display>
-        <title>大清相国</title>
-        <pubTime>2015-05-16T15:28:19.000Z</pubTime>
-        
-        <tag>摘录 </tag>
-         
-         
-           
-             
-              <breadCrumb title="读书篇" url="http://xukuang.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-05-16T02:43:38.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/05/13/contolling-axes-of-R-plots/</loc>
-    <lastmod>2015-05-13T10:22:50.000Z</lastmod>
-    <data>
-        <display>
-        <title>精通R画图之坐标轴</title>
-        <pubTime>2015-05-13T15:13:12.000Z</pubTime>
-        
-        <tag>R </tag>
-         
-        <tag>坐标轴 </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-05-13T10:22:50.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/05/10/how-to-think-for-onlookers/</loc>
-    <lastmod>2015-05-10T06:25:16.000Z</lastmod>
-    <data>
-        <display>
-        <title>旁观者的心态</title>
-        <pubTime>2015-05-10T15:38:15.000Z</pubTime>
-        
-        <tag>援助 </tag>
-         
-        <tag>旁观者 </tag>
-         
-         
-           
-             
-              <breadCrumb title="心理篇" url="http://xukuang.github.io/categories/%E5%BF%83%E7%90%86%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-05-10T06:25:16.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2014/05/10/file-rename/</loc>
-    <lastmod>2015-05-07T12:57:38.000Z</lastmod>
-    <data>
-        <display>
-        <title>文件名的批量修改</title>
-        <pubTime>2014-05-11T04:13:54.000Z</pubTime>
-        
-        <tag>重命名 </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-05-07T12:57:38.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/04/07/list-in-python/</loc>
-    <lastmod>2015-04-20T10:53:47.000Z</lastmod>
-    <data>
-        <display>
-        <title>列表</title>
-        <pubTime>2015-04-07T22:24:21.000Z</pubTime>
-        
-        <tag>python </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-20T10:53:47.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/04/09/value-in-python/</loc>
-    <lastmod>2015-04-16T05:31:06.000Z</lastmod>
-    <data>
-        <display>
-        <title>赋值语句</title>
-        <pubTime>2015-04-10T01:01:27.000Z</pubTime>
-        
-        <tag>python </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-16T05:31:06.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/04/11/great-psychological-experiments-of-the-twentieth-century/</loc>
-    <lastmod>2015-04-11T07:58:44.000Z</lastmod>
-    <data>
-        <display>
-        <title>20世纪最伟大的心理学实验</title>
-        <pubTime>2015-04-11T21:25:15.000Z</pubTime>
-        
-        <tag>摘录 </tag>
-         
-         
-           
-             
-              <breadCrumb title="读书篇" url="http://xukuang.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-11T07:58:44.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2014/12/17/jixinlin-dairy-at-Jinghua/</loc>
-    <lastmod>2015-04-10T14:28:21.000Z</lastmod>
-    <data>
-        <display>
-        <title>清华园日记</title>
-        <pubTime>2014-12-18T03:50:03.000Z</pubTime>
-        
-        <tag>摘录 </tag>
-         
-         
-           
-             
-              <breadCrumb title="读书篇" url="http://xukuang.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-10T14:28:21.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/04/05/world-of-plainness/</loc>
-    <lastmod>2015-04-10T14:21:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>平凡的世界</title>
-        <pubTime>2015-04-05T14:25:16.000Z</pubTime>
-        
-        <tag>摘录 </tag>
-         
-         
-           
-             
-              <breadCrumb title="读书篇" url="http://xukuang.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-10T14:21:29.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/04/05/you-are-the-apple-of-my-eye/</loc>
-    <lastmod>2015-04-10T14:18:25.000Z</lastmod>
-    <data>
-        <display>
-        <title>那些年，我们一起追的女孩</title>
-        <pubTime>2015-04-05T14:35:52.000Z</pubTime>
-        
-        <tag>摘录 </tag>
-         
-         
-           
-             
-              <breadCrumb title="读书篇" url="http://xukuang.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-10T14:18:25.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2014/07/17/talk-abut-dropbox/</loc>
-    <lastmod>2015-04-10T09:00:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>说说dropbox的好</title>
-        <pubTime>2014-07-18T04:55:25.000Z</pubTime>
-        
-        <tag>dropbox </tag>
-         
-         
-           
-             
-              <breadCrumb title="生活篇" url="http://xukuang.github.io/categories/%E7%94%9F%E6%B4%BB%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-10T09:00:48.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2014/05/14/blog-build/</loc>
-    <lastmod>2015-04-10T08:43:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>如何用hexo发博文</title>
-        <pubTime>2014-05-15T00:09:01.000Z</pubTime>
-        
-        <tag>hexo </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-10T08:43:26.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2014/05/16/past-and-future/</loc>
-    <lastmod>2015-04-10T07:48:19.000Z</lastmod>
-    <data>
-        <display>
-        <title>写在硕士的尾巴、博士的开端上</title>
-        <pubTime>2014-05-16T22:34:40.000Z</pubTime>
-        
-        <tag>计划 </tag>
-         
-         
-           
-             
-              <breadCrumb title="学习篇" url="http://xukuang.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-10T07:48:19.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2014/05/27/xiaoqingren/</loc>
-    <lastmod>2015-04-10T02:23:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>小情人</title>
-        <pubTime>2014-05-28T01:23:09.000Z</pubTime>
-        
-        <tag>摘录 </tag>
-         
-         
-           
-             
-              <breadCrumb title="读书篇" url="http://xukuang.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-10T02:23:54.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2014/05/20/english-study/</loc>
-    <lastmod>2015-04-10T02:23:21.000Z</lastmod>
-    <data>
-        <display>
-        <title>经典的英语日常对话</title>
-        <pubTime>2014-05-21T01:00:24.000Z</pubTime>
-        
-        <tag>英语 </tag>
-         
-         
-           
-             
-              <breadCrumb title="学习篇" url="http://xukuang.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-10T02:23:21.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/04/06/dictonary-in-python/</loc>
-    <lastmod>2015-04-07T12:58:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>字典</title>
-        <pubTime>2015-04-06T20:33:39.000Z</pubTime>
-        
-        <tag>python </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术篇" url="http://xukuang.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
+    <lastmod>2015-04-07T12:58:56.000Z</lastmod>
+    
+  </url>
+  
   <url>
     <loc>http://xukuang.github.io/2015/04/05/the-letters-of-shencongwen-s-family/</loc>
+    
     <lastmod>2015-04-05T12:40:58.000Z</lastmod>
-    <data>
-        <display>
-        <title>沈从文家书</title>
-        <pubTime>2015-04-05T13:54:55.000Z</pubTime>
-        
-        <tag>摘录 </tag>
-         
-         
-           
-             
-              <breadCrumb title="读书篇" url="http://xukuang.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AF%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    
+  </url>
+  
 </urlset>
