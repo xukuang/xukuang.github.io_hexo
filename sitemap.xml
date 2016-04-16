@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://xukuang.github.io/2015/05/29/merge-function-in-R/</loc>
+    
+    <lastmod>2016-04-16T04:14:43.441Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://xukuang.github.io/2016/04/13/data-table-in-R/</loc>
     
-    <lastmod>2016-04-14T19:26:11.318Z</lastmod>
+    <lastmod>2016-04-16T04:13:22.820Z</lastmod>
     
   </url>
   
@@ -61,13 +68,6 @@
     <loc>http://xukuang.github.io/2016/01/13/join-function/</loc>
     
     <lastmod>2016-01-18T06:28:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://xukuang.github.io/2015/05/29/merge-function-in-R/</loc>
-    
-    <lastmod>2016-01-13T13:59:26.000Z</lastmod>
     
   </url>
   
