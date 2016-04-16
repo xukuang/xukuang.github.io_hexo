@@ -317,7 +317,7 @@
 </li>
 </ul>
 <h2 id="data-table与data-frame的转化">data.table与data.frame的转化</h2><p>data.table格式加快了处理速度，而data.frame则更为基础。两者的转化可以通过data.table(),setDT()和setDT()来实现，其中data.table()和setDT()函数可以将数据从data.frame转化为data.table，setDF()函数可以将数据从data.table转化为data.frame。注意使用data.table(),setDT()和setDT()时，参数本身的数据类型也会发生变化。<br><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class<span class="comment">(DT)</span></span><br><span class="line">	<span class="title"># [1</span>] <span class="string">"data.table"</span> <span class="string">"data.frame"</span>  </span><br><span class="line">class<span class="comment">(setDF(DT)</span>)</span><br><span class="line">	<span class="title"># [1</span>] <span class="string">"data.frame"</span></span><br><span class="line">class<span class="comment">(DT)</span></span><br><span class="line">	<span class="title"># [1</span>] <span class="string">"data.frame"</span></span><br></pre></td></tr></table></figure></p>
-<p>此外，data.table包还可以与基础包中的duplicated()、unique()、subset() 函数结合使用。另外，data.table包还有一些基础包的替代函数。rbind()升级版的rbindlist()，可以合并列数不同和列位置不同的数据。比dplyr包中arrange()函数更快的setorder()排序函数。</p>
+<p>此外，data.table包还可以与基础包中的duplicated()、unique()、subset() 函数结合使用。 不仅如此，data.table包还有一些基础包的替代函数。rbind()升级版的rbindlist()，可以合并列数不同和列位置不同的数据。比dplyr包中arrange()函数更快的setorder()排序函数。</p>
 
       
     </div>
