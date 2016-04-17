@@ -258,7 +258,7 @@
 </ul>
 <p>　　事实上，通用汇总方式的用途比我们的例子强大的多，这里有点就事论事的味道，反而限制了该方式的灵活运用。</p>
 <h2 id="多变量的汇总">多变量的汇总</h2><p>plyr包当然不仅仅可以对单一列变量进行分析，还可以以进行多变量的分析。<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ddply<span class="list">(<span class="keyword">dfx</span>, .<span class="list">(<span class="keyword">sex</span>, age)</span>, function<span class="list">(<span class="keyword">x</span>)</span>&#123;mean<span class="list">(<span class="keyword">x</span>$worktime)</span>&#125;)</span></span><br><span class="line"></span><br><span class="line">ddply<span class="list">(<span class="keyword">dfx</span>, .<span class="list">(<span class="keyword">sex</span>, age)</span>, function<span class="list">(<span class="keyword">x</span>)</span>&#123;mean<span class="list">(<span class="keyword">x</span>$worktime)</span>&#125;, .drop = F)</span></span><br></pre></td></tr></table></figure></p>
-<p>　　上面两句的结果并不完全一样，在参数.drop = F会把sex和age两类中原来并不存在的组合以NA的形式展示出来。(在dplyr包中默认情况下，所有组合的结果均显示，只是不存在的组合的结果为NA)</p>
+<p>　　上面两句的结果并不完全一样，在参数.drop = F会把sex和age两类中原来并不存在的组合以NA的形式展示出来。(在dplyr包 和data.talbe包中尚未发现类似.drop = F这样的功能)。</p>
 <p>　　最后，本文的所有方法只是个人的使用心得，可能有很多不对的地方，欢迎大家提出不同的意见。</p>
 
       
