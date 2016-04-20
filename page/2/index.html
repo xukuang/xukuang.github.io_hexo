@@ -281,7 +281,7 @@
     </header>
     <div class="entry">
       
-        <p>这里将数据框分为两种：宽数据和长数据，宽数据便于数据成果的展示，长数据则便于数据在R中进行分析。reshape2包中的melt函数可以实现宽数据向长数据的转换，而dcast可以实现宽数据向长数据的转化。 tidyr是reshape2的升级版，主要用于数据框。</p>
+        <p>这里将数据框分为两种：宽数据和长数据，宽数据便于数据成果的展示，长数据则便于数据在R中进行分析。reshape2包中的melt函数可以实现宽数据向长数据的转换，而dcast可以实现宽数据向长数据的转化。 </p>
 <h2 id="宽数据转化为长数据">宽数据转化为长数据</h2><h3 id="melt函数">melt函数</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">melt(data, id<span class="class">.vars</span>, measure<span class="class">.vars</span>,</span><br><span class="line">  variable<span class="class">.name</span> = <span class="string">"variable"</span>, ..., na<span class="class">.rm</span> = FALSE, value<span class="class">.name</span> = <span class="string">"value"</span>,</span><br><span class="line">  factorsAsStrings = TRUE)</span><br></pre></td></tr></table></figure>
 <p><strong>data</strong> 要转化的数据，数据格式为数据框类型或者可以转化为数据框类型<br><strong>id.vars</strong> 数据的转化标准：依照那些列进行转化，数据格式为字符型或数字型的向量。如果该参数没有限定，会把所有数据转化为两列，其中指标一列，数据一列。<br><strong>measure.vars</strong>    被转化的数据：将哪些列数据值转化，该参数在没有指定的默认情况下，会将id.vars中以外的所有列数据进行转化，数据格式为字符型或数字型的向量<br><strong>variable.name</strong>    对转化后的数据标准列重新命名，默认情况下，列名为variable<br><strong>na.rm</strong> 是否去除数据中的NA，默认情况下为FALSE，不去除NA<br><strong>value.name</strong> 对转化后的数据列重新命名，默认情况下，列名为value<br><strong>factorsAsStrings</strong>    转化过程中是否将因子类型数据转化为字符型数据，默认情况下为TRUE，将因子类型数据转化为字符型数据<br>
       
@@ -479,11 +479,11 @@
   <h3 class="title">分类</h3>
   <ul class="entry">
   
-    <li><a href="/categories/学习篇/">学习篇</a><small>2</small></li>
+    <li><a href="/categories/学习篇/">学习篇</a><small>3</small></li>
   
     <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
   
-    <li><a href="/categories/技术篇/">技术篇</a><small>21</small></li>
+    <li><a href="/categories/技术篇/">技术篇</a><small>20</small></li>
   
     <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
   

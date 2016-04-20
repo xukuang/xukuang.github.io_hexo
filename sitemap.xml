@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://xukuang.github.io/2016/04/10/data-fomrat/</loc>
+    
+    <lastmod>2016-04-20T18:55:13.353Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://xukuang.github.io/2016/01/18/melt-and-dcast/</loc>
+    
+    <lastmod>2016-04-20T18:54:17.232Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://xukuang.github.io/2016/04/06/moment-in_statistics/</loc>
+    
+    <lastmod>2016-04-18T15:28:35.877Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://xukuang.github.io/2014/06/01/dots-in-plyr-of-r-packages/</loc>
     
     <lastmod>2016-04-17T23:05:04.443Z</lastmod>
@@ -23,30 +44,9 @@
   </url>
   
   <url>
-    <loc>http://xukuang.github.io/2016/04/10/data-fomrat/</loc>
-    
-    <lastmod>2016-04-10T22:36:15.429Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://xukuang.github.io/2016/01/18/melt-and-dcast/</loc>
-    
-    <lastmod>2016-04-10T21:27:28.363Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://xukuang.github.io/2016/04/07/simple-linear-regression/</loc>
     
     <lastmod>2016-04-08T22:16:29.572Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://xukuang.github.io/2016/04/06/moment-in_statistics/</loc>
-    
-    <lastmod>2016-04-08T21:54:54.390Z</lastmod>
     
   </url>
   
