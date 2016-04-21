@@ -219,6 +219,63 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2016-03-02T00:24:47.000Z"><a href="/2016/03/01/docement-mangement/">3月1 2016</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2016/03/01/docement-mangement/">用R进行文件系统管理</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>学习中，已经体会到了R在数据处理方面的厉害，偶然看到张丹的博文<a href="http://blog.fens.me/r-file-folder/">《用R进行文件系统管理》</a>，发现R居然还可以进行文件系统的管理，又一次全新的认识了世界（其实主要是R）。这里基本上是把张丹的文章照搬过来了，只是加了少许自己学习时心得。本文中提到的文件系统管理主要是指文件和目录（即文件夹）的创建、查看、重命名、复制、删除和文件权限处理。</p>
+<h2 id="文件操作">文件操作</h2><ul>
+<li><p>创建文件</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建一个空文件 A.txt</span></span><br><span class="line"><span class="built_in">file</span>.<span class="built_in">create</span>(<span class="string">"A.txt"</span>)</span><br><span class="line"><span class="comment"># 查看当前目录下的子目录和文件</span></span><br><span class="line">list.<span class="built_in">files</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建多个空文件 A1.txt，A2.txt，A3.txt</span></span><br><span class="line"><span class="built_in">file</span>.<span class="built_in">create</span>(<span class="string">"A1.txt"</span>, <span class="string">"A2.txt"</span>, <span class="string">"A3.txt"</span>)</span><br><span class="line"><span class="comment"># 查看当前目录下的子目录和文件</span></span><br><span class="line">list.<span class="built_in">files</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个有内容的文件 B.txt</span></span><br><span class="line">cat(<span class="string">"文件测试\n"</span>, <span class="built_in">file</span> = <span class="string">"B.txt"</span>)</span><br><span class="line">list.<span class="built_in">files</span>()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看文件</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># 显示当前目录中的目录和文件</span></span><br><span class="line"><span class="preprocessor">## 下面两句结果相同</span></span><br><span class="line">list.files() # 建议使用该命令，方便记忆</span><br><span class="line">dir()</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 检查文件是否存在</span></span><br><span class="line"><span class="preprocessor">## 存在的文件</span></span><br><span class="line">file.exists(<span class="string">"A.txt"</span>)</span><br><span class="line"><span class="preprocessor">## 不存在的文件</span></span><br><span class="line">file.exists(<span class="string">"readme.txt"</span>)</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># 判断是否是文件</span></span><br><span class="line">file_test(<span class="string">"-f"</span>, <span class="string">"A.txt"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2016/03/01/docement-mangement/#more" class="more-link">阅读全文</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2016-02-28T00:14:59.000Z"><a href="/2016/02/27/char-in-R/">2月27 2016</a></time>
       
       
@@ -407,55 +464,6 @@
 
 
 
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2015-05-31T14:59:39.000Z"><a href="/2015/05/31/push-ups/">5月31 2015</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2015/05/31/push-ups/">关于俯卧撑的那些事</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>俯卧撑坚持了有4个多月了，而有记录的也有2个多月了。今天主要说说坚持做俯卧撑的心路历程，也给自己一下鼓励，接着坚持下去。<br><img src="http://7xize0.com1.z0.glb.clouddn.com/Push_Ups.jpg" alt="俯卧撑三、四、五月"><br>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2015/05/31/push-ups/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
 
 <nav id="pagination">
   
@@ -483,7 +491,7 @@
   
     <li><a href="/categories/心理篇/">心理篇</a><small>2</small></li>
   
-    <li><a href="/categories/技术篇/">技术篇</a><small>20</small></li>
+    <li><a href="/categories/技术篇/">技术篇</a><small>21</small></li>
   
     <li><a href="/categories/生活篇/">生活篇</a><small>3</small></li>
   
