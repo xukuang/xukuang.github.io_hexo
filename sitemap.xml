@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://xukuang.github.io/2016/04/27/numpy/</loc>
+    
+    <lastmod>2016-04-27T22:50:10.592Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://xukuang.github.io/2015/04/07/list-in-python/</loc>
+    
+    <lastmod>2016-04-27T18:17:53.133Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://xukuang.github.io/2016/03/01/docement-mangement/</loc>
+    
+    <lastmod>2016-04-24T16:15:58.949Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://xukuang.github.io/2016/04/21/spatial-pattern-analysis/</loc>
+    
+    <lastmod>2016-04-21T23:37:54.558Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://xukuang.github.io/2016/04/21/dots-in-r/</loc>
     
     <lastmod>2016-04-21T22:16:36.752Z</lastmod>
@@ -68,13 +96,6 @@
     <loc>http://xukuang.github.io/2016/02/27/char-in-R/</loc>
     
     <lastmod>2016-03-03T02:04:52.159Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://xukuang.github.io/2016/03/01/docement-mangement/</loc>
-    
-    <lastmod>2016-03-02T09:26:40.196Z</lastmod>
     
   </url>
   
@@ -166,13 +187,6 @@
     <loc>http://xukuang.github.io/2014/05/10/file-rename/</loc>
     
     <lastmod>2015-05-07T12:57:38.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://xukuang.github.io/2015/04/07/list-in-python/</loc>
-    
-    <lastmod>2015-04-20T10:53:47.000Z</lastmod>
     
   </url>
   
